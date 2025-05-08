@@ -76,7 +76,7 @@ You can us at the [RWTH website](https://www.cpbl.rwth-aachen.de/) and our [gith
 # Lab members
 
 - [Prof. Dr. Anna Matuszyńska](https://github.com/AnnaMatuszynska) <a href="https://orcid.org/0000-0003-0882-6088"><img src="assets/orcid-logo.svg" width=15></a>
-- Dr. Tim Nies <a href="https://orcid.org/0000-0003-1587-2971"><img src="assets/orcid-logo.svg" width=15></a>
+- [Dr. Tim Nies](https://github.com/tnies) <a href="https://orcid.org/0000-0003-1587-2971"><img src="assets/orcid-logo.svg" width=15></a>
 - [Dr. Marvin van Aalst](https://github.com/marvinvanaalst) <a href="https://orcid.org/0000-0002-7434-0249"><img src="assets/orcid-logo.svg" width=15></a>
 - [Tobias Pfennig](https://github.com/pfennigt) <a href="https://orcid.org/0000-0002-3825-2778"><img src="assets/orcid-logo.svg" width=15></a>
 - Tanvir Hassan
