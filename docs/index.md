@@ -15,13 +15,13 @@ You can us at the [RWTH website](https://www.cpbl.rwth-aachen.de/) and our [gith
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-python:{ .lg .middle } **modelbase 2.0**
+-   :fontawesome-brands-python:{ .lg .middle } **MxlPy**
 
     ---
 
-    Build and analyse mechanistic learning models in minutes
+    Build and analyse **mechanistic learning** models in minutes
 
-    [:octicons-arrow-right-24: Getting started](https://github.com/Computational-Biology-Aachen/modelbase2)
+    [:octicons-arrow-right-24: Getting started](https://github.com/Computational-Biology-Aachen/MxlPy)
 
 -   :fontawesome-brands-python:{ .lg } :fontawesome-brands-html5:{ .lg } **absorpig**
 
