@@ -1,8 +1,8 @@
 <script>
-	import DarkBox from '$lib/DarkBox.svelte';
-	import LightBox from '$lib/LightBox.svelte';
-	import P from '$lib/P.svelte';
-	import SoftwareCard from '$lib/SoftwareCard.svelte';
+	import DarkBox from '$lib/BoxDark.svelte';
+	import LightBox from '$lib/BoxLight.svelte';
+	import SoftwareCard from '$lib/CardSoftware.svelte';
+	import P from '$lib/Text.svelte';
 </script>
 
 <DarkBox>

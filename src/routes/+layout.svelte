@@ -2,8 +2,8 @@
 	import * as config from '$lib/config';
 	import '../app.css';
 
+	import OneColumnLayout from '$lib/LayoutOneCol.svelte';
 	import Navbar from '$lib/Navbar.svelte';
-	import OneColumnLayout from '$lib/OneColumnLayout.svelte';
 
 	let { children } = $props();
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
+	import DarkBox from '$lib/BoxDark.svelte';
+	import LightBox from '$lib/BoxLight.svelte';
 	import Card from '$lib/Card.svelte';
-	import DarkBox from '$lib/DarkBox.svelte';
-	import LightBox from '$lib/LightBox.svelte';
-	import P from '$lib/P.svelte';
+	import P from '$lib/Text.svelte';
 	import json from '$lib/publications.json';
 </script>
 

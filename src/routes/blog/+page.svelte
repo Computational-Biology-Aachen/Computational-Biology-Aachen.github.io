@@ -1,9 +1,9 @@
 <script lang="ts">
+	import DarkBox from '$lib/BoxDark.svelte';
+	import LightBox from '$lib/BoxLight.svelte';
 	import BlogCard from '$lib/Card.svelte';
 	import * as config from '$lib/config';
-	import DarkBox from '$lib/DarkBox.svelte';
-	import LightBox from '$lib/LightBox.svelte';
-	import P from '$lib/P.svelte';
+	import P from '$lib/Text.svelte';
 
 	let { data } = $props();
 </script>
