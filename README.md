@@ -1,3 +1,6 @@
-# Computational Biology Aachen
+# Computational Biology at RWTH Aachen
 
-Visit us at [github.io](https://computational-biology-aachen.github.io/)
+```bash
+npm install
+npm run dev -- --open
+```

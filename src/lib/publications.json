@@ -1,0 +1,194 @@
+[
+    {
+        "title": "MxlPy - Python Package for Mechanistic Learning in Life Science",
+        "date": "2025-05-10",
+        "doi": "https://doi.org/10.1101/2025.05.06.652335",
+        "authors": [
+            "Marvin van Aalst",
+            "Tim Nies",
+            "Tobias Pfennig",
+            "Anna Matuszy\u0144ska"
+        ]
+    },
+    {
+        "title": "Hackathons as essential tools in an interdisciplinary biological training - report from trainings for Sub-saharan students",
+        "date": "2025-03-30",
+        "doi": "https://doi.org/10.1101/2025.03.27.645823",
+        "authors": [
+            "Marvin van Aalst",
+            "Tobias Pfennig",
+            "Faraimunashe Chirove",
+            "Marilyn Ronoh",
+            "Anna Matuszy\u0144ska"
+        ]
+    },
+    {
+        "title": "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity",
+        "date": "2025-03-28",
+        "doi": "https://doi.org/10.1126/sciadv.adt9287",
+        "authors": [
+            "Edward N. Smith",
+            "Marvin van Aalst",
+            "Andreas P. M. Weber",
+            "Oliver Ebenh\u00f6h",
+            "Matthias Heinemann"
+        ]
+    },
+    {
+        "title": "Rule-Based Deconstruction and Reconstruction of Diterpene Libraries: Categorizing Patterns & Unravelling the Structural Landscape",
+        "date": "2024-12-24",
+        "doi": "https://doi.org/10.1101/2024.12.20.629783",
+        "authors": [
+            "Davis T. Mathieu",
+            "Nicholas Schlecht",
+            "Marvin van Aalst",
+            "Kevin M. Shebek",
+            "Lucas Busta",
+            "Nicole Babineau",
+            "Oliver Ebenh\u00f6h",
+            "Bj\u00f6rn Hamberger"
+        ]
+    },
+    {
+        "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
+        "date": "2024-05-31",
+        "doi": "http://dx.doi.org/10.1093/plcell/koae101",
+        "authors": [
+            "Sarah Philipps",
+            "Tobias Pfennig",
+            "Elou\u00ebn Corvest",
+            "Marvin van Aalst",
+            "Lisa F\u00fcrtauer",
+            "Anna Matuszy\u0144ska"
+        ]
+    },
+    {
+        "title": "dismo: building and analysing discrete spatial ODE models",
+        "date": "2023-10-23",
+        "doi": "https://doi.org/10.1101/2023.10.17.562679",
+        "authors": [
+            "Marvin van Aalst",
+            "Oliver Ebenh\u00f6h"
+        ]
+    },
+    {
+        "title": "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives",
+        "date": "2023-09-01",
+        "doi": "http://dx.doi.org/10.1016/j.molp.2023.08.017",
+        "authors": [
+            "Edward N. Smith",
+            "Marvin van Aalst",
+            "Tiina Tosens",
+            "\u00dclo Niinemets",
+            "Benjamin Stich",
+            "Tomas Morosinotto",
+            "Alessandro Alboresi",
+            "Tobias J. Erb",
+            "Paul A. G\u00f3mez-Coronado",
+            "Dimitri Tolleter",
+            "Giovanni Finazzi",
+            "Gilles Curien",
+            "Matthias Heinemann",
+            "Oliver Ebenh\u00f6h",
+            "Julian M. Hibberd",
+            "Urte Schl\u00fcter",
+            "Tianshu Sun",
+            "Andreas P.M. Weber"
+        ]
+    },
+    {
+        "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
+        "date": "2023-06-20",
+        "doi": "http://dx.doi.org/10.1111/tpj.16352",
+        "authors": [
+            "Nima P. Saadat",
+            "Marvin van Aalst",
+            "Alejandro Brand",
+            "Oliver Ebenh\u00f6h",
+            "Alain Tissier",
+            "Anna B. Matuszy\u0144ska"
+        ]
+    },
+    {
+        "title": "What controls carbon sequestration in plants under which conditions?",
+        "date": "2023-04-21",
+        "doi": "https://doi.org/10.1101/2023.04.20.537672",
+        "authors": [
+            "Tim Nies",
+            "Marvin van Aalst",
+            "Nima Saadat",
+            "Josha Ebeling",
+            "Oliver Ebenh\u00f6h"
+        ]
+    },
+    {
+        "title": "Approximating carbon fixation - how important is the Calvin-Benson cycle steady-state assumption?",
+        "date": "2022-11-20",
+        "doi": "https://doi.org/10.1101/2022.11.18.517021",
+        "authors": [
+            "Marvin van Aalst",
+            "Oliver Ebenh\u00f6h",
+            "Berkley J. Walker"
+        ]
+    },
+    {
+        "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
+        "date": "2022-09-30",
+        "doi": "https://doi.org/10.1101/2022.09.29.510054",
+        "authors": [
+            "Nima P. Saadat",
+            "Marvin van Aalst",
+            "Alejandro Brand",
+            "Oliver Ebenh\u00f6h",
+            "Alain Tissier",
+            "Anna B. Matuszy\u0144ska"
+        ]
+    },
+    {
+        "title": "Network Reconstruction and Modelling Made Reproducible with moped",
+        "date": "2022-03-22",
+        "doi": "https://doi.org/10.3390/metabo12040275",
+        "authors": [
+            "Nima P. Saadat",
+            "Marvin van Aalst",
+            "Oliver Ebenh\u00f6h"
+        ]
+    },
+    {
+        "title": "COBREXA.jl: constraint-based reconstruction and exascale analysis",
+        "date": "2021-06-07",
+        "doi": "https://doi.org/10.1101/2021.06.04.447038",
+        "authors": [
+            "Miroslav Kratochv\u00edl",
+            "Laurent Heirendt",
+            "St. Elmo Wilken",
+            "Taneli Pusa",
+            "Sylvain Arreckx",
+            "Alberto Noronha",
+            "Marvin van Aalst",
+            "Venkata P Satagopam",
+            "Oliver Ebenh\u00f6h",
+            "Reinhard Schneider",
+            "Christophe Trefois",
+            "Wei Gu"
+        ]
+    },
+    {
+        "title": "moped - A Python package for metabolic modelling and topological analysis",
+        "date": "2020-12-06",
+        "doi": "http://dx.doi.org/10.1101/2020.12.04.411512",
+        "authors": []
+    },
+    {
+        "title": "Building Mathematical Models of Biological Systems with modelbase",
+        "date": "2018-11-16",
+        "doi": "http://dx.doi.org/10.5334/jors.236",
+        "authors": []
+    },
+    {
+        "title": "Building mathematical models of biological systems with modelbase, a Python package for semi-automatic ODE assembly and construction of isotope-specific models",
+        "date": "2018-07-05",
+        "doi": "http://dx.doi.org/10.1101/362954",
+        "authors": []
+    }
+]
