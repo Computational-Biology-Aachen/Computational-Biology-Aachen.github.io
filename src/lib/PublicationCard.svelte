@@ -25,7 +25,7 @@
 		width: 100%;
 		padding: 0;
 		margin: 0 auto;
-		background-image: url('placeholder.jpg');
+		background-image: url('/placeholder.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
