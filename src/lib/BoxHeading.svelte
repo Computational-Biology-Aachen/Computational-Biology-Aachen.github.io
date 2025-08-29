@@ -15,23 +15,23 @@
 
 <style>
 	.box {
+		box-sizing: border-box;
 		padding: 2rem 2rem;
 		margin: 0;
 		background-color: var(--primary);
 		min-height: 12rem;
 		display: flex;
-		flex-direction: row;
 		align-items: center;
-		justify-content: start;
 	}
 	.box > * {
 		color: var(--white);
 	}
 	.inner {
+		height: 100%;
+		width: 100%;
 		max-width: 80ch;
-		margin: 0;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
 	}
 </style>

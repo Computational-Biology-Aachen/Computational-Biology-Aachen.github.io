@@ -1,6 +1,6 @@
 <script>
 	import DarkBox from '$lib/BoxDark.svelte';
-	import BoxHeading from '$lib/BoxHeadingMain.svelte';
+	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
 	import HeroBox from '$lib/BoxHero.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
 	import PersonCard from '$lib/CardPerson.svelte';
@@ -12,11 +12,11 @@
 
 <HeroBox></HeroBox>
 <LightBox>
-	<BoxHeading n="01" title="about"></BoxHeading>
+	<BoxHeadingMain n="01" title="about"></BoxHeadingMain>
 	<p>Some really inspiring words to inspire people. Maybe talk about our mission or whatever.</p>
 </LightBox>
 <DarkBox>
-	<BoxHeading n="02" text="white" title="publications"></BoxHeading>
+	<BoxHeadingMain n="02" text="white" title="publications"></BoxHeadingMain>
 	<PublicationCard title="Shedding light on blue-green photosynthesis">
 		<P text="white">
 			Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan Červený,
@@ -43,7 +43,7 @@
 	</P>
 </DarkBox>
 <LightBox>
-	<BoxHeading n="03" title="team"></BoxHeading>
+	<BoxHeadingMain n="03" title="team"></BoxHeadingMain>
 	<TwoColumnLayout>
 		<PersonCard title="Prof. Dr. Anna Matuszyńska">
 			<P text="white">Some Description</P>
@@ -91,7 +91,7 @@
 	</div>
 </LightBox>
 <DarkBox>
-	<BoxHeading n="04" text="white" title="software"></BoxHeading>
+	<BoxHeadingMain n="04" text="white" title="software"></BoxHeadingMain>
 	<PublicationCard title="MxlPy">
 		<P text="white">
 			MxlPy (pronounced "em axe el pie") is a Python package for mechanistic learning (Mxl) - the
@@ -116,11 +116,11 @@
 	</P>
 </DarkBox>
 <LightBox>
-	<BoxHeading n="05" title="teaching"></BoxHeading>
+	<BoxHeadingMain n="05" title="teaching"></BoxHeadingMain>
 	<p>Here we could list current courses etc</p>
 </LightBox>
 <DarkBox>
-	<BoxHeading n="06" title="imprint" text="white"></BoxHeading>
+	<BoxHeadingMain n="06" title="imprint" text="white"></BoxHeadingMain>
 	<P text="white">
 		Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
 		Worringerweg 1 52074 Aachen <br />

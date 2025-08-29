@@ -36,7 +36,7 @@
 	}
 
 	@media screen and (min-width: 800px) {
-		div {
+		.box {
 			flex-direction: column;
 			align-items: center;
 		}

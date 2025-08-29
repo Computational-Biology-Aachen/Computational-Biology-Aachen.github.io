@@ -13,9 +13,10 @@
 			Advancing human knowledge ever so slightly.
 			<br />
 			An up-to-date collection of our scientific work can always be found on
-			<a href="https://orcid.org/0000-0003-0882-6088">ORCID</a>
+			<a class="light" href="https://orcid.org/0000-0003-0882-6088">ORCID</a>
 			and
 			<a
+				class="light"
 				href="https://scholar.google.com/citations?hl=en&user=H7ip_jsAAAAJ&view_op=list_works&sortby=pubdate"
 				>Google Scholar</a
 			>.
