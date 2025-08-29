@@ -1,12 +1,12 @@
 <script lang="ts">
-	import DarkBox from '$lib/BoxDark.svelte';
+	import BoxHeading from '$lib/BoxHeading.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
 	import Card from '$lib/Card.svelte';
 	import P from '$lib/Text.svelte';
 	import json from '$lib/publications.json';
 </script>
 
-<DarkBox>
+<BoxHeading>
 	<hgroup>
 		<h1>Papers</h1>
 		<P text="white">
@@ -21,7 +21,7 @@
 			>.
 		</P>
 	</hgroup>
-</DarkBox>
+</BoxHeading>
 <LightBox>
 	{#each json as { title, date, doi, authors }}
 		<Card {title}>

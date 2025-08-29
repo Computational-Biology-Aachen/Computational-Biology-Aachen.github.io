@@ -1,16 +1,16 @@
 <script>
-	import DarkBox from '$lib/BoxDark.svelte';
+	import BoxHeading from '$lib/BoxHeading.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
 	import SoftwareCard from '$lib/CardSoftware.svelte';
 	import P from '$lib/Text.svelte';
 </script>
 
-<DarkBox>
+<BoxHeading>
 	<hgroup>
 		<h1>Software</h1>
 		<P text="white">Things we built or contributed to with ❤️</P>
 	</hgroup>
-</DarkBox>
+</BoxHeading>
 <LightBox>
 	<SoftwareCard
 		title="MxlPy"

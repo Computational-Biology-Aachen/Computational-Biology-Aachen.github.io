@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DarkBox from '$lib/BoxDark.svelte';
+	import BoxHeading from '$lib/BoxHeading.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
 	import BlogCard from '$lib/Card.svelte';
 	import * as config from '$lib/config';
@@ -12,12 +12,12 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<DarkBox>
+<BoxHeading>
 	<hgroup>
 		<h1>Blog</h1>
 		<P text="white">Probably mostly random ramblings.</P>
 	</hgroup>
-</DarkBox>
+</BoxHeading>
 <LightBox>
 	{#each data.posts as post}
 		<BlogCard title={post.title}>

@@ -1,6 +1,6 @@
 <script>
 	import DarkBox from '$lib/BoxDark.svelte';
-	import BoxHeading from '$lib/BoxHeading.svelte';
+	import BoxHeading from '$lib/BoxHeadingMain.svelte';
 	import HeroBox from '$lib/BoxHero.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
 	import PersonCard from '$lib/CardPerson.svelte';

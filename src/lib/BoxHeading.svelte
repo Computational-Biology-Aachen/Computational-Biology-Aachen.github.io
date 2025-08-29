@@ -1,44 +1,37 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	let {
-		n,
-		title,
-		text = ''
+		children
 	}: {
-		n: string;
-		title: string;
-		text?: string;
+		children: Snippet;
 	} = $props();
-
-	import { MediaQuery } from 'svelte/reactivity';
-
-	const small = new MediaQuery('max-width: 800px');
 </script>
 
-<div>
-	{#if small.current}
-		<h1 class={text}>{n} - {title}</h1>
-	{:else}
-		<h1 class={text}>{n}</h1>
-		<h3 class={text}>|</h3>
-		<h4 class={text}>{title}</h4>
-	{/if}
+<div class="box">
+	<div class="inner">
+		{@render children()}
+	</div>
 </div>
 
 <style>
-	div {
+	.box {
+		padding: 2rem 2rem;
+		margin: 0;
+		background-color: var(--primary);
+		min-height: 12rem;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		justify-content: start;
 	}
-
-	h1,
-	h4 {
-		text-transform: uppercase;
+	.box > * {
+		color: var(--white);
 	}
-
-	@media screen and (min-width: 800px) {
-		div {
-			flex-direction: column;
-			align-items: center;
-		}
+	.inner {
+		max-width: 80ch;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 	}
 </style>
