@@ -19,9 +19,6 @@
 		margin: 0;
 		background-color: var(--box-bg-color);
 	}
-	.box > * {
-		color: var(--box-color);
-	}
 	.inner {
 		max-width: 80ch;
 		margin: 0 auto;

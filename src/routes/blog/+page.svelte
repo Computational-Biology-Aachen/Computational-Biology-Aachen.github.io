@@ -1,8 +1,8 @@
 <script lang="ts">
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
 	import BlogCard from '$lib/Card.svelte';
 	import * as config from '$lib/config';
+	import LightBox from '$lib/SectionLight.svelte';
 	import P from '$lib/Text.svelte';
 
 	let { data } = $props();

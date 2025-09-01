@@ -1,7 +1,7 @@
 <script>
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
 	import SoftwareCard from '$lib/CardSoftware.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 	import P from '$lib/Text.svelte';
 </script>
 

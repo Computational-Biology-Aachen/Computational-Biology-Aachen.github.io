@@ -1,7 +1,7 @@
 <script lang="ts">
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
 	import Card from '$lib/Card.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 	import P from '$lib/Text.svelte';
 	import json from '$lib/publications.json';
 </script>

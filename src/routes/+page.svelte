@@ -1,13 +1,13 @@
 <script>
-	import DarkBox from '$lib/BoxDark.svelte';
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
 	import HeroBox from '$lib/BoxHero.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
 	import PersonCard from '$lib/CardPerson.svelte';
 	import PublicationCard from '$lib/CardPublication.svelte';
 	import TwoColumnLayout from '$lib/LayoutTwoCol.svelte';
 	import Link from '$lib/Link.svelte';
 	import LinkLight from '$lib/LinkLight.svelte';
+	import DarkBox from '$lib/SectionDark.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 	import Text from '$lib/Text.svelte';
 	import TwoColUl from '$lib/UlTwoCol.svelte';
 

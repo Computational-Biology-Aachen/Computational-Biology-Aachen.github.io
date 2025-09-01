@@ -1,6 +1,6 @@
 <script lang="ts">
-	import DarkBox from '$lib/BoxDark.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
+	import DarkBox from '$lib/SectionDark.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 	import P from '$lib/Text.svelte';
 	import { formatDate } from '$lib/utils';
 

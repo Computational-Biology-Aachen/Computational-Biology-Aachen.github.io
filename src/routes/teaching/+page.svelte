@@ -1,7 +1,7 @@
 <script>
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
 	import Link from '$lib/Link.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 	import Text from '$lib/Text.svelte';
 </script>
 

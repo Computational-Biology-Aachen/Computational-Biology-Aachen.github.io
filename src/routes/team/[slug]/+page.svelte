@@ -1,6 +1,6 @@
 <script lang="ts">
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/BoxLight.svelte';
+	import LightBox from '$lib/SectionLight.svelte';
 
 	let { data: person } = $props();
 </script>
