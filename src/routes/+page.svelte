@@ -6,122 +6,148 @@
 	import PersonCard from '$lib/CardPerson.svelte';
 	import PublicationCard from '$lib/CardPublication.svelte';
 	import TwoColumnLayout from '$lib/LayoutTwoCol.svelte';
-	import P from '$lib/Text.svelte';
+	import LinkLight from '$lib/LinkLight.svelte';
+	import Text from '$lib/Text.svelte';
 	import TwoColUl from '$lib/UlTwoCol.svelte';
 </script>
 
 <HeroBox></HeroBox>
+<!-- mission -->
 <LightBox>
-	<BoxHeadingMain n="01" title="about"></BoxHeadingMain>
-	<p>Some really inspiring words to inspire people. Maybe talk about our mission or whatever.</p>
+	<BoxHeadingMain n="01" title="mission"></BoxHeadingMain>
+	<Text>Some really inspiring words to inspire people.</Text>
+	<Text>Some really inspiring words to inspire people.</Text>
+	<Text>Some really inspiring words to inspire people.</Text>
 </LightBox>
+<!-- Team -->
 <DarkBox>
-	<BoxHeadingMain n="02" text="white" title="publications"></BoxHeadingMain>
-	<PublicationCard title="Shedding light on blue-green photosynthesis">
-		<P text="white">
-			Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan Červený,
-			Gábor Bernát, Anna Barbara Matuszyńska
-		</P>
-	</PublicationCard>
-	<PublicationCard
-		title="Microbial markets: socio-economic perspective in studying microbial communities"
-	>
-		<P text="white">
-			Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin Schipper , Anna
-			Matuszyńska
-		</P>
-	</PublicationCard>
-	<PublicationCard title="A new era of synthetic biology—microbial community design">
-		<P text="white"
-			>Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C Ducat , Ilka M Axmann</P
-		>
-	</PublicationCard>
-	<P text="white">
-		Interested? Check out our <a style="color: var(--white);" href="/papers"
-			>full list of publications</a
-		>
-	</P>
-</DarkBox>
-<LightBox>
-	<BoxHeadingMain n="03" title="team"></BoxHeadingMain>
+	<BoxHeadingMain n="02" text="white" title="team"></BoxHeadingMain>
 	<TwoColumnLayout>
 		<PersonCard title="Prof. Dr. Anna Matuszyńska">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Dr. Tim Nies">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Dr. Marvin van Aalst">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Tobias Pfennig">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Tanvir Hassan">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Quang Huy Nguyen">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Josha Ebeling">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Elouën Corvest">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 		<PersonCard title="Veena Lohiya">
-			<P text="white">Some Description</P>
+			<Text text="white">Some Description</Text>
 		</PersonCard>
 	</TwoColumnLayout>
 
 	<div>
-		<h2>Alumni</h2>
+		<h2 class="white">Alumni</h2>
 		<TwoColUl>
-			<li>Fariha Mostafa</li>
-			<li>Andreas Nakielski</li>
-			<li>Chloe Aujoulat</li>
-			<li>Abdulmalik Omeiza Abdulkabir</li>
-			<li>Elena Kullmann</li>
-			<li>Anastasiia Boshtova</li>
-			<li>Sarah Philipps</li>
-			<li>Pia Falter</li>
-			<li>Theresa Zimmermann</li>
-			<li>Dorina von Oehsen</li>
+			<li style="color: white">Fariha Mostafa</li>
+			<li style="color: white">Andreas Nakielski</li>
+			<li style="color: white">Chloe Aujoulat</li>
+			<li style="color: white">Abdulmalik Omeiza Abdulkabir</li>
+			<li style="color: white">Elena Kullmann</li>
+			<li style="color: white">Anastasiia Boshtova</li>
+			<li style="color: white">Sarah Philipps</li>
+			<li style="color: white">Pia Falter</li>
+			<li style="color: white">Theresa Zimmermann</li>
+			<li style="color: white">Dorina von Oehsen</li>
 		</TwoColUl>
 	</div>
+</DarkBox>
+<!-- Research / Consortia -->
+<LightBox>
+	<BoxHeadingMain n="03" title="Research"></BoxHeadingMain>
+	<p>MibiNet</p>
+	<p>GoPMF</p>
+	<p>CEPLAS</p>
+	<p>BioSC</p>
+	<p>HDSLEE</p>
 </LightBox>
+<!-- Teaching -->
 <DarkBox>
-	<BoxHeadingMain n="04" text="white" title="software"></BoxHeadingMain>
+	<BoxHeadingMain n="04" text="white" title="Teaching"></BoxHeadingMain>
+	Our group offers several opportunities to learn about computational biology within both bachelor's
+	and master's programs. We are using different formats ranging from two weeks long, intensive courses
+	to semester long lectures with exercises. We are also offering a possibility to do your internship
+	with us! If you are interested, please contact Prof. Matuszynska directly.
+	<h2>Current semester</h2>
+	<LinkLight href="/teaching">Past semesters</LinkLight>
+</DarkBox>
+<!-- Publications -->
+<LightBox>
+	<BoxHeadingMain n="05" title="publications"></BoxHeadingMain>
+	<PublicationCard title="Shedding light on blue-green photosynthesis">
+		<Text text="white">
+			Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan Červený,
+			Gábor Bernát, Anna Barbara Matuszyńska
+		</Text>
+	</PublicationCard>
+	<PublicationCard
+		title="Microbial markets: socio-economic perspective in studying microbial communities"
+	>
+		<Text text="white">
+			Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin Schipper , Anna
+			Matuszyńska
+		</Text>
+	</PublicationCard>
+	<PublicationCard title="A new era of synthetic biology—microbial community design">
+		<Text text="white"
+			>Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C Ducat , Ilka M Axmann</Text
+		>
+	</PublicationCard>
+	<Text text="white">
+		Interested? Check out our <a style="color: var(--white);" href="/papers"
+			>full list of publications</a
+		>
+	</Text>
+</LightBox>
+<!-- Software -->
+<DarkBox>
+	<BoxHeadingMain n="06" text="white" title="software"></BoxHeadingMain>
 	<PublicationCard title="MxlPy">
-		<P text="white">
+		<Text text="white">
 			MxlPy (pronounced "em axe el pie") is a Python package for mechanistic learning (Mxl) - the
 			combination of mechanistic modeling and machine learning to deliver explainable, data-informed
 			solutions.
-		</P>
+		</Text>
 	</PublicationCard>
 	<PublicationCard title="MxlBricks">
-		<P text="white">
+		<Text text="white">
 			mxlbricks is a library built on top of <a
 				href="https://github.com/Computational-Biology-Aachen/MxlPy">MxlPy</a
 			> to enable quick building of mechanistic learning models by using re-usable reaction bricks.
-		</P>
+		</Text>
 	</PublicationCard>
 	<PublicationCard title="pySBML">
-		<P text="white">pySBML takes SBML models and makes them simpler ❤️</P>
+		<Text text="white">pySBML takes SBML models and makes them simpler ❤️</Text>
 	</PublicationCard>
-	<P text="white">
+	<Text text="white">
 		Interested? Check out our <a style="color: var(--white);" href="/software"
 			>full list of software</a
 		>
-	</P>
+	</Text>
 </DarkBox>
+<!-- Blog -->
 <LightBox>
-	<BoxHeadingMain n="05" title="teaching"></BoxHeadingMain>
-	<p>Here we could list current courses etc</p>
+	<BoxHeadingMain n="07" title="blog"></BoxHeadingMain>
 </LightBox>
 <DarkBox>
-	<BoxHeadingMain n="06" title="imprint" text="white"></BoxHeadingMain>
-	<P text="white">
+	<BoxHeadingMain n="08" title="imprint" text="white"></BoxHeadingMain>
+	<Text text="white">
 		Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
 		Worringerweg 1 52074 Aachen <br />
 		Work Phone: +49 241 80 25817 <br />
@@ -130,5 +156,5 @@
 		Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
 		Prof. Dr. Anna B. Matuszyńska <br />
 		(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
-	</P>
+	</Text>
 </DarkBox>
