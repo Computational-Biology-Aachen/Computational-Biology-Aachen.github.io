@@ -1,17 +1,18 @@
 <script>
 	import BoxHeading from '$lib/BoxHeading.svelte';
 	import SoftwareCard from '$lib/CardSoftware.svelte';
-	import LightBox from '$lib/SectionLight.svelte';
-	import P from '$lib/Text.svelte';
+	import Link from '$lib/Link.svelte';
+	import Section from '$lib/Section.svelte';
+	import Text from '$lib/Text.svelte';
 </script>
 
 <BoxHeading>
 	<hgroup>
 		<h1>Software</h1>
-		<P text="white">Things we built or contributed to with ❤️</P>
+		<Text text="white">Things we built or contributed to with ❤️</Text>
 	</hgroup>
 </BoxHeading>
-<LightBox>
+<Section>
 	<SoftwareCard
 		title="MxlPy"
 		github="https://github.com/Computational-Biology-Aachen/MxlPy"
@@ -29,8 +30,8 @@
 		github="https://github.com/Computational-Biology-Aachen/mxl-bricks"
 	>
 		<p>
-			mxlbricks is a library built on top of <a
-				href="https://github.com/Computational-Biology-Aachen/MxlPy">MxlPy</a
+			mxlbricks is a library built on top of <Link
+				href="https://github.com/Computational-Biology-Aachen/MxlPy">MxlPy</Link
 			> to enable quick building of mechanistic learning models by using re-usable reaction bricks.
 		</p>
 	</SoftwareCard>
@@ -81,14 +82,17 @@
 
 	<SoftwareCard title="cycparser (python)" gitlab="https://gitlab.com/qtb-hhu/cycparser-py">
 		<p>
-			Library to parse *cyc database flatfiles, such as <a href="https://metacyc.org/">MetaCyc</a>
-			and <a href="https://biocyc.org/">BioCyc</a>.
+			Library to parse *cyc database flatfiles, such as <Link href="https://metacyc.org/"
+				>MetaCyc</Link
+			>
+			and <Link href="https://biocyc.org/">BioCyc</Link>.
 		</p>
 	</SoftwareCard>
 
 	<SoftwareCard title="cycparser (rust)" gitlab="https://gitlab.com/qtb-hhu/cycparser-rs">
 		<p>
-			Rust implementation of <a href="https://gitlab.com/qtb-hhu/cycparser-py">cycparser</a> Python package.
+			Rust implementation of <Link href="https://gitlab.com/qtb-hhu/cycparser-py">cycparser</Link> Python
+			package.
 		</p>
 	</SoftwareCard>
 
@@ -102,4 +106,4 @@
 			with multi-organism community models.
 		</p>
 	</SoftwareCard>
-</LightBox>
+</Section>

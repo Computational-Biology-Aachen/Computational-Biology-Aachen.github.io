@@ -3,6 +3,7 @@
 	import '../app.css';
 
 	import OneColumnLayout from '$lib/LayoutOneCol.svelte';
+	import Link from '$lib/Link.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 
 	let { children } = $props();
@@ -19,11 +20,11 @@
 </svelte:head>
 
 <Navbar>
-	<li><a href="/">Home</a></li>
-	<li><a href="/teaching">Teaching</a></li>
-	<li><a href="/papers">Papers</a></li>
-	<li><a href="/software">Software</a></li>
-	<li><a href="/blog">Blog</a></li>
+	<li><Link href="/">Home</Link></li>
+	<li><Link href="/teaching">Teaching</Link></li>
+	<li><Link href="/papers">Papers</Link></li>
+	<li><Link href="/software">Software</Link></li>
+	<li><Link href="/blog">Blog</Link></li>
 </Navbar>
 <OneColumnLayout>
 	{@render children()}

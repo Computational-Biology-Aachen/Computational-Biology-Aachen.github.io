@@ -1,23 +1,32 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	let {
+		light = true,
 		children
 	}: {
+		light?: boolean;
 		children: Snippet;
 	} = $props();
 </script>
 
-<div class="box">
+<section class={light ? 'light' : 'dark'}>
 	<div class="inner">
 		{@render children()}
 	</div>
-</div>
+</section>
 
 <style>
-	.box {
+	.light {
+		color: var(--primary);
+		background-color: var(--white);
+	}
+	.dark {
+		color: var(--white);
+		background-color: var(--primary);
+	}
+	section {
 		padding: 2rem 2rem;
 		margin: 0;
-		background-color: var(--box-bg-color);
 	}
 	.inner {
 		max-width: 80ch;

@@ -2,8 +2,9 @@
 	import BoxHeading from '$lib/BoxHeading.svelte';
 	import BlogCard from '$lib/Card.svelte';
 	import * as config from '$lib/config';
-	import LightBox from '$lib/SectionLight.svelte';
-	import P from '$lib/Text.svelte';
+	import Link from '$lib/Link.svelte';
+	import Section from '$lib/Section.svelte';
+	import Text from '$lib/Text.svelte';
 
 	let { data } = $props();
 </script>
@@ -15,14 +16,14 @@
 <BoxHeading>
 	<hgroup>
 		<h1>Blog</h1>
-		<P text="white">Probably mostly random ramblings.</P>
+		<Text text="white">Probably mostly random ramblings.</Text>
 	</hgroup>
 </BoxHeading>
-<LightBox>
+<Section>
 	{#each data.posts as post}
 		<BlogCard title={post.title}>
-			<p class="description">{post.description}</p>
-			<a href="/blog/{post.slug}">Read on</a>
+			<Text>{post.description}</Text>
+			<Link href="/blog/{post.slug}">Read on</Link>
 		</BlogCard>
 	{/each}
-</LightBox>
+</Section>

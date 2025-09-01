@@ -1,7 +1,7 @@
 <script>
 	import BoxHeading from '$lib/BoxHeading.svelte';
 	import Link from '$lib/Link.svelte';
-	import LightBox from '$lib/SectionLight.svelte';
+	import Section from '$lib/Section.svelte';
 	import Text from '$lib/Text.svelte';
 </script>
 
@@ -17,16 +17,18 @@
 		>
 	</hgroup>
 </BoxHeading>
-<LightBox>
+<Section>
 	<h2>Current semester</h2>
 	<ul>
-		<Link href="/"><li>Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)</li></Link
-		>
-		<Link href="/"><li>Lecture Biology as an Application Subject II 16.00083</li></Link>
-		<Link href="/"><li>Lecture with exercise Introduction to Bioinformatics 16.00286</li></Link>
-		<Link href="/"><li>Lecture Ethics in the Biosciences 16.00244</li></Link>
-		<Link href="/"><li>Practical + Seminar Interdisciplinary Data Science Course 16.00017</li></Link
-		>
+		<li>
+			<Link href="/">Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)</Link>
+		</li>
+		<li><Link href="/">Lecture Biology as an Application Subject II 16.00083</Link></li>
+		<li><Link href="/">Lecture with exercise Introduction to Bioinformatics 16.00286</Link></li>
+		<li><Link href="/">Lecture Ethics in the Biosciences 16.00244</Link></li>
+		<li>
+			<Link href="/">Practical + Seminar Interdisciplinary Data Science Course 16.00017</Link>
+		</li>
 	</ul>
 	<Text
 		>An overview of all courses offered this semester can also be found on <Link
@@ -75,4 +77,4 @@
 		<li>...</li>
 		<li>...</li>
 	</ul>
-</LightBox>
+</Section>

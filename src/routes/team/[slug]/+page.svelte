@@ -1,6 +1,6 @@
 <script lang="ts">
 	import BoxHeading from '$lib/BoxHeading.svelte';
-	import LightBox from '$lib/SectionLight.svelte';
+	import Section from '$lib/Section.svelte';
 
 	let { data: person } = $props();
 </script>
@@ -15,4 +15,4 @@
 		<h1>{person.name}</h1>
 	</hgroup>
 </BoxHeading>
-<LightBox>{person.description}</LightBox>
+<Section>{person.description}</Section>

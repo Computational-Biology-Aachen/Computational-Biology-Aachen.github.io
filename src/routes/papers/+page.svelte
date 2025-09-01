@@ -1,33 +1,34 @@
 <script lang="ts">
 	import BoxHeading from '$lib/BoxHeading.svelte';
 	import Card from '$lib/Card.svelte';
-	import LightBox from '$lib/SectionLight.svelte';
-	import P from '$lib/Text.svelte';
+	import Link from '$lib/Link.svelte';
 	import json from '$lib/publications.json';
+	import Section from '$lib/Section.svelte';
+	import Text from '$lib/Text.svelte';
 </script>
 
 <BoxHeading>
 	<hgroup>
 		<h1>Papers</h1>
-		<P text="white">
+		<Text text="white">
 			Advancing human knowledge ever so slightly.
 			<br />
 			An up-to-date collection of our scientific work can always be found on
-			<a class="light" href="https://orcid.org/0000-0003-0882-6088">ORCID</a>
+			<Link light={true} href="https://orcid.org/0000-0003-0882-6088">ORCID</Link>
 			and
-			<a
-				class="light"
+			<Link
+				light={true}
 				href="https://scholar.google.com/citations?hl=en&user=H7ip_jsAAAAJ&view_op=list_works&sortby=pubdate"
-				>Google Scholar</a
+				>Google Scholar</Link
 			>.
-		</P>
+		</Text>
 	</hgroup>
 </BoxHeading>
-<LightBox>
+<Section>
 	{#each json as { title, date, doi, authors }}
 		<Card {title}>
-			<p><a href={doi}>doi</a>, published {date}.</p>
+			<Link href={doi}>doi</Link>, published {date}.
 			<p>Authored by {authors.join(', ')}</p>
 		</Card>
 	{/each}
-</LightBox>
+</Section>

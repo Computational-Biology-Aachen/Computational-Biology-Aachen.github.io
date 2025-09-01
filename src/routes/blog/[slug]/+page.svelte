@@ -1,6 +1,5 @@
 <script lang="ts">
-	import DarkBox from '$lib/SectionDark.svelte';
-	import LightBox from '$lib/SectionLight.svelte';
+	import Section from '$lib/Section.svelte';
 	import P from '$lib/Text.svelte';
 	import { formatDate } from '$lib/utils';
 
@@ -13,12 +12,12 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<DarkBox>
+<Section light={false}>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<P text="white">Published at {formatDate(data.meta.date)}</P>
 	</hgroup>
-</DarkBox>
-<LightBox>
+</Section>
+<Section>
 	<data.content />
-</LightBox>
+</Section>
