@@ -20,6 +20,7 @@
 
 <Navbar>
 	<li><a href="/">Home</a></li>
+	<li><a href="/teaching">Teaching</a></li>
 	<li><a href="/papers">Papers</a></li>
 	<li><a href="/software">Software</a></li>
 	<li><a href="/blog">Blog</a></li>

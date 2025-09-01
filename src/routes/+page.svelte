@@ -6,10 +6,17 @@
 	import PersonCard from '$lib/CardPerson.svelte';
 	import PublicationCard from '$lib/CardPublication.svelte';
 	import TwoColumnLayout from '$lib/LayoutTwoCol.svelte';
+	import Link from '$lib/Link.svelte';
 	import LinkLight from '$lib/LinkLight.svelte';
 	import Text from '$lib/Text.svelte';
 	import TwoColUl from '$lib/UlTwoCol.svelte';
+
+	import team from '$lib/team.json';
 </script>
+
+<svelte:head>
+	<title>The Matuszyńska Lab</title>
+</svelte:head>
 
 <HeroBox></HeroBox>
 <!-- mission -->
@@ -23,59 +30,38 @@
 <DarkBox>
 	<BoxHeadingMain n="02" text="white" title="team"></BoxHeadingMain>
 	<TwoColumnLayout>
-		<PersonCard title="Prof. Dr. Anna Matuszyńska">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Dr. Tim Nies">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Dr. Marvin van Aalst">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Tobias Pfennig">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Tanvir Hassan">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Quang Huy Nguyen">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Josha Ebeling">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Elouën Corvest">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
-		<PersonCard title="Veena Lohiya">
-			<Text text="white">Some Description</Text>
-		</PersonCard>
+		{#each team as { slug, name, is_alumni }}
+			{#if !is_alumni}
+				<Link href="team/{slug}">
+					<PersonCard title={name}>
+						<Text text="white">Some Description</Text>
+					</PersonCard>
+				</Link>
+			{/if}
+		{/each}
 	</TwoColumnLayout>
 
 	<div>
 		<h2 class="white">Alumni</h2>
 		<TwoColUl>
-			<li style="color: white">Fariha Mostafa</li>
-			<li style="color: white">Andreas Nakielski</li>
-			<li style="color: white">Chloe Aujoulat</li>
-			<li style="color: white">Abdulmalik Omeiza Abdulkabir</li>
-			<li style="color: white">Elena Kullmann</li>
-			<li style="color: white">Anastasiia Boshtova</li>
-			<li style="color: white">Sarah Philipps</li>
-			<li style="color: white">Pia Falter</li>
-			<li style="color: white">Theresa Zimmermann</li>
-			<li style="color: white">Dorina von Oehsen</li>
+			{#each team as { slug, name, is_alumni }}
+				{#if is_alumni}
+					<Link href="team/{slug}">
+						<li style="color: white">{name}</li>
+					</Link>
+				{/if}
+			{/each}
 		</TwoColUl>
 	</div>
 </DarkBox>
 <!-- Research / Consortia -->
 <LightBox>
-	<BoxHeadingMain n="03" title="Research"></BoxHeadingMain>
-	<p>MibiNet</p>
-	<p>GoPMF</p>
-	<p>CEPLAS</p>
-	<p>BioSC</p>
-	<p>HDSLEE</p>
+	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
+	<Link href="https://www.sfb1535.hhu.de/en/mibinet">MibiNet</Link>
+	<Link href="https://www.uni-muenster.de/GoPMF/">GoPMF</Link>
+	<Link href="https://www.ceplas.eu/en/home">CEPLAS</Link>
+	<Link href="https://www.biosc.de/">BioSC</Link>
+	<Link href="https://www.hds-lee.de/">HDSLEE</Link>
 </LightBox>
 <!-- Teaching -->
 <DarkBox>
@@ -84,7 +70,22 @@
 	and master's programs. We are using different formats ranging from two weeks long, intensive courses
 	to semester long lectures with exercises. We are also offering a possibility to do your internship
 	with us! If you are interested, please contact Prof. Matuszynska directly.
-	<h2>Current semester</h2>
+	<h2 class="white">Current semester</h2>
+
+	<ul>
+		<LinkLight href="/"
+			><li>Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)</li></LinkLight
+		>
+		<LinkLight href="/"><li>Lecture Biology as an Application Subject II 16.00083</li></LinkLight>
+		<LinkLight href="/"
+			><li>Lecture with exercise Introduction to Bioinformatics 16.00286</li></LinkLight
+		>
+		<LinkLight href="/"><li>Lecture Ethics in the Biosciences 16.00244</li></LinkLight>
+		<LinkLight href="/"
+			><li>Practical + Seminar Interdisciplinary Data Science Course 16.00017</li></LinkLight
+		>
+	</ul>
+
 	<LinkLight href="/teaching">Past semesters</LinkLight>
 </DarkBox>
 <!-- Publications -->
@@ -110,9 +111,7 @@
 		>
 	</PublicationCard>
 	<Text text="white">
-		Interested? Check out our <a style="color: var(--white);" href="/papers"
-			>full list of publications</a
-		>
+		Interested? Check out our <Link href="/papers">full list of publications</Link>
 	</Text>
 </LightBox>
 <!-- Software -->
@@ -127,8 +126,8 @@
 	</PublicationCard>
 	<PublicationCard title="MxlBricks">
 		<Text text="white">
-			mxlbricks is a library built on top of <a
-				href="https://github.com/Computational-Biology-Aachen/MxlPy">MxlPy</a
+			mxlbricks is a library built on top of <LinkLight
+				href="https://github.com/Computational-Biology-Aachen/MxlPy">MxlPy</LinkLight
 			> to enable quick building of mechanistic learning models by using re-usable reaction bricks.
 		</Text>
 	</PublicationCard>
@@ -143,7 +142,9 @@
 </DarkBox>
 <!-- Blog -->
 <LightBox>
-	<BoxHeadingMain n="07" title="blog"></BoxHeadingMain>
+	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
+	<Text>Add the most recent entry here.</Text>
+	<Text>Then link to the <Link href="/blog">blog page</Link>.</Text>
 </LightBox>
 <DarkBox>
 	<BoxHeadingMain n="08" title="imprint" text="white"></BoxHeadingMain>

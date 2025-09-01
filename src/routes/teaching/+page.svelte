@@ -19,16 +19,20 @@
 </BoxHeading>
 <LightBox>
 	<h2>Current semester</h2>
+	<ul>
+		<Link href="/"><li>Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)</li></Link
+		>
+		<Link href="/"><li>Lecture Biology as an Application Subject II 16.00083</li></Link>
+		<Link href="/"><li>Lecture with exercise Introduction to Bioinformatics 16.00286</li></Link>
+		<Link href="/"><li>Lecture Ethics in the Biosciences 16.00244</li></Link>
+		<Link href="/"><li>Practical + Seminar Interdisciplinary Data Science Course 16.00017</li></Link
+		>
+	</ul>
 	<Text
 		>An overview of all courses offered this semester can also be found on <Link
 			href="https://online.rwth-aachen.de/RWTHonline/pl/ui/$ctx/webnav.ini">RWTHonline</Link
 		></Text
 	>
-	<ul>
-		<li>...</li>
-		<li>...</li>
-		<li>...</li>
-	</ul>
 	<h2>Summer semester 2025</h2>
 	<ul>
 		<li>...</li>

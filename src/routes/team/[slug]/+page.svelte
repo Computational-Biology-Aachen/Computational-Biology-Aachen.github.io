@@ -1,24 +1,18 @@
 <script lang="ts">
-	import DarkBox from '$lib/BoxDark.svelte';
+	import BoxHeading from '$lib/BoxHeading.svelte';
 	import LightBox from '$lib/BoxLight.svelte';
-	import P from '$lib/Text.svelte';
-	import { formatDate } from '$lib/utils';
 
-	let { data } = $props();
+	let { data: person } = $props();
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{person.name}</title>
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<DarkBox>
+<BoxHeading>
 	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<P text="white">Published at {formatDate(data.meta.date)}</P>
+		<h1>{person.name}</h1>
 	</hgroup>
-</DarkBox>
-<LightBox>
-	<data.content />
-</LightBox>
+</BoxHeading>
+<LightBox>{person.description}</LightBox>
