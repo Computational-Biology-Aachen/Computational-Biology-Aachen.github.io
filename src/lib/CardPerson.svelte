@@ -1,18 +1,14 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
 	let {
-		children,
 		title
 	}: {
-		children: Snippet;
 		title: string;
 	} = $props();
 </script>
 
 <div class="card">
 	<div class="bar">
-		<h3 class="white">{title}</h3>
-		{@render children()}
+		<h4 class="white">{title}</h4>
 	</div>
 </div>
 
@@ -21,9 +17,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: end;
-		min-height: 400px;
 		width: 100%;
-		max-width: 500px;
+		aspect-ratio: 4/3;
 		padding: 0;
 		margin: 0 auto;
 		background-image: url('/placeholder.jpg');
@@ -37,5 +32,10 @@
 		padding: 2rem 0 1rem 1rem;
 		color: var(--white);
 		background-color: rgba(0, 0, 0, 0.7);
+	}
+	h4 {
+		padding: 0;
+		margin: 0;
+		font-size: 1rem;
 	}
 </style>

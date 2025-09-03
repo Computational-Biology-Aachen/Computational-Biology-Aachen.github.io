@@ -1,7 +1,7 @@
 <script>
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
 	import HeroBox from '$lib/BoxHero.svelte';
-	import PersonCard from '$lib/CardPerson.svelte';
+	import CardPerson from '$lib/CardPerson.svelte';
 	import PublicationCard from '$lib/CardPublication.svelte';
 	import CardSponsor from '$lib/CardSponsor.svelte';
 	import Grid from '$lib/Grid.svelte';
@@ -39,9 +39,7 @@
 		{#each team as { slug, name, is_alumni }}
 			{#if !is_alumni}
 				<Link light={true} href="team/{slug}">
-					<PersonCard title={name}>
-						<Text text="white">Some Description</Text>
-					</PersonCard>
+					<CardPerson title={name}></CardPerson>
 				</Link>
 			{/if}
 		{/each}
