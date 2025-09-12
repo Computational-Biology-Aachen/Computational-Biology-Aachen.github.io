@@ -2,13 +2,13 @@
 	let { children } = $props();
 </script>
 
-<div>
+<main>
 	{@render children()}
-</div>
+</main>
 
 <style>
-	div {
-		display: flex;
-		flex-direction: column;
+	main {
+		width: 100%;
+		height: 100%;
 	}
 </style>

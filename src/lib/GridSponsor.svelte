@@ -15,9 +15,15 @@
 		grid-gap: 10px;
 	}
 
-	@media screen and (min-width: 800px) {
+	@media (min-width: 768px) {
 		div {
 			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		div {
+			grid-template-columns: repeat(auto-fill, minmax(min-content, 150px));
 		}
 	}
 </style>

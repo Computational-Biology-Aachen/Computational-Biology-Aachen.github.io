@@ -1,6 +1,7 @@
 <script lang="ts">
-	import Section from '$lib/Section.svelte';
-	import P from '$lib/Text.svelte';
+	import Section from '$lib/sections/Section.svelte';
+	import H1 from '$lib/text/H1.svelte';
+	import Text from '$lib/text/Text.svelte';
 	import { formatDate } from '$lib/utils';
 
 	let { data } = $props();
@@ -12,11 +13,9 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<Section light={false}>
-	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<P text="white">Published at {formatDate(data.meta.date)}</P>
-	</hgroup>
+<Section color="primary">
+	<H1 color="light">{data.meta.title}</H1>
+	<Text color="light">Published at {formatDate(data.meta.date)}</Text>
 </Section>
 <Section>
 	<data.content />

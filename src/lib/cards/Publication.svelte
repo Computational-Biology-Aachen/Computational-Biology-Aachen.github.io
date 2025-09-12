@@ -1,20 +1,27 @@
 <script lang="ts">
+	import Link from '$lib/Link.svelte';
 	import type { Snippet } from 'svelte';
 	let {
-		children,
-		title
+		title,
+		href = '/',
+		img = '/placeholder.jpg',
+		children
 	}: {
-		children: Snippet;
 		title: string;
+		href?: string;
+		img?: string;
+		children: Snippet;
 	} = $props();
 </script>
 
-<div class="card">
-	<div class="bar">
-		<h4>{title}</h4>
-		{@render children()}
+<Link {href}>
+	<div class="card" style:background-image={`url(${img})`}>
+		<div class="bar">
+			<h4>{title}</h4>
+			{@render children()}
+		</div>
 	</div>
-</div>
+</Link>
 
 <style>
 	.card {
@@ -23,17 +30,18 @@
 		justify-content: end;
 		min-height: 400px;
 		width: 100%;
-		padding: 0;
-		margin: 0 auto;
-		background-image: url('/placeholder.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		transition: transform 0.3s ease;
+	}
+	.card:hover {
+		transform: scale(1.01);
 	}
 	.bar {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 2rem 0 1rem 1rem;
+		padding: 1rem;
 		color: var(--white);
 		background-color: rgba(0, 0, 0, 0.7);
 	}

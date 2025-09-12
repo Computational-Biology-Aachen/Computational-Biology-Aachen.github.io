@@ -2,9 +2,8 @@
 	import * as config from '$lib/config';
 	import '../app.css';
 
-	import OneColumnLayout from '$lib/LayoutOneCol.svelte';
-	import Link from '$lib/Link.svelte';
-	import Navbar from '$lib/Navbar.svelte';
+	import Nav from '$lib/nav/Nav.svelte';
+	import NavItem from '$lib/nav/NavItem.svelte';
 
 	let { children } = $props();
 </script>
@@ -19,13 +18,12 @@
 	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
-<Navbar>
-	<li><Link href="/">Home</Link></li>
-	<li><Link href="/teaching">Teaching</Link></li>
-	<li><Link href="/papers">Papers</Link></li>
-	<li><Link href="/software">Software</Link></li>
-	<li><Link href="/blog">Blog</Link></li>
-</Navbar>
-<OneColumnLayout>
-	{@render children()}
-</OneColumnLayout>
+<Nav>
+	<NavItem href="/" name="Home" />
+	<NavItem href="/teaching" name="Teaching" />
+	<NavItem href="/papers" name="Papers" />
+	<NavItem href="/software" name="Resources" />
+	<NavItem href="/blog" name="Blog" />
+</Nav>
+
+{@render children()}

@@ -24,23 +24,22 @@
 
 <style>
 	img {
-		width: 150px;
-		height: 150px;
+		width: 300px;
+		height: 300px;
 		border-radius: 50%;
-		margin-bottom: 1rem;
-		border: 4px solid var(--color);
+		border: 4px solid var(--white);
 	}
 
 	.placeholder {
-		width: 150px;
-		height: 150px;
+		width: 300px;
+		height: 300px;
 		border-radius: 50%;
-		color: var(--background-color);
-		background-color: var(--color);
+		color: var(--white);
+		background-color: var(--black);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 1rem;
-		border: 4px solid var(--color);
+		border: 4px solid var(--white);
 	}
 </style>

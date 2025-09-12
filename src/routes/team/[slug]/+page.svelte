@@ -1,7 +1,7 @@
 <script lang="ts">
-	import BoxHeading from '$lib/BoxHeading.svelte';
-	import ImageRound from '$lib/ImageRound.svelte';
-	import Section from '$lib/Section.svelte';
+	import HeaderPerson from '$lib/sections/HeaderPerson.svelte';
+	import Section from '$lib/sections/Section.svelte';
+	import H2 from '$lib/text/H2.svelte';
 
 	let { data: person } = $props();
 	let img = `/people/${person.slug.split('/').at(-1)}.jpg`;
@@ -12,11 +12,9 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<BoxHeading>
-	<ImageRound path={img}></ImageRound>
-	<hgroup>
-		<h1>{person.name}</h1>
-	</hgroup>
-</BoxHeading>
+<HeaderPerson name={person.name} {img}></HeaderPerson>
 
-<Section>{person.description}</Section>
+<Section>
+	<H2>About me</H2>
+	{person.description}
+</Section>

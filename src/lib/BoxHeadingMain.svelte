@@ -2,25 +2,27 @@
 	let {
 		n,
 		title,
-		text = ''
+		color = 'dark'
 	}: {
 		n: string;
 		title: string;
-		text?: string;
+		color?: 'dark' | 'light' | 'primary' | 'secondary';
 	} = $props();
 
 	import { MediaQuery } from 'svelte/reactivity';
+	import H1 from './text/H1.svelte';
+	import H4 from './text/H4.svelte';
 
 	const small = new MediaQuery('max-width: 800px');
 </script>
 
 <div class="box">
 	{#if small.current}
-		<h1 class={text}>{n} - {title}</h1>
+		<H1>{n.toUpperCase()} - {title.toUpperCase()}</H1>
 	{:else}
-		<h1 class={text}>{n}</h1>
-		<h3 class={text}>|</h3>
-		<h4 class={text}>{title}</h4>
+		<H1 {color}>{n.toUpperCase()}</H1>
+		<H4 {color}>|</H4>
+		<H1 {color}>{title.toUpperCase()}</H1>
 	{/if}
 </div>
 
@@ -28,11 +30,6 @@
 	.box {
 		display: flex;
 		flex-direction: row;
-	}
-
-	h1,
-	h4 {
-		text-transform: uppercase;
 	}
 
 	@media screen and (min-width: 800px) {

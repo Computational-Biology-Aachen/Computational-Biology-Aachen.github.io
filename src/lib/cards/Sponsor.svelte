@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Link from './Link.svelte';
+	import Link from '$lib/Link.svelte';
+
 	let {
 		href,
 		img,
@@ -20,7 +21,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: end;
-		min-height: 300px;
+		min-height: 200px;
+		max-width: 300px;
 		width: 100%;
 		max-width: 500px;
 		padding: 0;
@@ -32,14 +34,14 @@
 	}
 	.card:hover {
 		/* border: 1px solid var(--primary); */
-		transform: scale(1.05);
+		transform: scale(1.07);
 	}
 	/* .bar {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		padding: 2rem 0 1rem 1rem;
-		color: var(--white);
+		color: var(--light);
 		background-color: rgba(0, 0, 0, 0.7);
 	} */
 </style>

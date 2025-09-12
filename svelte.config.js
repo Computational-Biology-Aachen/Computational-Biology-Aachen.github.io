@@ -3,6 +3,13 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { escapeSvelte, mdsvex } from 'mdsvex';
 import { createHighlighter } from 'shiki';
 
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const path_to_layout = join(__dirname, './src/lib/BlogLayout.svelte');
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
@@ -17,6 +24,7 @@ const mdsvexOptions = {
 			return `{@html \`${html}\` }`
 		}
 	},
+	layout: path_to_layout,
 }
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -1,10 +1,12 @@
 <script lang="ts">
-	import BoxHeading from '$lib/BoxHeading.svelte';
-	import BlogCard from '$lib/Card.svelte';
+	import Card from '$lib/cards/Card.svelte';
 	import * as config from '$lib/config';
 	import Link from '$lib/Link.svelte';
-	import Section from '$lib/Section.svelte';
-	import Text from '$lib/Text.svelte';
+	import Header from '$lib/sections/Header.svelte';
+	import Section from '$lib/sections/Section.svelte';
+	import H1 from '$lib/text/H1.svelte';
+	import H2 from '$lib/text/H2.svelte';
+	import Text from '$lib/text/Text.svelte';
 
 	let { data } = $props();
 </script>
@@ -13,17 +15,16 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<BoxHeading>
-	<hgroup>
-		<h1>Blog</h1>
-		<Text text="white">Probably mostly random ramblings.</Text>
-	</hgroup>
-</BoxHeading>
+<Header>
+	<H1 color="light">Blog</H1>
+	<Text color="light">Probably mostly random ramblings.</Text>
+</Header>
 <Section>
 	{#each data.posts as post}
-		<BlogCard title={post.title}>
+		<Card format="full">
+			<H2>{post.title}</H2>
 			<Text>{post.description}</Text>
 			<Link href="/blog/{post.slug}">Read on</Link>
-		</BlogCard>
+		</Card>
 	{/each}
 </Section>
