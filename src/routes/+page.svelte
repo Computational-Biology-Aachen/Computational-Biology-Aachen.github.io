@@ -39,7 +39,7 @@
 		{#each team as { slug, name, is_alumni }}
 			{#if !is_alumni}
 				<Link light={true} href="team/{slug}">
-					<CardPerson title={name}></CardPerson>
+					<CardPerson title={name} img={slug}></CardPerson>
 				</Link>
 			{/if}
 		{/each}

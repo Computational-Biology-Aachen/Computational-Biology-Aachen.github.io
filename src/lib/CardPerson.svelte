@@ -1,12 +1,14 @@
 <script lang="ts">
 	let {
-		title
+		title,
+		img
 	}: {
 		title: string;
+		img: string;
 	} = $props();
 </script>
 
-<div class="card">
+<div class="card" style:background-image={`url(/people/${img}.jpg)`}>
 	<div class="bar">
 		<h4 class="white">{title}</h4>
 	</div>
