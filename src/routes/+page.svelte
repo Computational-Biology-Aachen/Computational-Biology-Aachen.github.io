@@ -1,17 +1,15 @@
 <script>
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
-	import Person from '$lib/cards/Person.svelte';
 	import Publication from '$lib/cards/Publication.svelte';
 	import SoftwareImage from '$lib/cards/SoftwareImage.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import Grid from '$lib/Grid.svelte';
-	import GridPerson from '$lib/GridPerson.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
 	import Li from '$lib/Li.svelte';
 	import Link from '$lib/Link.svelte';
+	import Team from '$lib/pages/Team.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
-	import team from '$lib/team.json';
 	import H2 from '$lib/text/H2.svelte';
 	import Text from '$lib/text/Text.svelte';
 	import Ul from '$lib/Ul.svelte';
@@ -37,25 +35,9 @@
 <!-- 02 - Team -->
 <Section color="dark">
 	<BoxHeadingMain n="02" color="light" title="team"></BoxHeadingMain>
-	<GridPerson>
-		{#each team as { slug, name, is_alumni }}
-			{#if !is_alumni}
-				<Person title={name} {slug}></Person>
-			{/if}
-		{/each}
-	</GridPerson>
-
-	<H2 color="light">Alumni</H2>
-	<Ul columns="two">
-		{#each team as { slug, name, is_alumni }}
-			{#if is_alumni}
-				<Link href="team/{slug}">
-					<Li color="light">{name}</Li>
-				</Link>
-			{/if}
-		{/each}
-	</Ul>
+	<Team />
 </Section>
+
 <!-- 03 - Research / Consortia -->
 <Section color="light">
 	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
@@ -67,6 +49,7 @@
 		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
 	</GridSponsor>
 </Section>
+
 <!-- Teaching -->
 <Section color="dark">
 	<BoxHeadingMain n="04" color="light" title="Teaching"></BoxHeadingMain>

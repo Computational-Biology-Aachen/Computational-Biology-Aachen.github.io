@@ -20,6 +20,7 @@
 
 <Nav>
 	<NavItem href="/" name="Home" />
+	<NavItem href="/team" name="Team" />
 	<NavItem href="/teaching" name="Teaching" />
 	<NavItem href="/papers" name="Papers" />
 	<NavItem href="/software" name="Resources" />
