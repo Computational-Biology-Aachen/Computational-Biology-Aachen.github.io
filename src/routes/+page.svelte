@@ -23,14 +23,18 @@
 <!-- 01 - mission -->
 <Section color="light">
 	<BoxHeadingMain n="01" title="mission"></BoxHeadingMain>
-	<Text>Some really inspiring words to inspire people.</Text>
-	<Text
-		>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum".</Text
-	>
+	<Text>
+		We are a computational biology lab re-imagining photosynthesis for the future of sustainable
+		agriculture and green innovation. Our mission bridges three core areas:
+		<Bold>cutting-edge research</Bold>, where we design integrative models to predict plant
+		performance under real-world stress; <Bold>transformative teaching</Bold>, where students gain
+		hands-on skills in coding, systems biology, and data science through hackathons and open-source
+		tools; and <Bold>citizen science & outreach</Bold>, where we connect plant modelling to
+		solutions for climate change, urban greening, and food security. By uniting mathematics,
+		biology, and global sustainability, we aim to inspire the next generation of scientists,
+		partners, and citizens to join us in shaping resilient crops, smart cities, and a climate-ready
+		future.
+	</Text>
 </Section>
 <!-- 02 - Team -->
 <Section color="dark">
