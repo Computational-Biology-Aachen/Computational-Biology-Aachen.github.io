@@ -1,5 +1,6 @@
 <script>
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
+	import Card from '$lib/cards/Card.svelte';
 	import Publication from '$lib/cards/Publication.svelte';
 	import SoftwareImage from '$lib/cards/SoftwareImage.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
@@ -10,9 +11,12 @@
 	import Team from '$lib/pages/Team.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
+	import Bold from '$lib/text/Bold.svelte';
 	import H2 from '$lib/text/H2.svelte';
 	import Text from '$lib/text/Text.svelte';
 	import Ul from '$lib/Ul.svelte';
+
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -172,8 +176,16 @@
 <!-- Blog -->
 <Section color="light">
 	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
-	<Text>Add the most recent entry here.</Text>
-	<Text>Then link to the <Link href="/blog">blog page</Link>.</Text>
+	{#each data.posts as post}
+		<Card format="full">
+			<H2>{post.title}</H2>
+			<Text>{post.description}</Text>
+			<Link href="/blog/{post.slug}">Read on</Link>
+		</Card>
+	{/each}
+	<Text>
+		Interested? Check out our <Link href="/blog">blog</Link>
+	</Text>
 </Section>
 <Section color="dark">
 	<BoxHeadingMain n="08" title="imprint" color="light"></BoxHeadingMain>
