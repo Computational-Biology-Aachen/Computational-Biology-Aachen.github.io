@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 :host,
 :root {
     font-size: 100%
