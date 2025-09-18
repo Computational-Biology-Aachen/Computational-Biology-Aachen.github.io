@@ -1,6 +1,6 @@
 ---
 title: CEPLAS Women in Plant Sciences Day
-description: Prof. Matuszyńska participated as speaker in the CEPLAS women is plant sciences day and talked about experiences and hardships for women in the academic world
+description: Prof. Matuszyńska participated as speaker in the CEPLAS women is plant sciences day and talked about experiences of working as women in the academic world previously highly dominated by men
 date: '2024-02-22'
 categories:
   - conference
