@@ -16,8 +16,7 @@
 </svelte:head>
 
 <Header>
-	<H1 color="light">Blog</H1>
-	<Text color="light">Probably mostly random ramblings.</Text>
+	<H1 color="light">News</H1>
 </Header>
 <Section>
 	{#each data.posts as post}

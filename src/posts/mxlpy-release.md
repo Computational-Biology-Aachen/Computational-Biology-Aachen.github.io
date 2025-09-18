@@ -15,4 +15,4 @@ View Documentation and Examples: https://computational-biology-aachen.github.io/
 
 If you use MxlPy, please cite our preprint on bioarxiv
 
-![mxlpy logo](news\mxlpy-logo.png)
+![mxlpy logo](/news/mxlpy-logo.png)

@@ -13,4 +13,4 @@ For my part, I delved into the intricacies of my non-linear career path, detaili
 
 Through engaging with the audience, we not only provided guidance and inspiration but also fostered meaningful connections among aspiring female researchers. It was a privilege to contribute to an event dedicated to supporting the career advancement of early-career female scientists within the CEPLAS community. As I shared insights from my own journey and showcased the work of my lab, I hope to have empowered and encouraged the next generation of women in plant sciences to pursue their ambitions with passion, confidence and determination.
 
-![CEPLAS women in science picture](news\women-plant-science.jpeg)
+![CEPLAS women in science picture](/news/women-plant-science.jpeg)
