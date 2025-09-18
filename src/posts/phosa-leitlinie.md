@@ -1,5 +1,5 @@
 ---
-title: Computational Photosynthesis: from in vivo to in silico
+title: Computational Photosynthesis - from in vivo to in silico
 description: The Computational Life Science Lab at RWTH Aachen has conceptualized a new cross-faculty master module bridging photosynthetsis with architecture
 date: '2024-08-02'
 categories:
