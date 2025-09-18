@@ -9,7 +9,7 @@ published: true
 
 Congratulations to our first bachelor students, Pia Falter and Elouen Corvest, for defending today their bachelor projects. It was a pleasure to work with such talented, motivated and hard working students. We wish Pia and Elouen all the best in their future education. There is always a place for the two of you in our group.
 
-![This image shows rows of scientists sitting and listening to a presentation](/news/bachelorstudents_2022_08_19.png "Bachelor Students of 2022")
+![This image shows rows of scientists sitting and listening to a presentation](/news/bachelorstudents_2022_08_19.jpeg "Bachelor Students of 2022")
 
 ## Topics of the bachelor projects
 
