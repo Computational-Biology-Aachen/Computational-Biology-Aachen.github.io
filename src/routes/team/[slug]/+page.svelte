@@ -12,7 +12,15 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<HeaderPerson name={person.name} {img}></HeaderPerson>
+<HeaderPerson
+	name={person.name}
+	{img}
+	mail={person.mail}
+	github={person.github}
+	gitlab={person.gitlab}
+	orcid={person.orcid}
+	website={person.website}
+></HeaderPerson>
 
 <Section>
 	<H2>About me</H2>
