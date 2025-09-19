@@ -180,11 +180,11 @@
 		<Card format="full">
 			<H2>{post.title}</H2>
 			<Text>{post.description}</Text>
-			<Link href="/blog/{post.slug}">Read on</Link>
+			<Link href="/news/{post.slug}">Read on</Link>
 		</Card>
 	{/each}
 	<Text>
-		Interested? Check out our <Link href="/blog">blog</Link>
+		Interested? Check out our <Link href="/news">news</Link>
 	</Text>
 </Section>
 <Section color="dark">
