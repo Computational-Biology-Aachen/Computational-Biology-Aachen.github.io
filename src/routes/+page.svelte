@@ -202,10 +202,10 @@
 		Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
 		Worringerweg 1 52074 Aachen <br />
 		Work Phone: +49 241 80 25817 <br />
-		Send Email <br />
 
 		Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
 		Prof. Dr. Anna B. Matuszyńska <br />
+		Design und Umsetzung Dr. Marvin van Aalst<br />
 		(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
 	</Text>
 </Section>
