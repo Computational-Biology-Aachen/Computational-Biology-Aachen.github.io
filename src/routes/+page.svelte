@@ -40,6 +40,7 @@
 		future.
 	</Text>
 </Section>
+
 <!-- 02 - Team -->
 <Section color="dark">
 	<BoxHeadingMain n="02" color="light" title="team"></BoxHeadingMain>
@@ -52,16 +53,19 @@
 	</Text>
 </Section>
 
-<!-- 03 - Research / Consortia -->
+<!-- Blog -->
 <Section color="light">
-	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
-	<GridSponsor>
-		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img="/mibinet-logo.png" />
-		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img="/gopmf-logo.png" />
-		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img="/ceplas-logo.jpg" />
-		<Sponsor name="BioSC" href="https://www.biosc.de/" img="/biosc-logo.jpg" />
-		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
-	</GridSponsor>
+	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
+	{#each data.posts as post}
+		<Card format="full">
+			<H2>{post.title}</H2>
+			<Text>{post.description}</Text>
+			<Link href="/news/{post.slug}">Read on</Link>
+		</Card>
+	{/each}
+	<Text>
+		Interested? Check out our <Link href="/news">news</Link>
+	</Text>
 </Section>
 
 <!-- Teaching -->
@@ -179,20 +183,19 @@
 		Interested? Check out our <Link color="secondary" href="/software">full list of software</Link>
 	</Text>
 </Section>
-<!-- Blog -->
+
+<!-- 03 - Research / Consortia -->
 <Section color="light">
-	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
-	{#each data.posts as post}
-		<Card format="full">
-			<H2>{post.title}</H2>
-			<Text>{post.description}</Text>
-			<Link href="/news/{post.slug}">Read on</Link>
-		</Card>
-	{/each}
-	<Text>
-		Interested? Check out our <Link href="/news">news</Link>
-	</Text>
+	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
+	<GridSponsor>
+		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img="/mibinet-logo.png" />
+		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img="/gopmf-logo.png" />
+		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img="/ceplas-logo.jpg" />
+		<Sponsor name="BioSC" href="https://www.biosc.de/" img="/biosc-logo.jpg" />
+		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
+	</GridSponsor>
 </Section>
+
 <Section color="dark">
 	<BoxHeadingMain n="08" title="imprint" color="light"></BoxHeadingMain>
 	<Text color="light">

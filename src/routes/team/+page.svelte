@@ -28,8 +28,8 @@
 	<Ul columns="two">
 		{#each team as { slug, name, is_alumni }}
 			{#if is_alumni}
-				<Link href="team/{slug}">
-					<Li color="dark">{name}</Li>
+				<Link color="primary" href="team/{slug}">
+					<Li color="primary">{name}</Li>
 				</Link>
 			{/if}
 		{/each}
