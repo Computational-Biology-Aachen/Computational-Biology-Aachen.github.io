@@ -5,6 +5,8 @@ let result = new Map(team.map(i => [i.slug, i]));
 
 export async function load({ params }) {
     let slug = params.slug.split("/").at(-1);
+
+    // Lead json
     if (typeof slug === "undefined") {
         error(404, `Could not find ${params.slug}`)
 
@@ -14,9 +16,17 @@ export async function load({ params }) {
         error(404, `Could not find ${params.slug}`)
 
     }
-    return person
+
+    const post = await import(`../../../team/${params.slug}.md`)
+
+    let md = {
+        content: post.default,
+        meta: post.metadata
+    }
+    return { person, md }
 
 }
+
 
 
 

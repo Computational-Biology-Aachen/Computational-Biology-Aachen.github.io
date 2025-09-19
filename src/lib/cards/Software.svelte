@@ -48,7 +48,7 @@
 
 <style>
 	.card {
-		margin: 1rem;
+		margin: 1rem 0;
 		padding: 0;
 		box-shadow:
 			0px 18px 36px -18px rgba(0, 0, 0, 0.1),

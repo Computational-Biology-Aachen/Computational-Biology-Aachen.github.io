@@ -74,6 +74,7 @@ img {
     /* Colors */
     --white: #eff1f4;
     --dark-grey: #1e2129;
+    --light-grey: rgb(207, 209, 210);
     --black: #202632;
     /* Color variables */
     --light: var(--white);

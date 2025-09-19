@@ -18,7 +18,7 @@
 <div class="box">
 	{#if small.current}
 		<!-- <H1>{n.toUpperCase()} - {title.toUpperCase()}</H1> -->
-		<H1>{title.toUpperCase()}</H1>
+		<H1 {color}>{title.toUpperCase()}</H1>
 	{:else}
 		<!-- <H1 {color}>{n.toUpperCase()}</H1> -->
 		<!-- <H4 {color}>|</H4> -->

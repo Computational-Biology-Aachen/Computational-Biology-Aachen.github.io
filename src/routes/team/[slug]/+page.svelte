@@ -1,9 +1,10 @@
 <script lang="ts">
 	import HeaderPerson from '$lib/sections/HeaderPerson.svelte';
 	import Section from '$lib/sections/Section.svelte';
-	import H2 from '$lib/text/H2.svelte';
 
-	let { data: person } = $props();
+	let { data } = $props();
+	let person = data.person;
+	let md = data.md;
 	let img = `/people/${person.slug.split('/').at(-1)}.jpg`;
 </script>
 
@@ -22,7 +23,4 @@
 	website={person.website}
 ></HeaderPerson>
 
-<Section>
-	<H2>About me</H2>
-	{person.description}
-</Section>
+<Section><md.content /></Section>
