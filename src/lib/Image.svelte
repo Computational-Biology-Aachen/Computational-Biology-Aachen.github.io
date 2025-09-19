@@ -14,6 +14,6 @@
 	img {
 		display: block;
 		max-width: 100%;
-		margin: 1rem auto;
+		margin: 0 auto 1rem;
 	}
 </style>
