@@ -6,9 +6,9 @@
 	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import Grid from '$lib/Grid.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
+	import Image from '$lib/Image.svelte';
 	import Li from '$lib/Li.svelte';
 	import Link from '$lib/Link.svelte';
-	import Team from '$lib/pages/Team.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import Bold from '$lib/text/Bold.svelte';
@@ -43,7 +43,13 @@
 <!-- 02 - Team -->
 <Section color="dark">
 	<BoxHeadingMain n="02" color="light" title="team"></BoxHeadingMain>
-	<Team />
+	<Link href="/team">
+		<Image src="/group.jpg" />
+	</Link>
+
+	<Text>
+		See our <Link href="/team">team page</Link> for more information.
+	</Text>
 </Section>
 
 <!-- 03 - Research / Consortia -->
