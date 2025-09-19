@@ -1,11 +1,12 @@
 <script lang="ts">
 	import HeaderPerson from '$lib/sections/HeaderPerson.svelte';
 	import Section from '$lib/sections/Section.svelte';
+	import type { Member } from '$lib/types';
 
 	let { data } = $props();
-	let person = data.person;
-	let md = data.md;
-	let img = `/people/${person.slug.split('/').at(-1)}.jpg`;
+	let person: Member = data.meta;
+
+	let img = `/people/${data.slug.split('/').at(-1)}.jpg`;
 </script>
 
 <svelte:head>
@@ -23,4 +24,4 @@
 	website={person.website}
 ></HeaderPerson>
 
-<Section><md.content /></Section>
+<Section><data.content /></Section>

@@ -1,12 +1,16 @@
-<script>
+<script lang="ts">
 	import AlumniTable from '$lib/AlumiTable.svelte';
 	import Person from '$lib/cards/Person.svelte';
 	import GridPerson from '$lib/GridPerson.svelte';
 	import Header from '$lib/sections/Header.svelte';
 	import Section from '$lib/sections/Section.svelte';
-	import team from '$lib/team.json';
+
 	import H1 from '$lib/text/H1.svelte';
 	import H2 from '$lib/text/H2.svelte';
+	import type { Member } from '$lib/types';
+
+	let { data } = $props();
+	let members: Member[] = data.members;
 </script>
 
 <Header>
@@ -15,10 +19,8 @@
 
 <Section color="light">
 	<GridPerson>
-		{#each team as { slug, name, is_alumni }}
-			{#if !is_alumni}
-				<Person title={name} {slug}></Person>
-			{/if}
+		{#each members as { slug, name }}
+			<Person title={name} {slug}></Person>
 		{/each}
 	</GridPerson>
 

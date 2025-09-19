@@ -8,6 +8,16 @@ export type Post = {
     categories: Categories[]
     published: boolean
 }
+export type Member = {
+    name: string
+    order: number
+    slug: string
+    mail?: string
+    github?: string
+    gitlab?: string
+    website?: string
+    orcid?: string
+}
 
 
 export type Publication = {
