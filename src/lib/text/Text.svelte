@@ -18,6 +18,8 @@
 		font-size: 1rem;
 		margin: 0 0 var(--text-ypad) 0;
 		font-family: var(--font-family);
+		text-align: justify;
+		hyphens: auto;
 	}
 	.inherit {
 		color: inherit;
