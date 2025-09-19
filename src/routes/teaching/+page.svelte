@@ -36,46 +36,4 @@
 			href="https://online.rwth-aachen.de/RWTHonline/pl/ui/$ctx/webnav.ini">RWTHonline</Link
 		>
 	</Text>
-	<H2>Summer semester 2025</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2024/2025</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2024</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2023/2024</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2023</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2022/2023</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2022</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
 </Section>
