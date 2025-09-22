@@ -30,12 +30,20 @@
 		justify-content: end;
 		min-height: 400px;
 		width: 100%;
+		background-color: white;
 		background-repeat: no-repeat;
 		background-size: cover;
 		transition: transform 0.3s ease;
 	}
 	.card:hover {
 		transform: scale(1.01);
+	}
+
+	@media (min-width: 768px) {
+		.card {
+			background-size: 95%;
+			background-position: center;
+		}
 	}
 	.bar {
 		display: flex;
