@@ -49,7 +49,7 @@
 	</Link>
 
 	<Text>
-		See our<Link color="secondary" href="/team">team page</Link>for more information.
+		See our <Link color="secondary" href="/team">team page</Link> for more information.
 	</Text>
 </Section>
 
