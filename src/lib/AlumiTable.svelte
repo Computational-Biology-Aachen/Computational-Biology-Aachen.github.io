@@ -9,13 +9,13 @@
 			'SoSe 2025',
 			'Manuel Schroder',
 			'M. Sc.',
-			'External: Sabine Arnold, Dr.-Ing, Boehringer Ingelheim Pharma GmbH & Co. KG 	Stoichiometric modelling for media characterization of a CHO-based process'
+			'Stoichiometric modelling for media characterization of a CHO-based process. <em>External: Sabine Arnold, Dr.-Ing, Boehringer Ingelheim Pharma GmbH & Co. KG</em>'
 		],
 		[
 			'SoSe 2025',
 			'Li Ina',
 			'M. Sc.',
-			'External: Daniel Weinberger, PhD, Yale School of Public Health, USA 	Investigating temporal dynamics of genetic diversityin RSV subgroups during an epidemic cycle in Germany, 2014-2023'
+			'Investigating temporal dynamics of genetic diversityin RSV subgroups during an epidemic cycle in Germany, 2014-2023. <em>External: Daniel Weinberger, PhD, Yale School of Public Health, USA</em>'
 		],
 		[
 			'SoSe 2024',
@@ -62,7 +62,7 @@
 		<thead>
 			<tr>
 				{#each header as cell}
-					<td>{cell}</td>
+					<td>{@html cell}</td>
 				{/each}
 			</tr>
 		</thead>
@@ -70,7 +70,7 @@
 			{#each rows as row}
 				<tr>
 					{#each row as cell}
-						<td>{cell}</td>
+						<td>{@html cell}</td>
 					{/each}
 				</tr>
 			{/each}
