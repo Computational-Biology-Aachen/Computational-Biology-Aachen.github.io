@@ -4,7 +4,7 @@ mail: tanvir.hassan@rwth-aachen.de
 github: https://github.com/Tanvir96rwth
 gitlab: null
 website: null
-orcid:https://orcid.org/0009-0005-4915-3686 
+orcid: https://orcid.org/0009-0005-4915-3686 
 order: 3
 ---
 
