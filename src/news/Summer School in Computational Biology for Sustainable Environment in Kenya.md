@@ -12,4 +12,4 @@ We are extremely proud to share that the Volkswagen Foundation granted us money 
 
 See you in Kenya this summer 2022!
 
-![Summer school poster ](static/news/SummerSchool-kenya.jpeg)
+![Summer school poster ](/static/news/Summer-School-in-kenya.jpeg)
