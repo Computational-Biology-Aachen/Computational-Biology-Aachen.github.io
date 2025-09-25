@@ -1,11 +1,10 @@
 <script lang="ts">
-	import Card from '$lib/cards/Card.svelte';
+	import Publication from '$lib/cards/Publication.svelte';
 	import Link from '$lib/Link.svelte';
 	import json from '$lib/publications.json';
 	import Header from '$lib/sections/Header.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
-	import H2 from '$lib/text/H2.svelte';
 	import Italic from '$lib/text/Italic.svelte';
 	import Text from '$lib/text/Text.svelte';
 </script>
@@ -25,12 +24,11 @@
 	</Text>
 </Header>
 <Section>
-	{#each json as { title, date, doi, authors }}
-		<Card format="full">
-			<H2>{title}</H2>
+	{#each json as { title, date, doi, authors, preprint }}
+		<Publication {title} format="full" img={preprint ? '/biorxiv_logo.png' : null}>
 			<Text>
-				Read at <Link href={doi}>doi</Link>, published {date}. Authored by {authors.join(', ')}
+				Published {date}, read at <Link href={doi}>doi</Link>. Authored by {authors.join(', ')}
 			</Text>
-		</Card>
+		</Publication>
 	{/each}
 </Section>
