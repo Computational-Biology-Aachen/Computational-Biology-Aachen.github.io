@@ -7,7 +7,7 @@ export async function load() {
     try {
         let posts: Post[] = []
 
-        const paths = import.meta.glob('/src/posts/*.md', { eager: true })
+        const paths = import.meta.glob('/src/news/*.md', { eager: true })
 
         for (const path in paths) {
             const file = paths[path]
@@ -27,8 +27,8 @@ export async function load() {
 
         return { posts }
     } catch (e) {
-        console.error('Failed to load blog posts:', e)
-        error(500, 'Failed to load blog posts')
+        console.error('Failed to load news:', e)
+        error(500, 'Failed to load news')
     }
 }
 

@@ -1,4 +1,5 @@
 <script>
+	import AlumniTable from '$lib/AlumiTable.svelte';
 	import Li from '$lib/Li.svelte';
 	import Link from '$lib/Link.svelte';
 	import Header from '$lib/sections/Header.svelte';
@@ -36,46 +37,7 @@
 			href="https://online.rwth-aachen.de/RWTHonline/pl/ui/$ctx/webnav.ini">RWTHonline</Link
 		>
 	</Text>
-	<H2>Summer semester 2025</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2024/2025</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2024</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2023/2024</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2023</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Winter semester 2022/2023</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
-	<H2>Summer semester 2022</H2>
-	<Ul>
-		<Li>...</Li>
-		<Li>...</Li>
-		<Li>...</Li>
-	</Ul>
+
+	<H2 color="dark">Past theses</H2>
+	<AlumniTable />
 </Section>

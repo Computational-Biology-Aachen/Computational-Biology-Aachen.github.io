@@ -20,7 +20,14 @@
 	}
 	.inner {
 		margin: 0 auto;
+		padding: 0 1rem;
 		width: 100%;
 		max-width: 80ch;
+	}
+
+	@media (min-width: 768px) {
+		.inner {
+			padding: 0;
+		}
 	}
 </style>

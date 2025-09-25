@@ -24,7 +24,13 @@
 	}
 	.inner {
 		margin: 0 auto;
+		padding: 0 1rem;
 		max-width: 80ch;
+	}
+	@media (min-width: 768px) {
+		.inner {
+			padding: 0;
+		}
 	}
 	.dark {
 		color: var(--white);

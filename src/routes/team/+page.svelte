@@ -1,8 +1,14 @@
-<script>
-	import Team from '$lib/pages/Team.svelte';
+<script lang="ts">
+	import Person from '$lib/cards/Person.svelte';
+	import GridPerson from '$lib/GridPerson.svelte';
 	import Header from '$lib/sections/Header.svelte';
 	import Section from '$lib/sections/Section.svelte';
+
 	import H1 from '$lib/text/H1.svelte';
+	import type { Member } from '$lib/types';
+
+	let { data } = $props();
+	let members: Member[] = data.members;
 </script>
 
 <Header>
@@ -10,5 +16,9 @@
 </Header>
 
 <Section color="light">
-	<Team color="light"></Team>
+	<GridPerson>
+		{#each members as { slug, name }}
+			<Person title={name} {slug}></Person>
+		{/each}
+	</GridPerson>
 </Section>

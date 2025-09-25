@@ -1,14 +1,14 @@
 <script>
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
 	import Card from '$lib/cards/Card.svelte';
-	import Publication from '$lib/cards/Publication.svelte';
-	import SoftwareImage from '$lib/cards/SoftwareImage.svelte';
+	import PublicationMain from '$lib/cards/PublicationMain.svelte';
+	import SoftwareMain from '$lib/cards/SoftwareMain.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import Grid from '$lib/Grid.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
+	import Image from '$lib/Image.svelte';
 	import Li from '$lib/Li.svelte';
 	import Link from '$lib/Link.svelte';
-	import Team from '$lib/pages/Team.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import Section from '$lib/sections/Section.svelte';
 	import Bold from '$lib/text/Bold.svelte';
@@ -40,22 +40,32 @@
 		future.
 	</Text>
 </Section>
+
 <!-- 02 - Team -->
 <Section color="dark">
 	<BoxHeadingMain n="02" color="light" title="team"></BoxHeadingMain>
-	<Team />
+	<Link href="/team">
+		<Image src="/group.jpg" />
+	</Link>
+
+	<Text>
+		See our <Link color="secondary" href="/team">team page</Link> for more information.
+	</Text>
 </Section>
 
-<!-- 03 - Research / Consortia -->
+<!-- Blog -->
 <Section color="light">
-	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
-	<GridSponsor>
-		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img="/mibinet-logo.png" />
-		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img="/gopmf-logo.png" />
-		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img="/ceplas-logo.jpg" />
-		<Sponsor name="BioSC" href="https://www.biosc.de/" img="/biosc-logo.jpg" />
-		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
-	</GridSponsor>
+	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
+	{#each data.posts as post}
+		<Card format="full">
+			<H2>{post.title}</H2>
+			<Text>{post.description}</Text>
+			<Link href="/news/{post.slug}">Read on</Link>
+		</Card>
+	{/each}
+	<Text>
+		Interested? Check out our<Link href="/news">news</Link>
+	</Text>
 </Section>
 
 <!-- Teaching -->
@@ -97,10 +107,10 @@
 </Section>
 <!-- Publications -->
 <Section color="light">
-	<BoxHeadingMain n="05" title="publications"></BoxHeadingMain>
+	<BoxHeadingMain n="05" title="latest publications"></BoxHeadingMain>
 
 	<Grid columns="one">
-		<Publication
+		<PublicationMain
 			title="Shedding light on blue-green photosynthesis"
 			href="https://doi.org/10.1371/journal.pcbi.1012445"
 			img="/publications/shedding.png"
@@ -109,8 +119,8 @@
 				Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan
 				Červený, Gábor Bernát, Anna Barbara Matuszyńska
 			</Text>
-		</Publication>
-		<Publication
+		</PublicationMain>
+		<PublicationMain
 			title="Microbial markets: socio-economic perspective in studying microbial communities"
 			href="https://doi.org/10.1093/femsml/uqae016"
 			img="/publications/microbial-markets.png"
@@ -119,8 +129,8 @@
 				Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin Schipper , Anna
 				Matuszyńska
 			</Text>
-		</Publication>
-		<Publication
+		</PublicationMain>
+		<PublicationMain
 			title="A new era of synthetic biology—microbial community design"
 			href="https://doi.org/10.1093/synbio/ysae011"
 			img="/publications/new-era.png"
@@ -128,10 +138,10 @@
 			<Text color="white"
 				>Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C Ducat , Ilka M Axmann</Text
 			>
-		</Publication>
+		</PublicationMain>
 	</Grid>
 	<Text>
-		Interested? Check out our <Link href="/papers">full list of publications</Link>
+		Interested? Check out our<Link href="/papers">full list of publications</Link>
 	</Text>
 </Section>
 <!-- community resources -->
@@ -139,64 +149,63 @@
 	<BoxHeadingMain n="06" color="light" title="community resources"></BoxHeadingMain>
 
 	<Grid columns="two">
-		<SoftwareImage
+		<SoftwareMain
 			title="MxlPy"
 			img="/mxlpy-logo.png"
 			url="https://github.com/Computational-Biology-Aachen/MxlPy"
 		>
 			<Text color="white">makes mechanistic learning approachable</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="MxlBricks"
 			img="/mxlbricks-logo.png"
 			url="https://github.com/Computational-Biology-Aachen/mxl-bricks"
 		>
 			<Text color="white">helps building large models</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="GreenSloth"
 			img="/greensloth-logo.svg"
 			url="https://greensloth.rwth-aachen.de/"
 		>
 			<Text color="white">Photosynthesis model database</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="ComPhot"
 			img="/comphot-logo.png"
 			url="https://comphot-biotool.streamlit.app/"
 		>
 			<Text color="white">Simulation based learning platform</Text>
-		</SoftwareImage>
+		</SoftwareMain>
 	</Grid>
 
 	<Text color="light">
-		Interested? Check out our <Link color="secondary" href="/software">full list of software</Link>
+		Interested? Check out our<Link color="secondary" href="/software">full list of software</Link>
 	</Text>
 </Section>
-<!-- Blog -->
+
+<!-- 03 - Research / Consortia -->
 <Section color="light">
-	<BoxHeadingMain n="07" title="news"></BoxHeadingMain>
-	{#each data.posts as post}
-		<Card format="full">
-			<H2>{post.title}</H2>
-			<Text>{post.description}</Text>
-			<Link href="/blog/{post.slug}">Read on</Link>
-		</Card>
-	{/each}
-	<Text>
-		Interested? Check out our <Link href="/blog">blog</Link>
-	</Text>
+	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
+	<GridSponsor>
+		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img="/mibinet-logo.png" />
+		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img="/gopmf-logo.png" />
+		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img="/ceplas-logo.jpg" />
+		<Sponsor name="BioSC" href="https://www.biosc.de/" img="/biosc-logo.jpg" />
+		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
+	</GridSponsor>
 </Section>
+
 <Section color="dark">
 	<BoxHeadingMain n="08" title="imprint" color="light"></BoxHeadingMain>
 	<Text color="light">
 		Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
 		Worringerweg 1 52074 Aachen <br />
 		Work Phone: +49 241 80 25817 <br />
-		Send Email <br />
 
 		Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
 		Prof. Dr. Anna B. Matuszyńska <br />
+		Design und Umsetzung Dr. Marvin van Aalst<br />
 		(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
 	</Text>
 </Section>

@@ -16,15 +16,14 @@
 </svelte:head>
 
 <Header>
-	<H1 color="light">Blog</H1>
-	<Text color="light">Probably mostly random ramblings.</Text>
+	<H1 color="light">News</H1>
 </Header>
 <Section>
 	{#each data.posts as post}
 		<Card format="full">
 			<H2>{post.title}</H2>
 			<Text>{post.description}</Text>
-			<Link href="/blog/{post.slug}">Read on</Link>
+			<Link href="/news/{post.slug}">Read on</Link>
 		</Card>
 	{/each}
 </Section>

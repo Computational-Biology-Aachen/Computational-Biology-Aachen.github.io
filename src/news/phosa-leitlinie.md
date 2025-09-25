@@ -1,10 +1,11 @@
 ---
-title: Computational Photosynthesis - from in vivo to in silico
-description: The Computational Life Science Lab at RWTH Aachen has conceptualized a new cross-faculty master module bridging photosynthetsis with architecture
+title: "Computational Photosynthesis - from in vivo to in silico"
+description: "The Computational Life Science Lab at RWTH Aachen has conceptualized a new cross-faculty master module bridging photosynthesis with architecture"
 date: '2024-08-02'
 categories:
   - teaching
 published: true
+author: "Anna Matuszyńska"
 ---
 
 With great pleasure, we announce that our application for the RWTH *"Leitlinie Lehre"* program, which supports the improvement and development of interdisciplinary teaching ideas, has been approved. In our newly developed course *"Computational Photosynthesis: from in vivo to in silico"*, we will team up with the institutes of landscape architecture (represented by Dr.-Ing. Axel Timpe), applied microbiology (Univ.-Prof. Dr. rer. nat. habil. Lars Lauterbach), and biology III (plant biology, Prof. Dr. Ulrich Schaffrath) to open for students not only the exciting world photosynthesis biology but also its importance for tackling social problems in our modern world.

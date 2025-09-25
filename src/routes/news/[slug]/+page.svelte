@@ -16,6 +16,7 @@
 <Section color="primary">
 	<H1 color="light">{data.meta.title}</H1>
 	<Text color="light">Published at {formatDate(data.meta.date)}</Text>
+	<Text color="light">Author: {data.meta.author}</Text>
 </Section>
 <Section>
 	<data.content />

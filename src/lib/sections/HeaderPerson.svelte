@@ -1,13 +1,28 @@
 <script lang="ts">
+	import Link from '$lib/Link.svelte';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
+	import { faGithub, faGitlab, faOrcid } from '@fortawesome/free-brands-svg-icons';
+	import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
+	import Fa from 'svelte-fa';
 
 	let {
 		name,
-		img
+		img,
+		mail = null,
+		github = null,
+		gitlab = null,
+		website = null,
+		orcid = null
 	}: {
 		name: string;
 		img: string;
+		mail?: string | null;
+		github?: string | null;
+		gitlab?: string | null;
+		doi?: string | null;
+		website?: string | null;
+		orcid?: string | null;
 	} = $props();
 
 	let imageError = $state(false);
@@ -25,6 +40,21 @@
 			<Text color="light">Faculty of Mathematics, Computer Science and Natural Sciences</Text>
 			<!-- <Text color="light">anna.matuszynska@rwth-aachen.de</Text> -->
 			<Text color="light">Worringerweg 1 52074 Aachen</Text>
+			{#if mail != null}
+				<Link color="light" href="mailto:{mail}"><Fa icon={faEnvelope} /></Link>
+			{/if}
+			{#if github != null}
+				<Link color="light" href={github}><Fa icon={faGithub} /></Link>
+			{/if}
+			{#if gitlab != null}
+				<Link color="light" href={gitlab}><Fa icon={faGitlab} /></Link>
+			{/if}
+			{#if orcid != null}
+				<Link color="light" href={orcid}><Fa icon={faOrcid} /></Link>
+			{/if}
+			{#if website != null}
+				<Link color="light" href={website}><Fa icon={faHome} /></Link>
+			{/if}
 		</div>
 		{#if imageError}
 			<div class="placeholder">
@@ -49,6 +79,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 0 1rem;
+		gap: 1rem;
 	}
 
 	@media (min-width: 768px) {

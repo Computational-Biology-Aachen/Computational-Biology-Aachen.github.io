@@ -1,10 +1,11 @@
 ---
-title: PhoSA HackLab Wins ENHANCE Testbed Funding
-description: The Computational Life Science Lab at RWTH Aachen has been awarded funding in the first round of the ENHANCE Alliance Testbed competition for the project PhoSA HackLab - Emulating Scientific Consultancy for Eco-Innovative Cities.
+title: "PhoSA HackLab Wins ENHANCE Testbed Funding"
+description: "The Computational Life Science Lab at RWTH Aachen has been awarded funding in the first round of the ENHANCE Alliance Testbed competition for the project PhoSA HackLab - Emulating Scientific Consultancy for Eco-Innovative Cities."
 date: '2025-09-17'
 categories:
   - teaching
 published: true
+author: "Anna Matuszyńska"
 ---
 
 The Computational Life Science Lab at RWTH Aachen has been awarded funding in the first round of the **ENHANCE Alliance Testbed competition** for the project *PhoSA HackLab: Emulating Scientific Consultancy for Eco-Innovative Cities*.

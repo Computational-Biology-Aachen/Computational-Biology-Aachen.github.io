@@ -22,7 +22,7 @@
 		/* text-decoration: currentcolor underline dashed auto; */
 		transition: var(--transition);
 		margin: 0 0 var(--text-ypad) 0;
-		padding: 0 0.5ch;
+		padding: 0;
 	}
 	a:hover {
 		text-decoration: underline;

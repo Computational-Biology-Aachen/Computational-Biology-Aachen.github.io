@@ -31,17 +31,21 @@
 		padding: 0;
 		background-color: var(--light);
 		font-family: var(--font-family);
-	}
-	details {
-		position: relative;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
 	}
 	.inner {
 		margin: 0 auto;
+		width: 100%;
 		max-width: var(--max-width);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: end;
+	}
+	details {
+		position: relative;
 	}
 	summary {
 		text-align: center;

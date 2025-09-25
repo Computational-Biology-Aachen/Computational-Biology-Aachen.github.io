@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 :host,
 :root {
     font-size: 100%
@@ -70,6 +74,7 @@
     /* Colors */
     --white: #eff1f4;
     --dark-grey: #1e2129;
+    --light-grey: rgb(207, 209, 210);
     --black: #202632;
     /* Color variables */
     --light: var(--white);
@@ -99,6 +104,7 @@ body {
     background-color: var(--light);
     width: 100%;
     height: 100%;
+    overflow: scroll;
 }
 
 

@@ -24,7 +24,7 @@
 	<NavItem href="/teaching" name="Teaching" />
 	<NavItem href="/papers" name="Papers" />
 	<NavItem href="/software" name="Resources" />
-	<NavItem href="/blog" name="Blog" />
+	<NavItem href="/news" name="News" />
 </Nav>
 
 {@render children()}
