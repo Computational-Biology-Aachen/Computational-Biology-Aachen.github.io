@@ -107,7 +107,7 @@
 </Section>
 <!-- Publications -->
 <Section color="light">
-	<BoxHeadingMain n="05" title="publications"></BoxHeadingMain>
+	<BoxHeadingMain n="05" title="latest publications"></BoxHeadingMain>
 
 	<Grid columns="one">
 		<PublicationMain

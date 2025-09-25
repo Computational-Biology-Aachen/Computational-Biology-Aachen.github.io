@@ -21,6 +21,11 @@ Notes: the "order" field is used to order people in the gallery by level of seni
 - Write the remainder as per usual
 
 
+## Creating a new publication
+
+- Edit the `src/lib/publications.json`
+- Everything else will work automatically
+
 ## Dev setup
 
 ```bash
