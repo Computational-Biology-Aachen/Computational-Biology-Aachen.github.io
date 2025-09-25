@@ -1,5 +1,5 @@
 ---
-title: New Software Release: "MxlPy – Bridging Mechanistic Modelling and Machine Learning"
+title: 'New Software Release: "MxlPy – Bridging Mechanistic Modelling and Machine Learning"'
 description:  "Mxlpy is a python package developed in  the Computational Life Science Lab that combines mechanistic modedlling and machine learning techniques to leverage the advantages of both fields"
 date: '2025-05-06'
 categories:

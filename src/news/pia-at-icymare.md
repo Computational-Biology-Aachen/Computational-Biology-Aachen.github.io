@@ -1,6 +1,6 @@
 ---
-title: Bachelor Student Pia Falter at ICYMARE
-description: The Bachelor alumni Pia Falter represents the Computational Life Science Lab with her thesis at ICYMARE2022.
+title: "Bachelor Student Pia Falter at ICYMARE"
+description: "The Bachelor alumni Pia Falter represents the Computational Life Science Lab with her thesis at ICYMARE2022."
 date: '2022-09-15'
 categories:
   - conference

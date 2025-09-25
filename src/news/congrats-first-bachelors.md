@@ -1,6 +1,6 @@
 ---
-title: Congratulations to our first Bachelor Students
-description: The Computational Life Science Lab at RWTH Aachen congratulate its first Bachelor Students
+title: "Congratulations to our first Bachelor Students"
+description: "The Computational Life Science Lab at RWTH Aachen congratulate its first Bachelor Students"
 date: '2022-08-19'
 categories:
   - teaching
