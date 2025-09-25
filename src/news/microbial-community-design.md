@@ -7,7 +7,7 @@ title: "Publication 'A new era of synthetic biology—microbial community design
 description:  "Publication 'A new era of synthetic biology—microbial community design'"
 
 
-date: '2025-08-02'
+date: '2024-08-02'
 
 
 categories:

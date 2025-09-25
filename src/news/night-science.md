@@ -7,7 +7,7 @@ title: "Night Science 2024 Recap"
 description:  "The annual nigth science took place and we gave an insight into our work as computational photo biology lab"
 
 
-date: '2025-11-09'
+date: '2024-11-09'
 
 
 categories:

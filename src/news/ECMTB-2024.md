@@ -7,7 +7,7 @@ title: "ECMTB2024"
 description:  "We are delighted to share that Team CPBL participated in the European Conference on Mathematical and Theoretical Biology (ECMTB) in Toledo, Spain from 21-26July 2024."
 
 
-date: '2025-08-27'
+date: '2024-08-27'
 
 
 categories:
