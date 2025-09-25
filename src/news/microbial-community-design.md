@@ -1,7 +1,7 @@
 ---
 
 
-title: "Night Science 2024 Recap"
+title: "Publication 'A new era of synthetic biology—microbial community design'"
 
 
 description:  "Publication 'A new era of synthetic biology—microbial community design'"
