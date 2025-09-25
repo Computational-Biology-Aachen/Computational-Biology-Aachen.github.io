@@ -26,7 +26,7 @@ author: "Anna Matuszyńska"
 
 **Advancing Synthetic Biology: Insights from our collaboration with HHU Düsseldorf and Michigan State University on the Role of Computational Biology in the microbial community design**
 
-![Publication "A new era of synthetic biology—microbial community design"](/news/microbial_community_design.png)
+![Publication A new era of synthetic biology—microbial community design](/news/microbial_community_design.png)
 
 *Düsseldorf, August 1, 2024* – Prof. Matuszyńska together with researchers from Heinrich Heine University Düsseldorf (HHU) and Michigan State University (USA) have published a new perspective on the future of synthetic biology, focusing on the potential of computational biology to support synthetic design. Funded by the German Research Foundation (DFG) under the SFB 1535 MibiNet initiative, this paper highlights the promising developments and future directions in this rapidly evolving field.
 
