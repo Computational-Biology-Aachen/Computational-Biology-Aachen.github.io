@@ -5,7 +5,7 @@ github: "https://github.com/pmfjosh"
 gitlab: "https://git.rwth-aachen.de/ebelingjosha"
 website: null
 orcid: "https://orcid.org/0000-0002-0634-1653"
-order: 4
+order: 3
 ---
 
 ## About me
