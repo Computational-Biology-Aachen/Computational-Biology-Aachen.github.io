@@ -31,29 +31,7 @@ img {
     }
 }
 
-@media (min-width:1024px) {
 
-    :host,
-    :root {
-        font-size: 118.75%
-    }
-}
-
-@media (min-width:1280px) {
-
-    :host,
-    :root {
-        font-size: 125%
-    }
-}
-
-@media (min-width:1536px) {
-
-    :host,
-    :root {
-        font-size: 131.25%
-    }
-}
 
 
 :root {
