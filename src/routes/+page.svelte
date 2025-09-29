@@ -64,7 +64,7 @@
 		</Card>
 	{/each}
 	<Text>
-		Interested? Check out our<Link href="/news">news</Link>
+		Interested? Check out our <Link href="/news">news</Link>
 	</Text>
 </Section>
 
@@ -141,7 +141,7 @@
 		</PublicationMain>
 	</Grid>
 	<Text>
-		Interested? Check out our<Link href="/papers">full list of publications</Link>
+		Interested? Check out our <Link href="/papers">full list of publications</Link>
 	</Text>
 </Section>
 <!-- community resources -->
@@ -180,7 +180,7 @@
 	</Grid>
 
 	<Text color="light">
-		Interested? Check out our<Link color="secondary" href="/software">full list of software</Link>
+		Interested? Check out our <Link color="secondary" href="/software">full list of software</Link>
 	</Text>
 </Section>
 
