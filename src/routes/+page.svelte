@@ -16,6 +16,20 @@
 	import Text from '$lib/text/Text.svelte';
 	import Ul from '$lib/Ul.svelte';
 
+	import bioscImg from '$lib/assets/biosc-logo.jpg';
+	import ceplasImg from '$lib/assets/ceplas-logo.jpg';
+	import crophotImg from '$lib/assets/comphot-logo.png';
+	import gopmfImg from '$lib/assets/gopmf-logo.png';
+	import greenslothImg from '$lib/assets/greensloth-logo.svg';
+	import groupImg from '$lib/assets/group.jpg';
+	import hdsleeImg from '$lib/assets/hdslee-logo.jpg';
+	import mibinetImg from '$lib/assets/mibinet-logo.png';
+	import mxlbricksImg from '$lib/assets/mxlbricks-logo.png';
+	import mxlpyImg from '$lib/assets/mxlpy-logo.png';
+	import marketsImg from '$lib/assets/publications/microbial-markets.png';
+	import newEraImg from '$lib/assets/publications/new-era.png';
+	import sheddingImg from '$lib/assets/publications/shedding.png';
+
 	let { data } = $props();
 </script>
 
@@ -45,7 +59,7 @@
 <Section color="dark">
 	<BoxHeadingMain n="02" color="light" title="team"></BoxHeadingMain>
 	<Link href="/team">
-		<Image src="/group.jpg" />
+		<Image src={groupImg} />
 	</Link>
 
 	<Text>
@@ -113,7 +127,7 @@
 		<PublicationMain
 			title="Shedding light on blue-green photosynthesis"
 			href="https://doi.org/10.1371/journal.pcbi.1012445"
-			img="/publications/shedding.png"
+			img={sheddingImg}
 		>
 			<Text color="white">
 				Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan
@@ -123,7 +137,7 @@
 		<PublicationMain
 			title="Microbial markets: socio-economic perspective in studying microbial communities"
 			href="https://doi.org/10.1093/femsml/uqae016"
-			img="/publications/microbial-markets.png"
+			img={marketsImg}
 		>
 			<Text color="white">
 				Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin Schipper , Anna
@@ -133,7 +147,7 @@
 		<PublicationMain
 			title="A new era of synthetic biology—microbial community design"
 			href="https://doi.org/10.1093/synbio/ysae011"
-			img="/publications/new-era.png"
+			img={newEraImg}
 		>
 			<Text color="white"
 				>Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C Ducat , Ilka M Axmann</Text
@@ -151,30 +165,22 @@
 	<Grid columns="two">
 		<SoftwareMain
 			title="MxlPy"
-			img="/mxlpy-logo.png"
+			img={mxlpyImg}
 			url="https://github.com/Computational-Biology-Aachen/MxlPy"
 		>
 			<Text color="white">makes mechanistic learning approachable</Text>
 		</SoftwareMain>
 		<SoftwareMain
 			title="MxlBricks"
-			img="/mxlbricks-logo.png"
+			img={mxlbricksImg}
 			url="https://github.com/Computational-Biology-Aachen/mxl-bricks"
 		>
 			<Text color="white">helps building large models</Text>
 		</SoftwareMain>
-		<SoftwareMain
-			title="GreenSloth"
-			img="/greensloth-logo.svg"
-			url="https://greensloth.rwth-aachen.de/"
-		>
+		<SoftwareMain title="GreenSloth" img={greenslothImg} url="https://greensloth.rwth-aachen.de/">
 			<Text color="white">Photosynthesis model database</Text>
 		</SoftwareMain>
-		<SoftwareMain
-			title="ComPhot"
-			img="/comphot-logo.png"
-			url="https://comphot-biotool.streamlit.app/"
-		>
+		<SoftwareMain title="ComPhot" img={crophotImg} url="https://comphot-biotool.streamlit.app/">
 			<Text color="white">Simulation based learning platform</Text>
 		</SoftwareMain>
 	</Grid>
@@ -188,11 +194,11 @@
 <Section color="light">
 	<BoxHeadingMain n="03" title="research community"></BoxHeadingMain>
 	<GridSponsor>
-		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img="/mibinet-logo.png" />
-		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img="/gopmf-logo.png" />
-		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img="/ceplas-logo.jpg" />
-		<Sponsor name="BioSC" href="https://www.biosc.de/" img="/biosc-logo.jpg" />
-		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img="/hdslee-logo.jpg" />
+		<Sponsor name="MibiNet" href="https://www.sfb1535.hhu.de/en/mibinet" img={mibinetImg} />
+		<Sponsor name="GoPMF" href="https://www.uni-muenster.de/GoPMF/" img={gopmfImg} />
+		<Sponsor name="CEPLAS" href="https://www.ceplas.eu/en/home" img={ceplasImg} />
+		<Sponsor name="BioSC" href="https://www.biosc.de/" img={bioscImg} />
+		<Sponsor name="HDSLEE" href="https://www.hds-lee.de/" img={hdsleeImg} />
 	</GridSponsor>
 </Section>
 

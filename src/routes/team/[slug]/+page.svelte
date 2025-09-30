@@ -3,10 +3,13 @@
 	import Section from '$lib/sections/Section.svelte';
 	import type { Member } from '$lib/types';
 
+	const images = import.meta.glob(['$lib/assets/people/*'], { eager: true, as: 'url' });
+
 	let { data } = $props();
 	let person: Member = data.meta;
 
-	let img = `/people/${data.slug.split('/').at(-1)}.jpg`;
+	let filename = `/people/${data.slug.split('/').at(-1)}.jpg`;
+	let img = images[`/src/lib/assets${filename}`];
 </script>
 
 <svelte:head>

@@ -5,6 +5,12 @@
 	import Section from '$lib/sections/Section.svelte';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
+
+	import absorpigImg from '$lib/assets/absorpig-logo.png';
+	import cpblRwthImg from '$lib/assets/cpbl-rwth-logo.svg';
+	import greenslothImg from '$lib/assets/greensloth-logo.svg';
+	import mxlbricksImg from '$lib/assets/mxlbricks-logo.png';
+	import mxlpyImg from '$lib/assets/mxlpy-logo.png';
 </script>
 
 <Header>
@@ -16,7 +22,7 @@
 		title="MxlPy"
 		github="https://github.com/Computational-Biology-Aachen/MxlPy"
 		doi="10.1101/2025.05.06.652335"
-		img="/mxlpy-logo.png"
+		img={mxlpyImg}
 	>
 		<Text>
 			MxlPy (pronounced "em axe el pie") is a Python package for mechanistic learning (Mxl) - the
@@ -28,7 +34,7 @@
 	<Software
 		title="MxlBricks"
 		github="https://github.com/Computational-Biology-Aachen/mxl-bricks"
-		img="/mxlbricks-logo.png"
+		img={mxlbricksImg}
 	>
 		<Text>
 			mxlbricks is a library built on top of <Link
@@ -37,14 +43,14 @@
 		</Text>
 	</Software>
 
-	<Software title="GreenSloth" href="https://greensloth.rwth-aachen.de/" img="/greensloth-logo.svg">
+	<Software title="GreenSloth" href="https://greensloth.rwth-aachen.de/" img={greenslothImg}>
 		<Text
 			>Interactive database of photosynthesis models to help you decide which model is best suited
 			for your needs.</Text
 		>
 	</Software>
 
-	<Software title="ComPhot" href="https://comphot-biotool.streamlit.app/" img="/cpbl-rwth-logo.svg">
+	<Software title="ComPhot" href="https://comphot-biotool.streamlit.app/" img={cpblRwthImg}>
 		<Text>
 			Simulation-based photosynthesis learning platform for the needs of 21st-century students
 		</Text>
@@ -53,7 +59,7 @@
 	<Software
 		title="absorpig"
 		github="https://github.com/Computational-Biology-Aachen/absorpig"
-		img="/absorpig-logo.png"
+		img={absorpigImg}
 	>
 		<Text
 			>Extract pigment composition of measured absorption spectra of photosynthetic organisms.</Text
@@ -63,7 +69,7 @@
 	<Software
 		title="pySBML"
 		github="https://github.com/Computational-Biology-Aachen/pysbml"
-		img="/cpbl-rwth-logo.svg"
+		img={cpblRwthImg}
 	>
 		<Text>pySBML takes SBML models and makes them simpler ❤️</Text>
 	</Software>

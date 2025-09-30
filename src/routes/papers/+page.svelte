@@ -1,4 +1,5 @@
 <script lang="ts">
+	import biorxivImg from '$lib/assets/biorxiv_logo.png';
 	import Publication from '$lib/cards/Publication.svelte';
 	import Link from '$lib/Link.svelte';
 	import json from '$lib/publications.json';
@@ -25,7 +26,7 @@
 </Header>
 <Section>
 	{#each json as { title, date, doi, authors, preprint }}
-		<Publication {title} format="full" img={preprint ? '/biorxiv_logo.png' : null}>
+		<Publication {title} format="full" img={preprint ? biorxivImg : null}>
 			<Text>
 				Published {date}, read at <Link href={doi}>doi</Link>. Authored by {authors.join(', ')}
 			</Text>

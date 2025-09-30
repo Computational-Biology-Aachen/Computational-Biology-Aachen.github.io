@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
+	const images = import.meta.glob(['$lib/assets/people/*'], { eager: true, as: 'url' });
 
 	let {
 		title,
@@ -8,10 +9,13 @@
 		title: string;
 		slug: string;
 	} = $props();
+
+	let filename = `/src/lib/assets/people/${slug}.jpg`;
+	let img = images[filename];
 </script>
 
 <Link color="light" href="team/{slug}">
-	<div class="card" style:background-image={`url(/people/${slug}.jpg)`}>
+	<div class="card" style:background-image="url({img})">
 		<div class="bar">
 			<h4 class="white">{title}</h4>
 		</div>
