@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Link from '$lib/Link.svelte';
-	const images = import.meta.glob(['$lib/assets/people/*'], { eager: true, as: 'url' });
+	const images = import.meta.glob(['$lib/assets/people/*'], {
+		eager: true,
+		query: '?url',
+		import: 'default'
+	});
 
 	let {
 		title,
@@ -11,7 +15,9 @@
 	} = $props();
 
 	let filename = `/src/lib/assets/people/${slug}.jpg`;
-	let img = images[filename];
+	let img = images[filename] ?? '/src/lib/assets/people/placeholder.jpg';
+	// console.log(img);
+	// let img = asset(`/people/marvin-van-aalst.jpg`);
 </script>
 
 <Link color="light" href="team/{slug}">
