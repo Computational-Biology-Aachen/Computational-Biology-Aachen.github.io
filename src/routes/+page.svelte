@@ -30,6 +30,9 @@
 	import newEraImg from '$lib/assets/publications/new-era.png';
 	import sheddingImg from '$lib/assets/publications/shedding.png';
 
+	import { faGithub } from '@fortawesome/free-brands-svg-icons';
+	import Fa from 'svelte-fa';
+
 	let { data } = $props();
 </script>
 
@@ -213,5 +216,9 @@
 		Prof. Dr. Anna B. Matuszyńska <br />
 		Design und Umsetzung Dr. Marvin van Aalst<br />
 		(c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
+		<Link
+			href="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
+			><Fa icon={faGithub} /></Link
+		>
 	</Text>
 </Section>

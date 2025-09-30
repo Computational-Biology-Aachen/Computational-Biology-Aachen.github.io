@@ -1,9 +1,18 @@
 <script lang="ts">
+	import cpblImg from '$lib/assets/cpbl-rwth-logo.svg';
+	import img from '$lib/assets/hero.jpg';
 </script>
 
-<div class="box">
+<div
+	class="box"
+	style:background-image={`linear-gradient(
+			to bottom,
+			rgba(245, 246, 252, 0.52),
+			color-mix(in srgb, var(--primary) 73%, transparent)
+		), url(${img})`}
+>
 	<div class="inner">
-		<img src="/cpbl-rwth-logo.svg" alt="cpbl logo" />
+		<img src={cpblImg} alt="cpbl logo" />
 		<div>
 			<h1>The Matuszyńska Lab</h1>
 			<h1>Computational Biology</h1>
@@ -16,13 +25,6 @@
 	.box {
 		position: relative;
 		background-color: var(--primary);
-		background-image:
-			linear-gradient(
-				to bottom,
-				rgba(245, 246, 252, 0.52),
-				color-mix(in srgb, var(--primary) 73%, transparent)
-			),
-			url('/hero.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
