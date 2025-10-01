@@ -5,7 +5,7 @@ export async function load() {
     try {
         let members: Member[] = []
 
-        const paths = import.meta.glob('/src/team/*.md', { eager: true })
+        const paths = import.meta.glob('/src/md/team/*.md', { eager: true })
 
         for (const path in paths) {
             const file = paths[path]

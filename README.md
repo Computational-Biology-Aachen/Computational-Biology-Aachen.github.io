@@ -2,7 +2,7 @@
 
 ## Editing your own data
 
-- Your information that displayed on the "Team" page is located at [src/team/{your-name}/md](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/team)
+- Your information that displayed on the "Team" page is located at [src/md/team/{your-name}.md](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/md/team)
 - Copy the yaml frontmatter from another person and adjust accordingly
 - Write the remainder as per usual
 
@@ -16,7 +16,7 @@ Notes: the "order" field is used to order people in the gallery by level of seni
 
 ## Creating a news entry
 
-- Create a new `.md` file in [src/news](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/news)
+- Create a new `.md` file in [src/md/news](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/md/news)
 - Copy the yaml frontmatter from another post and adjust accordingly
 - Write the remainder as per usual
 
