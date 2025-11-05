@@ -1,7 +1,7 @@
 ---
 name: "Quang Huy Nguyen"
-mail: null
-github: null
+mail: quang-huy.nguyen@rwth-aachen.de
+github: https://github.com/PhotosyntheticBatman
 gitlab: null
 website: null
 orcid: null
@@ -9,5 +9,11 @@ order: 3
 ---
 
 ## About me
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Huy got his Bachelor degree in Biology from Vietnam National University of
+Science, and he finished his Master thesis within our group. He is now a PhD
+student in CEPLAS Graduate School. Huy investigates vascular plant
+photosynthesis under natural light conditions with a focus on
+non-photochemical quenching (NPQ) and its interdependence with temperature.
+Using mathematical modeling and experimental approaches, he aims to determine
+key factors that define NPQ kinetics and quantify secondary effect of temperature
+during light fluctuations.
