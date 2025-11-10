@@ -1,7 +1,6 @@
 <script lang="ts">
 	let { children } = $props();
 	import { MediaQuery } from 'svelte/reactivity';
-	import ThemeSwitcher from './ThemeSwitcher.svelte';
 
 	const small = new MediaQuery('max-width: 800px');
 </script>
@@ -9,7 +8,7 @@
 <nav>
 	<div class="inner">
 		{#if small.current}
-			<ThemeSwitcher />
+			<!-- <ThemeSwitcher /> -->
 			<details>
 				<summary>=</summary>
 				<ul class="dropdown">
@@ -19,7 +18,7 @@
 		{:else}
 			<ul class="bar">
 				{@render children()}
-				<ThemeSwitcher />
+				<!-- <ThemeSwitcher /> -->
 			</ul>
 		{/if}
 	</div>

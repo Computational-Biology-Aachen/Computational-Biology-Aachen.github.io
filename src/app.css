@@ -86,10 +86,10 @@ body {
 }
 
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --light: var(--black);
     --dark: var(--white);
     --primary: var(--orange);
     --secondary: var(--petrol);
 
-}
+} */
