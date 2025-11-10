@@ -1,7 +1,7 @@
 ---
 title:  "Summer School in Computational Biology for Sustainable Environment in Kenya"
 description:  ""
-date: '10/05/2022'
+date: '2022-05-10'
 categories:
   - Summer School
 published: true

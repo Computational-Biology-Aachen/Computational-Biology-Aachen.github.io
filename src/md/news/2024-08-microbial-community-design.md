@@ -1,26 +1,11 @@
 ---
-
-
 title: "Publication 'A new era of synthetic biology—microbial community design'"
-
-
 description:  "Publication 'A new era of synthetic biology—microbial community design'"
-
-
 date: '2024-08-02'
-
-
 categories:
-
-
   - publications
-
-
 published: true
-
-
 author: "Anna Matuszyńska"
-
 ---
 ## Advancing Synthetic Biology
 

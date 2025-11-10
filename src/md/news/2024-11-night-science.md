@@ -1,26 +1,11 @@
 ---
-
-
 title: "Night Science 2024 Recap"
-
-
 description:  "The annual nigth science took place and we gave an insight into our work as computational photo biology lab"
-
-
 date: '2024-11-09'
-
-
 categories:
-
-
   - teaching
-
-
 published: true
-
-
 author: "Anna Matuszyńska"
-
 ---
 
 What an incredible night! Night Science was a smashing success, and we are absolutely thrilled by the overwhelming turnout. From start to finish, the energy in the lab was electric, and the curiosity of every participant made it all the more rewarding.
