@@ -1,8 +1,8 @@
 <script>
 	import BoxHeadingMain from '$lib/BoxHeadingMain.svelte';
 	import Card from '$lib/cards/Card.svelte';
-	import Publication from '$lib/cards/Publication.svelte';
-	import SoftwareImage from '$lib/cards/SoftwareImage.svelte';
+	import PublicationMain from '$lib/cards/PublicationMain.svelte';
+	import SoftwareMain from '$lib/cards/SoftwareMain.svelte';
 	import Sponsor from '$lib/cards/Sponsor.svelte';
 	import Grid from '$lib/Grid.svelte';
 	import GridSponsor from '$lib/GridSponsor.svelte';
@@ -49,7 +49,7 @@
 	</Link>
 
 	<Text>
-		See our<Link color="secondary" href="/team">team page</Link>for more information.
+		See our <Link color="secondary" href="/team">team page</Link> for more information.
 	</Text>
 </Section>
 
@@ -107,10 +107,10 @@
 </Section>
 <!-- Publications -->
 <Section color="light">
-	<BoxHeadingMain n="05" title="publications"></BoxHeadingMain>
+	<BoxHeadingMain n="05" title="latest publications"></BoxHeadingMain>
 
 	<Grid columns="one">
-		<Publication
+		<PublicationMain
 			title="Shedding light on blue-green photosynthesis"
 			href="https://doi.org/10.1371/journal.pcbi.1012445"
 			img="/publications/shedding.png"
@@ -119,8 +119,8 @@
 				Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver Ebenhöh, Jan
 				Červený, Gábor Bernát, Anna Barbara Matuszyńska
 			</Text>
-		</Publication>
-		<Publication
+		</PublicationMain>
+		<PublicationMain
 			title="Microbial markets: socio-economic perspective in studying microbial communities"
 			href="https://doi.org/10.1093/femsml/uqae016"
 			img="/publications/microbial-markets.png"
@@ -129,8 +129,8 @@
 				Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin Schipper , Anna
 				Matuszyńska
 			</Text>
-		</Publication>
-		<Publication
+		</PublicationMain>
+		<PublicationMain
 			title="A new era of synthetic biology—microbial community design"
 			href="https://doi.org/10.1093/synbio/ysae011"
 			img="/publications/new-era.png"
@@ -138,7 +138,7 @@
 			<Text color="white"
 				>Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C Ducat , Ilka M Axmann</Text
 			>
-		</Publication>
+		</PublicationMain>
 	</Grid>
 	<Text>
 		Interested? Check out our<Link href="/papers">full list of publications</Link>
@@ -149,34 +149,34 @@
 	<BoxHeadingMain n="06" color="light" title="community resources"></BoxHeadingMain>
 
 	<Grid columns="two">
-		<SoftwareImage
+		<SoftwareMain
 			title="MxlPy"
 			img="/mxlpy-logo.png"
 			url="https://github.com/Computational-Biology-Aachen/MxlPy"
 		>
 			<Text color="white">makes mechanistic learning approachable</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="MxlBricks"
 			img="/mxlbricks-logo.png"
 			url="https://github.com/Computational-Biology-Aachen/mxl-bricks"
 		>
 			<Text color="white">helps building large models</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="GreenSloth"
 			img="/greensloth-logo.svg"
 			url="https://greensloth.rwth-aachen.de/"
 		>
 			<Text color="white">Photosynthesis model database</Text>
-		</SoftwareImage>
-		<SoftwareImage
+		</SoftwareMain>
+		<SoftwareMain
 			title="ComPhot"
 			img="/comphot-logo.png"
 			url="https://comphot-biotool.streamlit.app/"
 		>
 			<Text color="white">Simulation based learning platform</Text>
-		</SoftwareImage>
+		</SoftwareMain>
 	</Grid>
 
 	<Text color="light">

@@ -1,4 +1,5 @@
 <script>
+	import AlumniTable from '$lib/AlumiTable.svelte';
 	import Li from '$lib/Li.svelte';
 	import Link from '$lib/Link.svelte';
 	import Header from '$lib/sections/Header.svelte';
@@ -36,4 +37,7 @@
 			href="https://online.rwth-aachen.de/RWTHonline/pl/ui/$ctx/webnav.ini">RWTHonline</Link
 		>
 	</Text>
+
+	<H2 color="dark">Past theses</H2>
+	<AlumniTable />
 </Section>

@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/publications.json"
+            ],
+            "url": "./schemas/publications-schema.json"
+        }
+    ]
+}
