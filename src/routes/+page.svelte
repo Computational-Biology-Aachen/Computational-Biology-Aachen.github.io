@@ -21,7 +21,7 @@
 	import crophotImg from '$lib/assets/comphot-logo.png';
 	import gopmfImg from '$lib/assets/gopmf-logo.png';
 	import greenslothImg from '$lib/assets/greensloth-logo.svg';
-	import groupImg from '$lib/assets/group.jpg';
+	import groupImg from '$lib/assets/group-picture-2026-03-sm.jpg';
 	import hdsleeImg from '$lib/assets/hdslee-logo.jpg';
 	import mibinetImg from '$lib/assets/mibinet-logo.png';
 	import mxlbricksImg from '$lib/assets/mxlbricks-logo.png';
