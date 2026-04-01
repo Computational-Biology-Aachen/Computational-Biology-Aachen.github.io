@@ -31,6 +31,29 @@ img {
     }
 }
 
+.textWithImage {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width:768px) {
+        grid-template-columns: 2fr 1fr;
+    }
+	p {
+		font-size: 1rem;
+		margin: 0 0 var(--text-ypad) 0;
+		font-family: var(--font-family);
+		text-align: justify;
+		hyphens: auto;
+	}
+
+    img {
+        max-width: 100%;
+    }
+
+
+}
+
 
 
 
