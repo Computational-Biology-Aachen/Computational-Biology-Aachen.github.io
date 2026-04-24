@@ -24,6 +24,7 @@
 	<NavItem href="/teaching" name="Teaching" />
 	<NavItem href="/papers" name="Papers" />
 	<NavItem href="/software" name="Resources" />
+	<NavItem href="/tutorials" name="Tutorials" />
 	<NavItem href="/news" name="News" />
 </Nav>
 

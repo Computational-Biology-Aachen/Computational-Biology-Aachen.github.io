@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const path_to_layout = join(__dirname, './src/lib/BlogLayout.svelte');
+const path_to_layout = join(__dirname, './src/lib/mdpages/BlogLayout.svelte');
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -17,15 +17,15 @@ const mdsvexOptions = {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
 				themes: ['poimandres'],
-				langs: ['javascript', 'typescript']
-			})
-			await highlighter.loadLanguage('javascript', 'typescript')
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }))
-			return `{@html \`${html}\` }`
+				langs: ['javascript', 'typescript', 'python']
+			});
+			await highlighter.loadLanguage('javascript', 'typescript', 'python');
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
+			return `{@html \`${html}\` }`;
 		}
 	},
-	layout: path_to_layout,
-}
+	layout: path_to_layout
+};
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -38,7 +38,7 @@ const config = {
 			precompress: false,
 			strict: true,
 			fallback: '404.html'
-		}),
+		})
 	}
 };
 
