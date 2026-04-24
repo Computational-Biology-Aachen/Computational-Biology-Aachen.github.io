@@ -16,6 +16,7 @@
 	import h6 from '../text/H6.svelte';
 	import p from '../text/Text.svelte';
 	import code from './code.svelte';
+	import hr from './hr.svelte';
 	import li from './li.svelte';
 	import table from './table.svelte';
 	import tbody from './tbody.svelte';
@@ -25,7 +26,7 @@
 	import tr from './tr.svelte';
 	import ul from './ul.svelte';
 
-	export { a, code, h1, h2, h3, h4, h5, h6, li, p, table, tbody, td, th, thead, tr, ul };
+	export { a, code, h1, h2, h3, h4, h5, h6, hr, li, p, table, tbody, td, th, thead, tr, ul };
 	/**
 	 * @type {string}
 	 */
