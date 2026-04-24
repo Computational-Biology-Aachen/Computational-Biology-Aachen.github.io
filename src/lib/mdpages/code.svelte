@@ -19,5 +19,6 @@
 		/* background-color: lch(from var(--white) calc(l - 10) c h); */
 		border-radius: 10px;
 		padding: 0 6px;
+		hyphens: none;
 	}
 </style>
