@@ -10,16 +10,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const layouts_dir = join(__dirname, './src/lib/mdpages');
 
+const highlighter = await createHighlighter({
+	themes: ['poimandres'],
+	langs: ['javascript', 'typescript', 'python']
+});
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
 	highlight: {
-		highlighter: async (code, lang = 'text') => {
-			const highlighter = await createHighlighter({
-				themes: ['poimandres'],
-				langs: ['javascript', 'typescript', 'python']
-			});
-			await highlighter.loadLanguage('javascript', 'typescript', 'python');
+		highlighter: (code, lang = 'text') => {
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
 			return `{@html \`${html}\` }`;
 		}

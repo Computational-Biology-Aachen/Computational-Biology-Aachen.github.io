@@ -7,13 +7,9 @@
 	} = $props();
 </script>
 
-<td>
+<ul>
 	{@render children()}
-</td>
+</ul>
 
 <style>
-	td {
-		padding: 1rem 1.5rem;
-		font-size: 0.75rem;
-	}
 </style>

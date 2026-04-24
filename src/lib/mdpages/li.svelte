@@ -7,13 +7,12 @@
 	} = $props();
 </script>
 
-<td>
+<li>
 	{@render children()}
-</td>
+</li>
 
 <style>
-	td {
-		padding: 1rem 1.5rem;
-		font-size: 0.75rem;
+	li {
+		list-style-position: inside;
 	}
 </style>

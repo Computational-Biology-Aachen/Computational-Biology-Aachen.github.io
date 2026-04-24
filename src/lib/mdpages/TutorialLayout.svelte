@@ -8,7 +8,6 @@
 
 <script context="module">
 	import a from '../Link.svelte';
-	import code from '../text/Code.svelte';
 	import h1 from '../text/H1.svelte';
 	import h2 from '../text/H2.svelte';
 	import h3 from '../text/H3.svelte';
@@ -16,11 +15,17 @@
 	import h5 from '../text/H5.svelte';
 	import h6 from '../text/H6.svelte';
 	import p from '../text/Text.svelte';
+	import code from './code.svelte';
+	import li from './li.svelte';
 	import table from './table.svelte';
+	import tbody from './tbody.svelte';
 	import td from './td.svelte';
 	import th from './th.svelte';
+	import thead from './thead.svelte';
+	import tr from './tr.svelte';
+	import ul from './ul.svelte';
 
-	export { a, code, h1, h2, h3, h4, h5, h6, p, table, td, th };
+	export { a, code, h1, h2, h3, h4, h5, h6, li, p, table, tbody, td, th, thead, tr, ul };
 	/**
 	 * @type {string}
 	 */
@@ -49,18 +54,5 @@
 	:global(.shiki) {
 		padding: 1rem;
 		margin: 1rem 0;
-	}
-
-	:global(table) {
-		border-collapse: collapse;
-		width: 100%;
-		text-align: left;
-		margin: 1rem 0;
-	}
-
-	:global(th),
-	:global(td) {
-		padding: 0.5rem 1rem;
-		border: 1px solid #333;
 	}
 </style>

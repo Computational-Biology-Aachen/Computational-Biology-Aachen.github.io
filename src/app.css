@@ -73,6 +73,8 @@ img {
     --violet: rgb(97, 33, 88);
     --lilac: rgb(122, 111, 172);
     /* Colors */
+    --bg-l0: rgb(246 246 248);
+    --bg-l1: rgb(255, 255, 255);
     --white: #eff1f4;
     --dark-grey: #1e2129;
     --light-grey: rgb(207, 209, 210);

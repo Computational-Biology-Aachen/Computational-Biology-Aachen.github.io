@@ -18,5 +18,7 @@
 		overflow-x: auto;
 		text-align: left;
 		text-indent: 0;
+		margin-bottom: 1rem;
+		font-family: var(--font-family);
 	}
 </style>
