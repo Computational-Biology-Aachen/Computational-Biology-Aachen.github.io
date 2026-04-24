@@ -22,3 +22,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# AI config files
+.github/copilot-instructions.md
+.claude
+CLAUDE.md
