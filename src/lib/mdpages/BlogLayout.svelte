@@ -7,14 +7,32 @@
 	import h4 from '../text/H4.svelte';
 	import h5 from '../text/H5.svelte';
 	import h6 from '../text/H6.svelte';
-	import pre from '../text/Pre.svelte';
 	import p from '../text/Text.svelte';
+	import table from './table.svelte';
+	import td from './td.svelte';
+	import th from './th.svelte';
 
-	export { a, code, h1, h2, h3, h4, h5, h6, p, pre };
+	export { a, code, h1, h2, h3, h4, h5, h6, p, table, td, th };
+
+	/**
+	 * @type {string}
+	 */
 	export let title;
+	/**
+	 * @type {string}
+	 */
 	export let description;
+	/**
+	 * @type {string}
+	 */
 	export let date;
+	/**
+	 * @type {string}
+	 */
 	export let categories;
+	/**
+	 * @type {string}
+	 */
 	export let published;
 </script>
 

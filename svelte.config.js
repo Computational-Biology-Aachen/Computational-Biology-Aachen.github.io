@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const path_to_layout = join(__dirname, './src/lib/mdpages/BlogLayout.svelte');
+const layouts_dir = join(__dirname, './src/lib/mdpages');
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -24,7 +24,10 @@ const mdsvexOptions = {
 			return `{@html \`${html}\` }`;
 		}
 	},
-	layout: path_to_layout
+	layout: {
+		tutorials: join(layouts_dir, 'TutorialLayout.svelte'),
+		_: join(layouts_dir, 'BlogLayout.svelte')
+	}
 };
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -5,6 +5,7 @@ categories:
   - teaching
 date: '2026-04-24'
 author: "Marvin van Aalst"
+layout: tutorials
 published: true
 ---
 
