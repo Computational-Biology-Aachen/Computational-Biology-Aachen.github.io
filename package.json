@@ -14,11 +14,11 @@
 		"lint": "prettier --check . && eslint ."
 	},
 	"devDependencies": {
-		"@eslint/compat": ">=2.0.4",
+		"@eslint/compat": ">=2.1.0",
 		"@eslint/js": ">=10.0.0",
 		"@sveltejs/adapter-auto": ">=7.0.1",
 		"@sveltejs/kit": ">=2.59.0",
-		"@sveltejs/vite-plugin-svelte": ">=7.0.0",
+		"@sveltejs/vite-plugin-svelte": ">=7.1.2",
 		"eslint": ">=10.0.0",
 		"eslint-config-prettier": ">=10.1.8",
 		"eslint-plugin-svelte": ">=3.17.1",
@@ -31,7 +31,7 @@
 		"svelte-check": ">=4.4.7",
 		"typescript": ">=6.0.3",
 		"typescript-eslint": ">=8.59.1",
-		"vite": ">=8.0.10"
+		"vite": ">=8.0.11"
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": ">=7.2.0",
