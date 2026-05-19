@@ -1,51 +1,106 @@
 <script>
-  import BoxHeadingMain from "$lib/BoxHeadingMain.svelte";
-  import Card from "$lib/cards/Card.svelte";
-  import PublicationMain from "$lib/cards/PublicationMain.svelte";
-  import SoftwareMain from "$lib/cards/SoftwareMain.svelte";
-  import Sponsor from "$lib/cards/Sponsor.svelte";
-  import GridSponsor from "$lib/GridSponsor.svelte";
-  import Image from "$lib/Image.svelte";
-  import Li from "$lib/Li.svelte";
-  import Link from "$lib/Link.svelte";
-  import Hero from "$lib/sections/Hero.svelte";
-  import Bold from "$lib/text/Bold.svelte";
-  import H2 from "$lib/text/H2.svelte";
-  import Text from "$lib/text/Text.svelte";
-  import Ul from "$lib/Ul.svelte";
-  import { Grid, Section } from "@computational-biology-aachen/design";
-
   import bioscImg from "$lib/assets/biosc-logo.jpg";
+  import ccls from "$lib/assets/ccls.svg";
   import ceplasImg from "$lib/assets/ceplas-logo.jpg";
   import crophotImg from "$lib/assets/comphot-logo.png";
+  import cpblImg from "$lib/assets/cpbl-rwth-logo.svg";
   import gopmfImg from "$lib/assets/gopmf-logo.png";
   import greenslothImg from "$lib/assets/greensloth-logo.svg";
   import groupImg from "$lib/assets/group-picture-2026-03-sm.jpg";
   import hdsleeImg from "$lib/assets/hdslee-logo.jpg";
+  import hero from "$lib/assets/hero.jpg";
   import mibinetImg from "$lib/assets/mibinet-logo.png";
   import mxlbricksImg from "$lib/assets/mxlbricks-logo.png";
   import mxlpyImg from "$lib/assets/mxlpy-logo.png";
   import marketsImg from "$lib/assets/publications/microbial-markets.png";
   import newEraImg from "$lib/assets/publications/new-era.png";
   import sheddingImg from "$lib/assets/publications/shedding.png";
-
-  import { Main } from "@computational-biology-aachen/design";
+  import rwth from "$lib/assets/rwth.svg";
+  import {
+    Bold,
+    BoxHeadingMain,
+    Card,
+    Grid,
+    H2,
+    HeroGradient,
+    Image,
+    Li,
+    Link,
+    LogoBar,
+    Narrow,
+    CardPublicationMain as PublicationMain,
+    Section,
+    CardSoftwareMain as SoftwareMain,
+    Text,
+    Ul,
+  } from "@computational-biology-aachen/design";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import Fa from "svelte-fa";
 
   let { data } = $props();
+
+  const logos = [
+    { src: rwth, href: "https://www.rwth-aachen.de", alt: "rwth logo" },
+    {
+      src: ccls,
+      href: "https://www.ccls.rwth-aachen.de",
+      alt: "ccls logo",
+      height: "4rem",
+    },
+    {
+      src: bioscImg,
+      href: "https://www.biosc.de/",
+      alt: "ccls logo",
+      height: "4rem",
+    },
+    {
+      src: hdsleeImg,
+      href: "https://www.hds-lee.de",
+      alt: "HDSLEE logo",
+      height: "4rem",
+    },
+    {
+      src: ceplasImg,
+      href: "https://www.ceplas.eu/en/home",
+      alt: "ceplas logo",
+      height: "4rem",
+    },
+    {
+      src: mibinetImg,
+      href: "https://www.sfb1535.hhu.de/en/mibinet",
+      alt: "mibinet logo",
+      height: "5.5rem",
+    },
+    {
+      src: gopmfImg,
+      href: "https://www.uni-muenster.de/GoPMF/en/index.html",
+      alt: "gopmf logo",
+      height: "5.5rem",
+    },
+  ];
 </script>
 
 <!-- 00 - hero image -->
-<Hero />
+<HeroGradient
+  src={hero}
+  cpblLogo={cpblImg}
+>
+  <Narrow>
+    <hgroup>
+      <h1>The Matuszyńska Lab</h1>
+      <h1>Computational Biology</h1>
+      <h1>RWTH Aachen</h1>
+    </hgroup>
+  </Narrow>
+</HeroGradient>
 
-<Main>
-  <!-- 01 - mission -->
-  <Section variant="light">
-    <BoxHeadingMain
-      n="01"
-      title="mission"
-    ></BoxHeadingMain>
+<!-- 01 - mission -->
+<Section variant="light">
+  <BoxHeadingMain
+    n="01"
+    title="mission"
+  ></BoxHeadingMain>
+  <Narrow>
     <Text>
       We are a computational biology lab re-imagining photosynthesis for the
       future of sustainable agriculture and green innovation. Our mission
@@ -62,15 +117,17 @@
       partners, and citizens to join us in shaping resilient crops, smart
       cities, and a climate-ready future.
     </Text>
-  </Section>
+  </Narrow>
+</Section>
 
-  <!-- 02 - Team -->
-  <Section variant="dark">
-    <BoxHeadingMain
-      n="02"
-      color="light"
-      title="team"
-    ></BoxHeadingMain>
+<!-- 02 - Team -->
+<Section variant="dark">
+  <BoxHeadingMain
+    n="02"
+    color="light"
+    title="team"
+  ></BoxHeadingMain>
+  <Narrow>
     <Link href="/team">
       <Image src={groupImg} />
     </Link>
@@ -81,14 +138,16 @@
         href="/team">team page</Link
       > for more information.
     </Text>
-  </Section>
+  </Narrow>
+</Section>
 
-  <!-- Blog -->
-  <Section variant="light">
-    <BoxHeadingMain
-      n="07"
-      title="news"
-    ></BoxHeadingMain>
+<!-- Blog -->
+<Section variant="light">
+  <BoxHeadingMain
+    n="07"
+    title="news"
+  ></BoxHeadingMain>
+  <Narrow>
     {#each data.posts as post}
       <Card format="full">
         <H2>{post.title}</H2>
@@ -99,15 +158,17 @@
     <Text>
       Interested? Check out our <Link href="/news">news</Link>
     </Text>
-  </Section>
+  </Narrow>
+</Section>
 
-  <!-- Teaching -->
-  <Section variant="dark">
-    <BoxHeadingMain
-      n="04"
-      color="light"
-      title="Teaching"
-    ></BoxHeadingMain>
+<!-- Teaching -->
+<Section variant="dark">
+  <BoxHeadingMain
+    n="04"
+    color="light"
+    title="Teaching"
+  ></BoxHeadingMain>
+  <Narrow>
     <Text>
       Our group offers several opportunities to learn about computational
       biology within both bachelor's and master's programs. We are using
@@ -158,14 +219,15 @@
       color="secondary"
       href="/teaching">Past semesters</Link
     >
-  </Section>
-  <!-- Publications -->
-  <Section variant="light">
-    <BoxHeadingMain
-      n="05"
-      title="latest publications"
-    ></BoxHeadingMain>
-
+  </Narrow>
+</Section>
+<!-- Publications -->
+<Section variant="light">
+  <BoxHeadingMain
+    n="05"
+    title="latest publications"
+  ></BoxHeadingMain>
+  <Narrow>
     <Grid columns={1}>
       <PublicationMain
         title="Shedding light on blue-green photosynthesis"
@@ -203,15 +265,17 @@
         >full list of publications</Link
       >
     </Text>
-  </Section>
-  <!-- community resources -->
-  <Section variant="dark">
-    <BoxHeadingMain
-      n="06"
-      color="light"
-      title="community resources"
-    ></BoxHeadingMain>
+  </Narrow>
+</Section>
+<!-- community resources -->
+<Section variant="dark">
+  <BoxHeadingMain
+    n="06"
+    color="light"
+    title="community resources"
+  ></BoxHeadingMain>
 
+  <Narrow>
     <Grid columns={2}>
       <SoftwareMain
         title="MxlPy"
@@ -249,49 +313,27 @@
         href="/software">full list of software</Link
       >
     </Text>
-  </Section>
+  </Narrow>
+</Section>
 
-  <!-- 03 - Research / Consortia -->
-  <Section variant="light">
-    <BoxHeadingMain
-      n="03"
-      title="research community"
-    ></BoxHeadingMain>
-    <GridSponsor>
-      <Sponsor
-        name="MibiNet"
-        href="https://www.sfb1535.hhu.de/en/mibinet"
-        img={mibinetImg}
-      />
-      <Sponsor
-        name="GoPMF"
-        href="https://www.uni-muenster.de/GoPMF/"
-        img={gopmfImg}
-      />
-      <Sponsor
-        name="CEPLAS"
-        href="https://www.ceplas.eu/en/home"
-        img={ceplasImg}
-      />
-      <Sponsor
-        name="BioSC"
-        href="https://www.biosc.de/"
-        img={bioscImg}
-      />
-      <Sponsor
-        name="HDSLEE"
-        href="https://www.hds-lee.de/"
-        img={hdsleeImg}
-      />
-    </GridSponsor>
-  </Section>
+<!-- 03 - Research / Consortia -->
+<Section variant="light">
+  <BoxHeadingMain
+    n="03"
+    title="research community"
+  ></BoxHeadingMain>
+  <Narrow>
+    <LogoBar logos={logos} />
+  </Narrow>
+</Section>
 
-  <Section variant="dark">
-    <BoxHeadingMain
-      n="08"
-      title="imprint"
-      color="light"
-    ></BoxHeadingMain>
+<Section variant="dark">
+  <BoxHeadingMain
+    n="08"
+    title="imprint"
+    color="light"
+  ></BoxHeadingMain>
+  <Narrow>
     <Text color="light">
       Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
       Worringerweg 1 52074 Aachen <br />
@@ -307,5 +349,28 @@
       ><br />
       (c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
     </Text>
-  </Section>
-</Main>
+  </Narrow>
+</Section>
+
+<style>
+  hgroup {
+    h1 {
+      margin: var(--space-1) 0;
+      color: white;
+      font-weight: 400;
+      font-size: 2rem;
+      font-family: "Quicksand", sans-serif;
+      letter-spacing: -2%;
+    }
+    @media screen and (min-width: 800px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    @media screen and (min-width: 1385px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+</style>

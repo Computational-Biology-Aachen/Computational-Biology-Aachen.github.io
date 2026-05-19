@@ -1,9 +1,8 @@
 <script lang="ts">
-  import * as config from "$lib/config";
-  import "../app.css";
-
   import favicon from "$lib/assets/cpbl-favicon.svg";
+  import * as config from "$lib/config";
   import { Navbar, NavGH, NavItem } from "@computational-biology-aachen/design";
+  import "../app.css";
 
   let { children } = $props();
 </script>
@@ -52,7 +51,7 @@
   <NavItem href="/software">Resources</NavItem>
   <NavItem href="/tutorials">Tutorials</NavItem>
   <NavItem href="/news">News</NavItem>
-  <NavGH />
+  <NavGH href="https://github.com/Computational-Biology-Aachen" />
 </Navbar>
 
 {@render children()}

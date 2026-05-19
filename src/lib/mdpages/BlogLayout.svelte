@@ -1,39 +1,41 @@
 <script context="module">
-	import a from '../Link.svelte';
-	import code from '../text/Code.svelte';
-	import h1 from '../text/H1.svelte';
-	import h2 from '../text/H2.svelte';
-	import h3 from '../text/H3.svelte';
-	import h4 from '../text/H4.svelte';
-	import h5 from '../text/H5.svelte';
-	import h6 from '../text/H6.svelte';
-	import p from '../text/Text.svelte';
-	import table from './table.svelte';
-	import td from './td.svelte';
-	import th from './th.svelte';
+  import {
+    Link as a,
+    Code as code,
+    H1 as h1,
+    H2 as h2,
+    H3 as h3,
+    H4 as h4,
+    H5 as h5,
+    H6 as h6,
+    Text as p,
+  } from "@computational-biology-aachen/design";
+  import table from "./table.svelte";
+  import td from "./td.svelte";
+  import th from "./th.svelte";
 
-	export { a, code, h1, h2, h3, h4, h5, h6, p, table, td, th };
+  export { a, code, h1, h2, h3, h4, h5, h6, p, table, td, th };
 
-	/**
-	 * @type {string}
-	 */
-	export let title;
-	/**
-	 * @type {string}
-	 */
-	export let description;
-	/**
-	 * @type {string}
-	 */
-	export let date;
-	/**
-	 * @type {string}
-	 */
-	export let categories;
-	/**
-	 * @type {string}
-	 */
-	export let published;
+  /**
+   * @type {string}
+   */
+  export let title;
+  /**
+   * @type {string}
+   */
+  export let description;
+  /**
+   * @type {string}
+   */
+  export let date;
+  /**
+   * @type {string}
+   */
+  export let categories;
+  /**
+   * @type {string}
+   */
+  export let published;
 </script>
 
 <slot></slot>

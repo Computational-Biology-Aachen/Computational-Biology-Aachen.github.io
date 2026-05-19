@@ -1,35 +1,6 @@
 @charset "UTF-8";
 @import "@computational-biology-aachen/design/tokens.css";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
-:root {
-  /* Legacy aliases — existing site components use these names */
-  --primary: var(--color-primary);
-  --secondary: var(--color-accent);
-  --light: var(--color-bg);
-  --dark: var(--color-text);
-  --white: var(--color-bg);
-  --black: var(--color-text);
-  --light-grey: var(--color-border);
-
-  --font-family: var(--font-sans);
-  --section-ypad: var(--space-8);
-  --text-ypad: var(--space-4);
-  --max-width: 80ch;
-
-  /* Icon chevron for dropdown */
-  --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-}
-
 html,
 body {
   margin: 0;
@@ -38,26 +9,13 @@ body {
   width: 100%;
   height: 100%;
   overflow: scroll;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
   font-family: var(--font-sans);
 }
 
-.textWithImage {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
-  }
-  p {
-    margin: 0 0 var(--text-ypad) 0;
-    font-size: 1rem;
-    font-family: var(--font-sans);
-    hyphens: auto;
-    text-align: justify;
-  }
-
-  img {
-    max-width: 100%;
-  }
+.katex-display {
+  margin: 0 !important;
+  padding: 0 !important;
 }

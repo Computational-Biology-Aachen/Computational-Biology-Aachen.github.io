@@ -21,5 +21,5 @@ How do genetic differences shape the way plants capture light, process carbon, a
 
 **Registration has been extended until** 16th of November 2025
 
-<a href="https://computational-biology-aachen.github.io/2026-photosynthesis-hackathon/" style="color: var(--secondary); font-family: sans-serif; display: block; margin-bottom: 1rem;">Join us and be part of a new community driving innovation at the intersection of genetics, physiology, and data!</a>
+<a href="https://computational-biology-aachen.github.io/2026-photosynthesis-hackathon/" style="color: var(--color-accent); font-family: sans-serif; display: block; margin-bottom: 1rem;">Join us and be part of a new community driving innovation at the intersection of genetics, physiology, and data!</a>
 
