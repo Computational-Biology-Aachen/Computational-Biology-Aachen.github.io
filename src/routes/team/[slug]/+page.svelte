@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HeaderPerson from '$lib/sections/HeaderPerson.svelte';
-	import Section from '$lib/sections/Section.svelte';
+	import { Section } from '@computational-biology-aachen/design';
 	import type { Member } from '$lib/types';
 
 	const images = import.meta.glob(['$lib/assets/people/*'], {

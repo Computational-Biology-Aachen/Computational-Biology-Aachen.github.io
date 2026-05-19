@@ -2,7 +2,7 @@
 	import Software from '$lib/cards/Software.svelte';
 	import Link from '$lib/Link.svelte';
 	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
+	import { Section } from '@computational-biology-aachen/design';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
 

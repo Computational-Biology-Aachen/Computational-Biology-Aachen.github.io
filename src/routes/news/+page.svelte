@@ -3,7 +3,7 @@
 	import * as config from '$lib/config';
 	import Link from '$lib/Link.svelte';
 	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
+	import { Section } from '@computational-biology-aachen/design';
 	import H1 from '$lib/text/H1.svelte';
 	import H2 from '$lib/text/H2.svelte';
 	import Text from '$lib/text/Text.svelte';

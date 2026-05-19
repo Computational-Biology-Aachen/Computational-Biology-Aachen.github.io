@@ -4,7 +4,7 @@
 	import Link from '$lib/Link.svelte';
 	import json from '$lib/publications.json';
 	import Header from '$lib/sections/Header.svelte';
-	import Section from '$lib/sections/Section.svelte';
+	import { Section } from '@computational-biology-aachen/design';
 	import H1 from '$lib/text/H1.svelte';
 	import Italic from '$lib/text/Italic.svelte';
 	import Text from '$lib/text/Text.svelte';

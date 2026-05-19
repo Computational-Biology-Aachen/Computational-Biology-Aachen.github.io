@@ -1,120 +1,63 @@
 @charset "UTF-8";
+@import "@computational-biology-aachen/design/tokens.css";
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
-:host,
-:root {
-    font-size: 100%
-}
-
-@media (min-width:576px) {
-
-    :host,
-    :root {
-        font-size: 106.25%
-    }
-}
-
-@media (min-width:768px) {
-
-    :host,
-    :root {
-        font-size: 112.5%
-    }
-}
-
-.textWithImage {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-
-    @media (min-width:768px) {
-        grid-template-columns: 2fr 1fr;
-    }
-	p {
-		font-size: 1rem;
-		margin: 0 0 var(--text-ypad) 0;
-		font-family: var(--font-family);
-		text-align: justify;
-		hyphens: auto;
-	}
-
-    img {
-        max-width: 100%;
-    }
-
-
-}
-
-
-
 
 :root {
-    /* RWTH colors */
-    --blue: rgb(0, 84, 159);
-    --black: rgb(0, 0, 0);
-    --petrol: rgb(0, 97, 101);
-    --turquoise: rgb(0, 152, 161);
-    --green: rgb(87, 171, 39);
-    --light-green: rgb(189, 205, 0);
-    --yellow: rgb(255, 237, 0);
-    --orange: rgb(246, 168, 0);
-    --red: rgb(204, 7, 30);
-    --magenta: rgb(227, 0, 102);
-    --bordeaux: rgb(161, 16, 53);
-    --violet: rgb(97, 33, 88);
-    --lilac: rgb(122, 111, 172);
-    /* Colors */
-    --bg-l0: rgb(246 246 248);
-    --bg-l1: rgb(255, 255, 255);
-    --white: #eff1f4;
-    --dark-grey: #1e2129;
-    --light-grey: rgb(207, 209, 210);
-    --black: #202632;
-    /* Color variables */
-    --light: var(--white);
-    --dark: var(--black);
-    --primary: var(--petrol);
-    --secondary: var(--orange);
-    /* Fonts */
-    --font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
-    --font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--font-family-emoji);
-    --font-family: sans-serif;
-    --bold: 700;
-    /* Layout */
-    --max-width: 80ch;
-    --section-ypad: 2rem;
-    /* Spacing */
-    --spacing: 1rem;
-    --text-ypad: 1rem;
-    /* Animations */
-    --transition: 0.2s ease-in-out;
-    /* Icons */
-    --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  /* Legacy aliases — existing site components use these names */
+  --primary: var(--color-primary);
+  --secondary: var(--color-accent);
+  --light: var(--color-bg);
+  --dark: var(--color-text);
+  --white: var(--color-bg);
+  --black: var(--color-text);
+  --light-grey: var(--color-border);
+
+  --font-family: var(--font-sans);
+  --section-ypad: var(--space-8);
+  --text-ypad: var(--space-4);
+  --max-width: 80ch;
+
+  /* Icon chevron for dropdown */
+  --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
 html,
 body {
-    background-color: var(--light);
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
+  margin: 0;
+  background-color: var(--color-bg);
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  font-family: var(--font-sans);
 }
 
+.textWithImage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 
-/* [data-theme="dark"] {
-    --light: var(--black);
-    --dark: var(--white);
-    --primary: var(--orange);
-    --secondary: var(--petrol);
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+  }
+  p {
+    margin: 0 0 var(--text-ypad) 0;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    hyphens: auto;
+    text-align: justify;
+  }
 
-} */
+  img {
+    max-width: 100%;
+  }
+}

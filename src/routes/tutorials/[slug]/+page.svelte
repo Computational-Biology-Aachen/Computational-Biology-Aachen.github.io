@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Section from '$lib/sections/Section.svelte';
+	import { Section } from '@computational-biology-aachen/design';
 	import H1 from '$lib/text/H1.svelte';
 	import Text from '$lib/text/Text.svelte';
 	import { formatDate } from '$lib/utils';
@@ -13,7 +13,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<Section color="primary">
+<Section variant="primary">
 	<H1 color="light">{data.meta.title}</H1>
 	<Text color="light">Published at {formatDate(data.meta.date)}</Text>
 	<Text color="light">Author: {data.meta.author}</Text>
