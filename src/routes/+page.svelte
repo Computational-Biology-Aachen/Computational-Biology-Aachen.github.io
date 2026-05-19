@@ -27,7 +27,6 @@
     Li,
     Link,
     LogoBar,
-    Narrow,
     CardPublicationMain as PublicationMain,
     Section,
     CardSoftwareMain as SoftwareMain,
@@ -84,272 +83,281 @@
 <HeroGradient
   src={hero}
   cpblLogo={cpblImg}
+  width="narrow"
 >
-  <Narrow>
-    <hgroup>
-      <h1>The Matuszyńska Lab</h1>
-      <h1>Computational Biology</h1>
-      <h1>RWTH Aachen</h1>
-    </hgroup>
-  </Narrow>
+  <hgroup>
+    <h1>The Matuszyńska Lab</h1>
+    <h1>Computational Biology</h1>
+    <h1>RWTH Aachen</h1>
+  </hgroup>
 </HeroGradient>
 
 <!-- 01 - mission -->
-<Section variant="light">
+<Section
+  variant="light"
+  width="narrow"
+>
   <BoxHeadingMain
     n="01"
     title="mission"
   ></BoxHeadingMain>
-  <Narrow>
-    <Text>
-      We are a computational biology lab re-imagining photosynthesis for the
-      future of sustainable agriculture and green innovation. Our mission
-      bridges three core areas:
-      <Bold>cutting-edge research</Bold>, where we design integrative models to
-      predict plant performance under real-world stress; <Bold
-        >transformative teaching</Bold
-      >, where students gain hands-on skills in coding, systems biology, and
-      data science through hackathons and open-source tools; and <Bold
-        >citizen science & outreach</Bold
-      >, where we connect plant modelling to solutions for climate change, urban
-      greening, and food security. By uniting mathematics, biology, and global
-      sustainability, we aim to inspire the next generation of scientists,
-      partners, and citizens to join us in shaping resilient crops, smart
-      cities, and a climate-ready future.
-    </Text>
-  </Narrow>
+  <Text>
+    We are a computational biology lab re-imagining photosynthesis for the
+    future of sustainable agriculture and green innovation. Our mission bridges
+    three core areas:
+    <Bold>cutting-edge research</Bold>, where we design integrative models to
+    predict plant performance under real-world stress; <Bold
+      >transformative teaching</Bold
+    >, where students gain hands-on skills in coding, systems biology, and data
+    science through hackathons and open-source tools; and <Bold
+      >citizen science & outreach</Bold
+    >, where we connect plant modelling to solutions for climate change, urban
+    greening, and food security. By uniting mathematics, biology, and global
+    sustainability, we aim to inspire the next generation of scientists,
+    partners, and citizens to join us in shaping resilient crops, smart cities,
+    and a climate-ready future.
+  </Text>
 </Section>
 
 <!-- 02 - Team -->
-<Section variant="dark">
+<Section
+  variant="dark"
+  width="narrow"
+>
   <BoxHeadingMain
     n="02"
     color="light"
     title="team"
   ></BoxHeadingMain>
-  <Narrow>
-    <Link href="/team">
-      <Image src={groupImg} />
-    </Link>
+  <Link href="/team">
+    <Image src={groupImg} />
+  </Link>
 
-    <Text>
-      See our <Link
-        color="secondary"
-        href="/team">team page</Link
-      > for more information.
-    </Text>
-  </Narrow>
+  <Text>
+    See our <Link
+      color="secondary"
+      href="/team">team page</Link
+    > for more information.
+  </Text>
 </Section>
 
 <!-- Blog -->
-<Section variant="light">
+<Section
+  variant="light"
+  width="narrow"
+>
   <BoxHeadingMain
     n="07"
     title="news"
   ></BoxHeadingMain>
-  <Narrow>
-    {#each data.posts as post}
-      <Card format="full">
-        <H2>{post.title}</H2>
-        <Text>{post.description}</Text>
-        <Link href="/news/{post.slug}">Read on</Link>
-      </Card>
-    {/each}
-    <Text>
-      Interested? Check out our <Link href="/news">news</Link>
-    </Text>
-  </Narrow>
+
+  {#each data.posts as post}
+    <Card format="full">
+      <H2>{post.title}</H2>
+      <Text>{post.description}</Text>
+      <Link href="/news/{post.slug}">Read on</Link>
+    </Card>
+  {/each}
+  <Text>
+    Interested? Check out our <Link href="/news">news</Link>
+  </Text>
 </Section>
 
 <!-- Teaching -->
-<Section variant="dark">
+<Section
+  variant="dark"
+  width="narrow"
+>
   <BoxHeadingMain
     n="04"
     color="light"
     title="Teaching"
   ></BoxHeadingMain>
-  <Narrow>
-    <Text>
-      Our group offers several opportunities to learn about computational
-      biology within both bachelor's and master's programs. We are using
-      different formats ranging from two weeks long, intensive courses to
-      semester long lectures with exercises. We are also offering a possibility
-      to do your internship with us! If you are interested, please contact Prof.
-      Matuszyńska directly.
-    </Text>
 
-    <H2 color="light">Current semester</H2>
+  <Text>
+    Our group offers several opportunities to learn about computational biology
+    within both bachelor's and master's programs. We are using different formats
+    ranging from two weeks long, intensive courses to semester long lectures
+    with exercises. We are also offering a possibility to do your internship
+    with us! If you are interested, please contact Prof. Matuszyńska directly.
+  </Text>
 
-    <Ul>
-      <Li color="light">
-        <Link
-          color="light"
-          href="/"
-          >Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)
-        </Link>
-      </Li>
-      <Li color="light">
-        <Link
-          color="light"
-          href="/">Lecture Biology as an Application Subject II 16.00083</Link
-        >
-      </Li>
-      <Li color="light">
-        <Link
-          color="light"
-          href="/"
-          >Lecture with exercise Introduction to Bioinformatics 16.00286
-        </Link>
-      </Li>
-      <Li color="light">
-        <Link
-          color="light"
-          href="/">Lecture Ethics in the Biosciences 16.00244</Link
-        >
-      </Li>
-      <Li color="light">
-        <Link
-          color="light"
-          href="/"
-          >Practical + Seminar Interdisciplinary Data Science Course 16.00017</Link
-        >
-      </Li>
-    </Ul>
-    <Link
-      color="secondary"
-      href="/teaching">Past semesters</Link
-    >
-  </Narrow>
+  <H2 color="light">Current semester</H2>
+
+  <Ul>
+    <Li color="light">
+      <Link
+        color="light"
+        href="/"
+        >Lecture + Practical Photosynthetic Systems in Architecture (PhoSA)
+      </Link>
+    </Li>
+    <Li color="light">
+      <Link
+        color="light"
+        href="/">Lecture Biology as an Application Subject II 16.00083</Link
+      >
+    </Li>
+    <Li color="light">
+      <Link
+        color="light"
+        href="/"
+        >Lecture with exercise Introduction to Bioinformatics 16.00286
+      </Link>
+    </Li>
+    <Li color="light">
+      <Link
+        color="light"
+        href="/">Lecture Ethics in the Biosciences 16.00244</Link
+      >
+    </Li>
+    <Li color="light">
+      <Link
+        color="light"
+        href="/"
+        >Practical + Seminar Interdisciplinary Data Science Course 16.00017</Link
+      >
+    </Li>
+  </Ul>
+  <Link
+    color="secondary"
+    href="/teaching">Past semesters</Link
+  >
 </Section>
 <!-- Publications -->
-<Section variant="light">
+<Section
+  variant="light"
+  width="narrow"
+>
   <BoxHeadingMain
     n="05"
     title="latest publications"
   ></BoxHeadingMain>
-  <Narrow>
-    <Grid columns={1}>
-      <PublicationMain
-        title="Shedding light on blue-green photosynthesis"
-        href="https://doi.org/10.1371/journal.pcbi.1012445"
-        img={sheddingImg}
+
+  <Grid columns={1}>
+    <PublicationMain
+      title="Shedding light on blue-green photosynthesis"
+      href="https://doi.org/10.1371/journal.pcbi.1012445"
+      img={sheddingImg}
+    >
+      <Text color="white">
+        Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver
+        Ebenhöh, Jan Červený, Gábor Bernát, Anna Barbara Matuszyńska
+      </Text>
+    </PublicationMain>
+    <PublicationMain
+      title="Microbial markets: socio-economic perspective in studying microbial communities"
+      href="https://doi.org/10.1093/femsml/uqae016"
+      img={marketsImg}
+    >
+      <Text color="white">
+        Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin
+        Schipper , Anna Matuszyńska
+      </Text>
+    </PublicationMain>
+    <PublicationMain
+      title="A new era of synthetic biology—microbial community design"
+      href="https://doi.org/10.1093/synbio/ysae011"
+      img={newEraImg}
+    >
+      <Text color="white"
+        >Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C
+        Ducat , Ilka M Axmann</Text
       >
-        <Text color="white">
-          Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski,
-          Oliver Ebenhöh, Jan Červený, Gábor Bernát, Anna Barbara Matuszyńska
-        </Text>
-      </PublicationMain>
-      <PublicationMain
-        title="Microbial markets: socio-economic perspective in studying microbial communities"
-        href="https://doi.org/10.1093/femsml/uqae016"
-        img={marketsImg}
-      >
-        <Text color="white">
-          Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin
-          Schipper , Anna Matuszyńska
-        </Text>
-      </PublicationMain>
-      <PublicationMain
-        title="A new era of synthetic biology—microbial community design"
-        href="https://doi.org/10.1093/synbio/ysae011"
-        img={newEraImg}
-      >
-        <Text color="white"
-          >Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C
-          Ducat , Ilka M Axmann</Text
-        >
-      </PublicationMain>
-    </Grid>
-    <Text>
-      Interested? Check out our <Link href="/papers"
-        >full list of publications</Link
-      >
-    </Text>
-  </Narrow>
+    </PublicationMain>
+  </Grid>
+  <Text>
+    Interested? Check out our <Link href="/papers"
+      >full list of publications</Link
+    >
+  </Text>
 </Section>
 <!-- community resources -->
-<Section variant="dark">
+<Section
+  variant="dark"
+  width="narrow"
+>
   <BoxHeadingMain
     n="06"
     color="light"
     title="community resources"
   ></BoxHeadingMain>
 
-  <Narrow>
-    <Grid columns={2}>
-      <SoftwareMain
-        title="MxlPy"
-        img={mxlpyImg}
-        url="https://github.com/Computational-Biology-Aachen/MxlPy"
-      >
-        <Text color="white">makes mechanistic learning approachable</Text>
-      </SoftwareMain>
-      <SoftwareMain
-        title="MxlBricks"
-        img={mxlbricksImg}
-        url="https://github.com/Computational-Biology-Aachen/mxl-bricks"
-      >
-        <Text color="white">helps building large models</Text>
-      </SoftwareMain>
-      <SoftwareMain
-        title="GreenSloth"
-        img={greenslothImg}
-        url="https://greensloth.rwth-aachen.de/"
-      >
-        <Text color="white">Photosynthesis model database</Text>
-      </SoftwareMain>
-      <SoftwareMain
-        title="ComPhot"
-        img={crophotImg}
-        url="https://comphot-biotool.streamlit.app/"
-      >
-        <Text color="white">Simulation based learning platform</Text>
-      </SoftwareMain>
-    </Grid>
+  <Grid columns={2}>
+    <SoftwareMain
+      title="MxlPy"
+      img={mxlpyImg}
+      url="https://github.com/Computational-Biology-Aachen/MxlPy"
+    >
+      <Text color="white">makes mechanistic learning approachable</Text>
+    </SoftwareMain>
+    <SoftwareMain
+      title="MxlBricks"
+      img={mxlbricksImg}
+      url="https://github.com/Computational-Biology-Aachen/mxl-bricks"
+    >
+      <Text color="white">helps building large models</Text>
+    </SoftwareMain>
+    <SoftwareMain
+      title="GreenSloth"
+      img={greenslothImg}
+      url="https://greensloth.rwth-aachen.de/"
+    >
+      <Text color="white">Photosynthesis model database</Text>
+    </SoftwareMain>
+    <SoftwareMain
+      title="ComPhot"
+      img={crophotImg}
+      url="https://comphot-biotool.streamlit.app/"
+    >
+      <Text color="white">Simulation based learning platform</Text>
+    </SoftwareMain>
+  </Grid>
 
-    <Text color="light">
-      Interested? Check out our <Link
-        color="secondary"
-        href="/software">full list of software</Link
-      >
-    </Text>
-  </Narrow>
+  <Text color="light">
+    Interested? Check out our <Link
+      color="secondary"
+      href="/software">full list of software</Link
+    >
+  </Text>
 </Section>
 
 <!-- 03 - Research / Consortia -->
-<Section variant="light">
+<Section
+  variant="light"
+  width="narrow"
+>
   <BoxHeadingMain
     n="03"
     title="research community"
   ></BoxHeadingMain>
-  <Narrow>
-    <LogoBar logos={logos} />
-  </Narrow>
+  <LogoBar logos={logos} />
 </Section>
 
-<Section variant="dark">
+<Section
+  variant="dark"
+  width="narrow"
+>
   <BoxHeadingMain
     n="08"
     title="imprint"
     color="light"
   ></BoxHeadingMain>
-  <Narrow>
-    <Text color="light">
-      Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
-      Worringerweg 1 52074 Aachen <br />
-      Sammelbau Biologie, Bauteil 42 C, Erdgeschoss, Raum 041 <br />
-      Work Phone: +49 241 80 25817 <br />
+  <Text color="light">
+    Anbieter i.S.d. TDG/MDStV: Prof. Dr. Anna B. Matuszyńska <br />
+    Worringerweg 1 52074 Aachen <br />
+    Sammelbau Biologie, Bauteil 42 C, Erdgeschoss, Raum 041 <br />
+    Work Phone: +49 241 80 25817 <br />
 
-      Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
-      Prof. Dr. Anna B. Matuszyńska <br />
-      Design und Umsetzung Dr. Marvin van Aalst <Link
-        color="light"
-        href="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
-        ><Fa icon={faGithub} /></Link
-      ><br />
-      (c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
-    </Text>
-  </Narrow>
+    Verantwortlich i.S.d. § 6 Abs. 2 MDStV: <br />
+    Prof. Dr. Anna B. Matuszyńska <br />
+    Design und Umsetzung Dr. Marvin van Aalst <Link
+      color="light"
+      href="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
+      ><Fa icon={faGithub} /></Link
+    ><br />
+    (c) 2025 Prof. Dr. Anna B. Matuszyńska, Alle Rechte vorbehalten.
+  </Text>
 </Section>
 
 <style>

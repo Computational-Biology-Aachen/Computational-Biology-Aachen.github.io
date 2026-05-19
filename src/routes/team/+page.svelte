@@ -5,11 +5,10 @@
     GridPerson,
     H1,
     H2,
-    SectionHeader as Header,
     Image,
-    Narrow,
     CardPerson as Person,
     Section,
+    SectionHeader,
     Text,
   } from "@computational-biology-aachen/design";
 
@@ -17,24 +16,26 @@
   let members: Member[] = data.members;
 </script>
 
-<Header color="primary">
-  <Narrow>
-    <H1 color="light">Team</H1>
-    <Text color="light">Members of the AG Matuszyńska as of October 2025</Text>
-  </Narrow>
-</Header>
+<SectionHeader
+  variant="primary"
+  width="narrow"
+>
+  <H1 color="light">Team</H1>
+  <Text color="light">Members of the AG Matuszyńska as of October 2025</Text>
+</SectionHeader>
 
-<Section variant="light">
-  <Narrow>
-    <GridPerson>
-      {#each members as { slug, name }}
-        <Person
-          title={name}
-          slug={slug}
-        ></Person>
-      {/each}
-    </GridPerson>
-  </Narrow>
+<Section
+  variant="light"
+  width="narrow"
+>
+  <GridPerson>
+    {#each members as { slug, name }}
+      <Person
+        title={name}
+        slug={slug}
+      ></Person>
+    {/each}
+  </GridPerson>
 </Section>
 
 <Section variant="light">

@@ -2,7 +2,6 @@
   import type { Member } from "$lib/types";
   import {
     SectionHeaderPerson as HeaderPerson,
-    Narrow,
     Section,
   } from "@computational-biology-aachen/design";
 
@@ -39,8 +38,6 @@
   website={person.website}
 ></HeaderPerson>
 
-<Section>
-  <Narrow>
-    <data.content />
-  </Narrow>
+<Section width="narrow">
+  <data.content />
 </Section>
