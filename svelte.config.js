@@ -41,7 +41,10 @@ const config = {
 			precompress: false,
 			strict: true,
 			fallback: '404.html'
-		})
+		}),
+		alias: {
+			'@computational-biology-aachen/design': './design/src/lib'
+		}
 	}
 };
 
