@@ -336,7 +336,7 @@
 
 <Section
   variant="dark"
-  width="narrow"
+  width="full"
 >
   <BoxHeadingMain
     n="08"
