@@ -1,3 +1,4 @@
+import { existsSync } from 'fs';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { escapeSvelte, mdsvex } from 'mdsvex';
@@ -42,9 +43,9 @@ const config = {
 			strict: true,
 			fallback: '404.html'
 		}),
-		alias: {
-			'@computational-biology-aachen/design': './design/src/lib'
-		}
+		...(existsSync('./design/src/lib') && {
+			alias: { '@computational-biology-aachen/design': './design/src/lib' }
+		})
 	}
 };
 
