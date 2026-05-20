@@ -13,6 +13,8 @@
   import Fa from "svelte-fa";
 
   let { data } = $props();
+
+  // svelte-ignore state_referenced_locally
   let allPosts = data.posts;
   let perPage = 5;
 

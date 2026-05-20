@@ -12,8 +12,10 @@
   });
 
   let { data } = $props();
+  // svelte-ignore state_referenced_locally
   let person: Member = data.meta;
 
+  // svelte-ignore state_referenced_locally
   let filename = `/people/${data.slug.split("/").at(-1)}.jpg`;
   let img: string =
     (images[`/src/lib/assets${filename}`] as string) ||

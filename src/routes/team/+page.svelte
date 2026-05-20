@@ -13,6 +13,8 @@
   } from "@computational-biology-aachen/design";
 
   let { data } = $props();
+
+  // svelte-ignore state_referenced_locally
   let members: Member[] = data.members;
 </script>
 
