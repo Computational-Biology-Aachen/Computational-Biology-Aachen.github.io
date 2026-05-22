@@ -34,7 +34,7 @@
 		"vite": ">=8.0.13"
 	},
 	"dependencies": {
-		"@computational-biology-aachen/design": "*",
+		"@computational-biology-aachen/design": "github:Computational-Biology-Aachen/design",
 		"@fortawesome/free-brands-svg-icons": ">=7.2.0",
 		"@fortawesome/free-solid-svg-icons": ">=7.2.0",
 		"@sveltejs/adapter-static": ">=3.0.10",
