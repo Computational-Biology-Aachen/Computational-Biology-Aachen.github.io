@@ -1,34 +1,36 @@
 # Computational Biology at RWTH Aachen
 
-## Editing your own data
+Main lab website. SvelteKit 5, adapter-static, mdsvex. Content lives in Markdown — no Svelte editing needed for team, news, or publications.
 
-- Your information that displayed on the "Team" page is located at [src/md/team/{your-name}.md](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/md/team)
-- Copy the yaml frontmatter from another person and adjust accordingly
-- Write the remainder as per usual
-
-Notes: the "order" field is used to order people in the gallery by level of seniority
-
-- 5: Professor
-- 4: Post-Doc
-- 3: PhD student
-- 2: Master student
-- 1: Bachelor student
-
-## Creating a news entry
-
-- Create a new `.md` file in [src/md/news](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/tree/main/src/md/news)
-- Copy the yaml frontmatter from another post and adjust accordingly
-- Write the remainder as per usual
-
-
-## Creating a new publication
-
-- Edit the [src/lib/publications.json](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/blob/main/src/lib/publications.json)
-- Everything else will work automatically
-
-## Dev setup
+## Dev
 
 ```bash
 npm install
-npm run dev -- --open
+npm run dev          # dev server on :5173
+npm run build        # static build → build/
+npm run check        # TypeScript + Svelte type checking
+npm run lint         # Prettier + ESLint check
+npm run format       # auto-format with Prettier
 ```
+
+## Content editing
+
+### Team profile
+
+Edit or create `src/md/team/{your-name}.md`. Copy frontmatter from an existing profile and adjust. The `order` field controls gallery ordering by seniority:
+
+| Value | Role             |
+| ----- | ---------------- |
+| 5     | Professor        |
+| 4     | Post-Doc         |
+| 3     | PhD student      |
+| 2     | Master student   |
+| 1     | Bachelor student |
+
+### News post
+
+Create a new `.md` file in `src/md/news/`. File name format: `YYYY-MM-DD-slug.md`. Copy frontmatter from an existing post.
+
+### Publication
+
+Edit `src/lib/publications.json`. Everything else derives automatically.
