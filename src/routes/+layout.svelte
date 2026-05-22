@@ -1,7 +1,12 @@
 <script lang="ts">
   import favicon from "$lib/assets/cpbl-favicon.svg";
   import * as config from "$lib/config";
-  import { Navbar, NavGH, NavItem } from "@computational-biology-aachen/design";
+  import {
+    CollapseToBurger,
+    Navbar,
+    NavGH,
+    NavItem,
+  } from "@computational-biology-aachen/design";
   import "../app.css";
 
   let { children } = $props();
@@ -44,13 +49,15 @@
   {#snippet brand()}
     <span class="brand">The Matuszyńska Lab</span>
   {/snippet}
-  <NavItem href="/">Home</NavItem>
-  <NavItem href="/team">Team</NavItem>
-  <NavItem href="/teaching">Teaching</NavItem>
-  <NavItem href="/papers">Papers</NavItem>
-  <NavItem href="/software">Resources</NavItem>
-  <NavItem href="/tutorials">Tutorials</NavItem>
-  <NavItem href="/news">News</NavItem>
+  <CollapseToBurger collapseAt="920px">
+    <NavItem href="/">Home</NavItem>
+    <NavItem href="/team">Team</NavItem>
+    <NavItem href="/teaching">Teaching</NavItem>
+    <NavItem href="/papers">Papers</NavItem>
+    <NavItem href="/software">Resources</NavItem>
+    <NavItem href="/tutorials">Tutorials</NavItem>
+    <NavItem href="/news">News</NavItem>
+  </CollapseToBurger>
   <NavGH href="https://github.com/Computational-Biology-Aachen" />
 </Navbar>
 
