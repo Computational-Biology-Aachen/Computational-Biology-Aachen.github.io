@@ -3,8 +3,14 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { escapeSvelte, mdsvex } from "mdsvex";
 import { createHighlighter } from "shiki";
 
+import { existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+
+const designSrc = new URL("../design/src/lib", import.meta.url).pathname;
+const designAlias = existsSync(designSrc)
+  ? { "@computational-biology-aachen/design": designSrc }
+  : {};
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,6 +43,7 @@ const config = {
   extensions: [".svelte", ".md"],
   preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
   kit: {
+    alias: designAlias,
     adapter: adapter({
       pages: "build",
       assets: "build",
