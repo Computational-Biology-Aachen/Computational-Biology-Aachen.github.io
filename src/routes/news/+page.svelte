@@ -36,7 +36,10 @@
 <Header width="narrow">
   <H1 color="light">News</H1>
 </Header>
-<Section width="narrow">
+<Section
+  width="narrow"
+  gap="large"
+>
   {#each trimmedRows as post}
     <Card format="full">
       <H2>{post.title}</H2>

@@ -18,7 +18,10 @@
   <H1 color="light">Community resources</H1>
   <Text color="light">Things we built or contributed to with ❤️</Text>
 </Header>
-<Section width="narrow">
+<Section
+  width="narrow"
+  gap="large"
+>
   <CardSoftware
     title="MxlPy"
     github="https://github.com/Computational-Biology-Aachen/MxlPy"

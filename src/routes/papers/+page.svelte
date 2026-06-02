@@ -29,7 +29,10 @@
   </Text>
 </Header>
 
-<Section width="narrow">
+<Section
+  width="narrow"
+  gap="large"
+>
   {#each json as { title, date, doi, authors, preprint }}
     <Publication
       title={title}
