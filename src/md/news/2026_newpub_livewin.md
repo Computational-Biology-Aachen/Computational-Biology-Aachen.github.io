@@ -22,6 +22,6 @@ The work was carried out by an interdisciplinary team spanning biology, engineer
 
 **Authors:** Frederic Radzio, Tim Nies, Lisa Fürtauer, Lars Lauterbach, Anna Matuszyńska  
 **Journal:** Frontiers in Built Environment (2026)  
-**Link:** [insert link]
+**Link:** [article](https://doi.org/10.3389/fbuil.2026.1818560)]
 
 ![Window-integrated photobioreactor prototype](/news/window_pbr.jpg)
