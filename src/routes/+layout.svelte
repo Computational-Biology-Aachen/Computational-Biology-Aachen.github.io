@@ -38,7 +38,6 @@
     name="twitter:card"
     content="summary"
   />
-  <title>The Matuszyńska Lab</title>
   <link
     rel="icon"
     href={favicon}
