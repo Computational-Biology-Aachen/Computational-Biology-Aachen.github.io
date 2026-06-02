@@ -30,7 +30,10 @@
   variant="light"
   width="narrow"
 >
-  <GridPerson>
+  <GridPerson
+    columns={3}
+    gap="var(--space-8)"
+  >
     {#each members as { slug, name }}
       <Person
         title={name}
