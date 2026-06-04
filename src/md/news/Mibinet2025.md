@@ -11,8 +11,8 @@ Mibinet Aachen Day brought together researchers from HHU Düsseldorf, Forschungs
 Participants also had the chance to visit the iAMB laboratories, offering a closer look at facilities and ongoing work. After the seminar, the group continued the day with a relaxed visit to the Aachen Christmas market, enjoying the festive atmosphere and closing the event on a cheerful note.
 
 
-![](/static/news/mibinet2.jpg)
-![](/static/news/mibinet3.jpg)
-![](/static/news/mibinet4.jpg)
-![](/static/news/mibinet5.jpg)
-![](/static/news/mibinet1.jpg)
+![Researchers at Mibinet Aachen Day](/static/news/mibinet2.jpg)
+![Research talk during the Mibinet Aachen Day seminar](/static/news/mibinet3.jpg)
+![Tour of the iAMB laboratories](/static/news/mibinet4.jpg)
+![Participants networking at Mibinet Aachen Day](/static/news/mibinet5.jpg)
+![Group visit to the Aachen Christmas market](/static/news/mibinet1.jpg)

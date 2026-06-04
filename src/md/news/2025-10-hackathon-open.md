@@ -9,7 +9,7 @@ published: true
 ---
 
 <a href="https://computational-biology-aachen.github.io/2026-photosynthesis-hackathon/">
-  <img src="/news/hackathon-opening.png" style="max-width: 100%">
+  <img src="/news/hackathon-opening.png" alt="Hacking for Photosynthesis hackathon announcement banner" style="max-width: 100%">
 </a>
 <br />
 

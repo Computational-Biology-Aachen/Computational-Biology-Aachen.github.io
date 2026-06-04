@@ -9,7 +9,7 @@ published: true
 ---
 
 <a href="https://computational-biology-aachen.github.io/2026-photosynthesis-hackathon/">
-  <img src="/news/hackathon-opening.png" style="max-width: 100%">
+  <img src="/news/hackathon-opening.png" alt="Hacking for Photosynthesis hackathon announcement banner" style="max-width: 100%">
 </a>
 <br />
 
@@ -27,10 +27,10 @@ How do genetic differences shape the way plants capture light, process carbon, a
 **Funding**: We would like to thank the the Mastercard Foundation and University of Cambridge Climate Resilience and Sustainability Research Fund JanIngenhousz Intitute under JII Open Challenge Fund for the generous funding of this hackathon.
 
 <a href="https://mastercardfdn.org/en/">
-  <img src="/news/mastercard-climate.png"  style="max-width: 48%">
+  <img src="/news/mastercard-climate.png" alt="Mastercard Foundation logo"  style="max-width: 48%">
   </a>
 
 
 <a href="https://www.jan-ingenhousz-institute.org/">
-  <img src="/news/jan-ingenhousz-institute-logo.png" style="max-width: 48%">
+  <img src="/news/jan-ingenhousz-institute-logo.png" alt="Jan Ingenhousz Institute logo" style="max-width: 48%">
 </a>
