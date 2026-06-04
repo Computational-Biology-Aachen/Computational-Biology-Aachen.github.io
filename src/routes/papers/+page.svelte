@@ -12,6 +12,10 @@
   } from "@computational-biology-aachen/design";
 </script>
 
+<svelte:head>
+  <title>Papers - Matuszyńska Lab</title>
+</svelte:head>
+
 <Header width="narrow">
   <H1 color="light">Our publications</H1>
   <Text color="light"

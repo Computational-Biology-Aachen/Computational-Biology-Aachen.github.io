@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title}</title>
+  <title>Tutorials - Matuszyńska Lab</title>
 </svelte:head>
 
 <Header width="narrow">

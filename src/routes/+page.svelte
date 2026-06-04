@@ -79,7 +79,7 @@
 </script>
 
 <svelte:head>
-  <title>The Matuszyńska Lab</title>
+  <title>Matuszyńska Lab</title>
 </svelte:head>
 
 <!-- 00 - hero image -->

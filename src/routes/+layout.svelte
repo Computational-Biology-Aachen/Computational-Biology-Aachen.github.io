@@ -14,6 +14,7 @@
 
 <!-- SEO -->
 <svelte:head>
+  <title>Matuszyńska Lab</title>
   <meta
     name="description"
     content={config.description}

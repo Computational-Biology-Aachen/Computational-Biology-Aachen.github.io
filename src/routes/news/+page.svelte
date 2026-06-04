@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-  <title>{config.title}</title>
+  <title>News - Matuszyńska Lab</title>
 </svelte:head>
 
 <Header width="narrow">

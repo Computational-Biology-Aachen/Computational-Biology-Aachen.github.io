@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>{data.meta.title}</title>
+  <title>{data.meta.title} - Matuszyńska Lab</title>
   <meta
     property="og:type"
     content="article"

@@ -14,6 +14,10 @@
   } from "@computational-biology-aachen/design";
 </script>
 
+<svelte:head>
+  <title>Community resources - Matuszyńska Lab</title>
+</svelte:head>
+
 <Header width="narrow">
   <H1 color="light">Community resources</H1>
   <Text color="light">Things we built or contributed to with ❤️</Text>

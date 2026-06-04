@@ -18,6 +18,10 @@
   let members: Member[] = data.members;
 </script>
 
+<svelte:head>
+  <title>Team - Matuszyńska Lab</title>
+</svelte:head>
+
 <SectionHeader
   variant="primary"
   width="narrow"

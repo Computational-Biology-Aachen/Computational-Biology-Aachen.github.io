@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-  <title>{person.name}</title>
+  <title>{person.name} - Matuszyńska Lab</title>
   <meta
     property="og:type"
     content="article"
