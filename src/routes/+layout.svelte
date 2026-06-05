@@ -3,6 +3,7 @@
   import * as config from "$lib/config";
   import {
     CollapseToBurger,
+    Imprint,
     Navbar,
     NavGH,
     NavItem,
@@ -63,6 +64,10 @@
 </Navbar>
 
 {@render children()}
+
+<Imprint
+  github="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
+/>
 
 <style>
   .brand {

@@ -24,7 +24,6 @@
     H2,
     HeroGradient,
     Image,
-    Imprint,
     Li,
     Link,
     LogoBar,
@@ -336,10 +335,6 @@
   ></BoxHeadingMain>
   <LogoBar logos={logos} />
 </Section>
-
-<Imprint
-  github="https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io"
-/>
 
 <style>
   hgroup {
