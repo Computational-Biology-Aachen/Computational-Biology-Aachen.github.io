@@ -49,13 +49,14 @@
   {#snippet brand()}
     <span class="brand">The Matuszyńska Lab</span>
   {/snippet}
-  <CollapseToBurger collapseAt="920px">
+  <CollapseToBurger collapseAt="960px">
     <NavItem href="/">Home</NavItem>
     <NavItem href="/team">Team</NavItem>
     <NavItem href="/teaching">Teaching</NavItem>
     <NavItem href="/papers">Papers</NavItem>
     <NavItem href="/software">Resources</NavItem>
     <NavItem href="/tutorials">Tutorials</NavItem>
+    <NavItem href="/events">Events</NavItem>
     <NavItem href="/news">News</NavItem>
   </CollapseToBurger>
   <NavGH href="https://github.com/Computational-Biology-Aachen" />
