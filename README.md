@@ -2,6 +2,8 @@
 
 Main lab website. SvelteKit 5, adapter-static, mdsvex. Content lives in Markdown — no Svelte editing needed for team, news, or publications.
 
+Styling and shared UI come from the lab [`@computational-biology-aachen/design`](https://github.com/Computational-Biology-Aachen/design) system (design tokens + Svelte components).
+
 ## Dev
 
 ```bash
