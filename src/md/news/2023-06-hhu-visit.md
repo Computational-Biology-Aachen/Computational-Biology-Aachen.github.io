@@ -1,7 +1,7 @@
 ---
 title: "Visit to Heinrich Heine University in Düsseldorf"
 description: "Prof. Matuszyńska, the PhD student Tranvir Hassan and the student Siraz Kader visited the Heinrich Heine University"
-date: '2023-06-05'
+date: "2023-06-05"
 categories: null
 published: true
 author: Anna Matuszyńska

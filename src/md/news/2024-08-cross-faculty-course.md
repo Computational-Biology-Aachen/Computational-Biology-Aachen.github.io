@@ -1,7 +1,7 @@
 ---
 title: "New cross-faculty course"
-description:  "Computational Photosynthesis: from in vivo to in silico"
-date: '2024-08-02'
+description: "Computational Photosynthesis: from in vivo to in silico"
+date: "2024-08-02"
 categories:
   - teaching
 published: true

@@ -1,7 +1,7 @@
 ---
 title: "Part of one of the newly funded DFG research groups"
 description: "We are pleased to report that our Lab is a part of one of the seven newly funded DFG research groups! Under the leadership of Prof. Michael Hippler from the University of Münster."
-date: '2023-06-30'
+date: "2023-06-30"
 categories: null
 published: true
 author: Anna Matuszyńska

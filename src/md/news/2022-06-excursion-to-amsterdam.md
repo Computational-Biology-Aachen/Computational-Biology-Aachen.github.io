@@ -1,7 +1,7 @@
 ---
 title: "First excursion to Amsterdam"
 description: "For the first time, our the Computational Life Science Lab took part in the RWTH Excursion Week. They organised a trip to Amsterdam, the birth place of Python, the programming language they use!"
-date: '2022-06-10'
+date: "2022-06-10"
 categories:
   - excursion
   - congress

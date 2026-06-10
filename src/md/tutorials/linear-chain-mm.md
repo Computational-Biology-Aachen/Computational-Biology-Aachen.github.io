@@ -3,7 +3,7 @@ title: "Linear Michaelis-Menten Kinetics"
 description: "Linear Michaelis-Menten Kinetics - Enzymatic Chains with mxlpy"
 categories:
   - teaching
-date: '2026-04-21'
+date: "2026-04-21"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
@@ -32,7 +32,6 @@ v_i = Vmax_i · S_i / (Km_i + S_i)
 mxlpy provides `fns.michaelis_menten_1s(s, vmax, km)` as a built-in rate function, so no custom functions are needed here.
 
 The model factory below generates a chain of any length.
-
 
 ```python
 import numpy as np
@@ -67,7 +66,6 @@ def linear_mm(n_steps: int = 4) -> Model:
 
 The factory works because mxlpy's `add_variables`, `add_parameters`, and `add_reaction` all accept dynamic names. The model structure is programmatically generated — adding another step requires only changing `n_steps`.
 
-
 ```python
 variables, fluxes = (
     Simulator(linear_mm(n_steps=5))
@@ -91,7 +89,6 @@ S1 drains first, filling S2, which in turn fills S3, and so on. Each substrate p
 ## Signal Delay vs Chain Length
 
 Longer chains delay the appearance of the final product. We can quantify this by tracking when the last substrate S_n reaches its half-maximum concentration as a function of chain length.
-
 
 ```python
 time_long = np.linspace(0, 30, 2000)

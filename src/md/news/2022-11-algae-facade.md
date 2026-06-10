@@ -3,7 +3,7 @@ title: "Algae facade project funded"
 description: "Project which uses cyanobacteria or microalgae for facades got founded by the Sustainability Fund"
 categories:
   - funding
-date: '2022-11-18'
+date: "2022-11-18"
 author: "Anna Matuszyńska"
 published: true
 ---

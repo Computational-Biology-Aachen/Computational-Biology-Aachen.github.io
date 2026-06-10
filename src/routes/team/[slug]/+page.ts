@@ -1,17 +1,15 @@
-
-import { error } from '@sveltejs/kit';
+import { error } from "@sveltejs/kit";
 
 export async function load({ params }) {
-    try {
-        const member = await import(`../../../md/team/${params.slug}.md`)
+  try {
+    const member = await import(`../../../md/team/${params.slug}.md`);
 
-        return {
-            content: member.default,
-            slug: params.slug,
-            meta: member.metadata
-        }
-    } catch (e) {
-        error(404, `Could not find ${params.slug}`)
-    }
+    return {
+      content: member.default,
+      slug: params.slug,
+      meta: member.metadata,
+    };
+  } catch {
+    error(404, `Could not find ${params.slug}`);
+  }
 }
-

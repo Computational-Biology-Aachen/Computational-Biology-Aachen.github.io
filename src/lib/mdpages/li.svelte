@@ -1,18 +1,18 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-	let {
-		children
-	}: {
-		children: Snippet;
-	} = $props();
+  import type { Snippet } from "svelte";
+  let {
+    children,
+  }: {
+    children: Snippet;
+  } = $props();
 </script>
 
 <li>
-	{@render children()}
+  {@render children()}
 </li>
 
 <style>
-	li {
-		list-style-position: inside;
-	}
+  li {
+    list-style-position: inside;
+  }
 </style>

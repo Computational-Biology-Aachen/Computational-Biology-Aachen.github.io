@@ -3,7 +3,7 @@ title: "New publication: Window-integrated photobioreactors for green building r
 description: "A proof-of-concept showing how living systems can be embedded into standard window infrastructure."
 categories:
   - publication
-date: '2026-04-22'
+date: "2026-04-22"
 author: "Anna Matuszyńska"
 published: true
 ---

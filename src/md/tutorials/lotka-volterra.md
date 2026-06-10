@@ -3,7 +3,7 @@ title: "The Lotka-Volterra Model"
 description: "The Lotka-Volterra Model - Predator-Prey Cycles with mxlpy"
 categories:
   - teaching
-date: '2026-04-22'
+date: "2026-04-22"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
@@ -35,7 +35,6 @@ dL/dt =  delta · H · L  −  gamma · L
 
 Predation and predator growth share the same functional form (`H · L`) but different rate constants — `beta` sets how fast prey die, `delta` sets how efficiently that converts to predator growth.
 
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -47,7 +46,6 @@ ASSETS.mkdir(parents=True, exist_ok=True)
 
 time = np.linspace(0, 40, 2000)
 ```
-
 
 ```python
 def lv() -> Model:
@@ -84,7 +82,6 @@ def lv() -> Model:
 
 Predation and predator growth are two separate reactions with the same rate law but different parameters and stoichiometries. mxlpy tracks the flux through each process independently — useful when we later want to ask 'how much prey is consumed per unit time?'
 
-
 ```python
 variables, fluxes = (
     Simulator(lv()).simulate_time_course(time).get_result().unwrap_or_err()
@@ -105,7 +102,6 @@ Both populations oscillate with a fixed period. The predator peak always lags be
 ## Phase Portrait
 
 Instead of watching H and L evolve over time, we can plot one against the other. Each point in this **phase plane** represents the complete state of the system at one instant. Because the classical Lotka-Volterra model conserves a quantity analogous to energy, trajectories are **closed orbits** — the system returns exactly to its starting point every cycle.
-
 
 ```python
 fig_ph, ax = plt.subplots(figsize=(5, 5))

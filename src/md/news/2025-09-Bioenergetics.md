@@ -3,7 +3,7 @@ title: "CPBL at Perspectives in Bionenergetics 2025"
 description: "Members of the group attended the conference Perspectives in Bionenergtics 2025. Prof. Matuszyńska gave a lecture,Quang Huy Nguyen and Josha Ebeling presented their poster."
 categories:
   - conference
-date: '2025-09-30'
+date: "2025-09-30"
 author: "Josha Ebeling"
 ---
 

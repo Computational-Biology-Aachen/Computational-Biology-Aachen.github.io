@@ -3,12 +3,11 @@ title: "The Solow-Swan Model"
 description: "The Solow-Swan Model - Economic Growth as an ODE"
 categories:
   - teaching
-date: '2026-04-24'
+date: "2026-04-24"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
 ---
-
 
 # Economic Growth as an ODE — The Solow-Swan Model
 
@@ -35,14 +34,13 @@ dk/dt = s · k^alpha  −  (delta + n) · k
 | `delta`   | Depreciation rate of capital                 |
 | `n`       | Population (labour force) growth rate        |
 
-The **steady state** k* is where investment equals depreciation:
+The **steady state** k\* is where investment equals depreciation:
 
 ```
 k* = (s / (delta + n))^(1 / (1 - alpha))
 ```
 
-From any starting capital, the economy converges to k* — neither growing without limit nor collapsing to zero.
-
+From any starting capital, the economy converges to k\* — neither growing without limit nor collapsing to zero.
 
 ```python
 import numpy as np
@@ -85,7 +83,6 @@ def solow_swan() -> Model:
     )
 ```
 
-
 ```python
 # Compare convergence from different starting points
 k_star = (0.3 / (0.05 + 0.02)) ** (1 / (1 - 0.3))
@@ -119,7 +116,6 @@ All three trajectories converge to the same steady-state k* regardless of starti
 
 The steady state is most clearly visualised by plotting investment and depreciation against k. Their intersection is k*. Increasing the savings rate `s` lifts the investment curve and shifts k* to the right — more savings, more capital per worker in the long run.
 
-
 ```python
 k_range = np.linspace(0.1, 20, 500)
 depreciation = (0.05 + 0.02) * k_range
@@ -144,10 +140,10 @@ plt.tight_layout()
 
 ![Solow diagram](/tutorials/solow-swan-diagram.png)
 
-Each coloured curve is the investment schedule for a different savings rate. Where each curve crosses the depreciation line (black) is the corresponding steady state k*. Higher savings → higher k*, but with diminishing returns: doubling s does not double k*.
+Each coloured curve is the investment schedule for a different savings rate. Where each curve crosses the depreciation line (black) is the corresponding steady state k*. Higher savings → higher k*, but with diminishing returns: doubling s does not double k\*.
 
 ## What's Next
 
 - Add **technological progress** by replacing `k^alpha` with `A(t) · k^alpha` where A grows at rate g — the full Solow model.
-- Vary `delta` and `n` to see their effect on k* — a useful exercise for understanding why rich countries tend to have higher capital per worker.
+- Vary `delta` and `n` to see their effect on k\* — a useful exercise for understanding why rich countries tend to have higher capital per worker.
 - Up next: back to biochemistry with the **linear-chain Michaelis-Menten model**, which showcases mxlpy's ability to build models programmatically.

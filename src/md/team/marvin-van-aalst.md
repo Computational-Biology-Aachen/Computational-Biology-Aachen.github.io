@@ -20,7 +20,6 @@ With these tools I hope to build a much needed bridge between experimental biolo
 
 I'm always open to chat so feel free to contact me!
 
-
 ## Professional Career
 
 Since 09/2024: Postdoctoral Research Software Engineer, Computational Life Science, Department of Biology, RWTH Aachen

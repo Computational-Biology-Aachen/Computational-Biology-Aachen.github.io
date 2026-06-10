@@ -1,7 +1,7 @@
 ---
 title: "Welcome Quang Huy Nguyen"
 description: "We welcome Quang Huy Nguyen"
-date: '2023-06-20'
+date: "2023-06-20"
 categories: null
 published: true
 author: Anna Matuszyńska

@@ -153,7 +153,7 @@
     title="news"
   ></BoxHeadingMain>
 
-  {#each data.posts as post}
+  {#each data.posts as post (post.slug)}
     <Card format="full">
       <H2>{post.title}</H2>
       <Text>{post.description}</Text>

@@ -1,7 +1,7 @@
 ---
 title: "CPBL at the ISGSB 2022"
 description: "Members of the group attended the International Study Group for Systems Biology ISGSB 2022 and Prof. Matuszyńska gave an opening lecture"
-date: '2022-09-23'
+date: "2022-09-23"
 categories:
   - conference
 published: true

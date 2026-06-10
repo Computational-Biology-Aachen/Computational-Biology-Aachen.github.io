@@ -3,7 +3,7 @@ title: "Open Post-Doc position"
 description: ""
 categories:
   - Job
-date: '2022-01-24'
+date: "2022-01-24"
 author: "Anna Matuszyńska"
 published: true
 ---

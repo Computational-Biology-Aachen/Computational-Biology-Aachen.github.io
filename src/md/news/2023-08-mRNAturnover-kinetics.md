@@ -1,7 +1,7 @@
 ---
 title: "Publication 'mRNAturnover kinetics'"
 description: "Simple model to study the mRNA turnover kinetics"
-date: '2023-08-18'
+date: "2023-08-18"
 categories: null
 published: true
 author: Anna Matuszyńska
@@ -11,7 +11,6 @@ We are happy to share the results of the latest collaborative project that was p
 
 https://github.com/AnnaMatuszynska/mRNAturnoverkinetics
 
-https://www.pnas.org/doi/10.1073/pnas.2301731120 
-
+https://www.pnas.org/doi/10.1073/pnas.2301731120
 
 ![GFirst page of publication](/news/mrna-turnover.png)

@@ -9,13 +9,12 @@ orcid: "https://orcid.org/0000-0003-0882-6088"
 order: 5
 ---
 
-
 ## About me
 
 I bridge quantitative biology, mathematical modelling and machine learning (mechanistic learning), with collaborative research to uncover the universal principles that govern temporal adaptation in plants and photosynthetic bacteria (a preprint and Python package coming soon!).
 
 I am dedicated to making science inclusive and accessible. Highlights include developing an interactive simulation-based learning platform to teach photosynthesis through modelling and organizing international summer school in East Africa. By empowering others to integrate computational methods into their research I aim at creating sustainable knowledge hubs beyond my own scientific field.
- 
+
 I teach others how to integrate computational methods into their research using project-based approaches, a work recognized with the Department's Teaching Prize in 2022!
 
 ## Professional Career
@@ -50,7 +49,7 @@ I have published **16 peer reviewed articles** in top scientific journals with t
 
 [4] van Aalst, M., Ebenhöh, O. and **Matuszyńska, A.** Constructing and analysing dynamic models with modelbase v1.2.3: a software update. BMC Bioinformatics 22, 203 (2021). [doi: 10.1186/s12859-021-04122-7](https://doi.org/10.1186/s12859-021-04122-7)
 
-[5] **Matuszyńska, A.**, Heidari, S., Jahns, P., and Ebenhöh, O. (2016) A mathematical model of non-photochemical quenching to study short-termlight memory in plants. *Biochimica et Biophysica Acta*, 1857(12), [doi: 10.1016/j.bbabio.2016.09.003](10.1016/j.bbabio.2016.09.003) <span style="color:blue">My very first original research paper published during my PhD. I have developed a photosynthesis model, designed to test mechanistic hypotheses on how different acclimation components interact. Focusing on non-photochemical quenching and short-term light memory, it revealed how specific regulatory processes shape dynamic acclimation. Despite its simplicity, it remains
+[5] **Matuszyńska, A.**, Heidari, S., Jahns, P., and Ebenhöh, O. (2016) A mathematical model of non-photochemical quenching to study short-termlight memory in plants. _Biochimica et Biophysica Acta_, 1857(12), [doi: 10.1016/j.bbabio.2016.09.003](10.1016/j.bbabio.2016.09.003) <span style="color:blue">My very first original research paper published during my PhD. I have developed a photosynthesis model, designed to test mechanistic hypotheses on how different acclimation components interact. Focusing on non-photochemical quenching and short-term light memory, it revealed how specific regulatory processes shape dynamic acclimation. Despite its simplicity, it remains
 my most cited work, showing the value of targeted mechanistic modelling as a foundation for the more integrative approaches I pursue today.</span>.
 
 For full list please see [orcid](https://orcid.org/0000-0003-0882-6088).

@@ -1,7 +1,7 @@
 ---
 title: "Tag der Aachener Biologie und Biotechnologie"
 description: "Prof. Matuszyńska gives a talk at Tag der Aachener Biologie"
-date: '2021-11-12'
+date: "2021-11-12"
 categories:
   - teaching
   - outreach

@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-	let {
-		children
-	}: {
-		children: Snippet;
-	} = $props();
+  import type { Snippet } from "svelte";
+  let {
+    children,
+  }: {
+    children: Snippet;
+  } = $props();
 </script>
 
 <thead>
-	{@render children()}
+  {@render children()}
 </thead>
 
 <style>

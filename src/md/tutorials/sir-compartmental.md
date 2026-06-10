@@ -3,7 +3,7 @@ title: "From SIR to SEIR"
 description: "From SIR to SEIR - Building Epidemic Models with mxlpy"
 categories:
   - teaching
-date: '2026-04-23'
+date: "2026-04-23"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
@@ -11,7 +11,7 @@ published: true
 
 # Building Epidemic Models with mxlpy — From SIR to SEIR Without Starting Over
 
-Compartmental epidemic models are one of the oldest and most widely used tools in public health. The core idea is simple: divide a population into groups — *compartments* — and write down rules for how people move between them. Despite their simplicity, these models powered pandemic response decisions during COVID-19, influenza outbreaks, and many others.
+Compartmental epidemic models are one of the oldest and most widely used tools in public health. The core idea is simple: divide a population into groups — _compartments_ — and write down rules for how people move between them. Despite their simplicity, these models powered pandemic response decisions during COVID-19, influenza outbreaks, and many others.
 
 In this post we will build a family of these models using mxlpy. The point is not just to simulate an epidemic — it is to show how mxlpy lets you **start with a simple model and extend it incrementally**, without ever rewriting the core from scratch.
 
@@ -42,7 +42,6 @@ dR/dt =  gamma * I
 
 ### Building SIR in mxlpy
 
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -54,7 +53,6 @@ ASSETS.mkdir(parents=True, exist_ok=True)
 
 time = np.linspace(0, 200, 500)
 ```
-
 
 ```python
 def sir() -> Model:
@@ -84,7 +82,6 @@ A few things to note about the mxlpy API:
 - Rate functions come from `mxlpy.fns`. `mass_action_2s(k, s1, s2)` evaluates to `k * s1 * s2`, which gives us `beta * S * I`.
 
 ### Simulating and Plotting
-
 
 ```python
 variables, fluxes = (
@@ -122,7 +119,6 @@ Here `mu` is the disease-induced mortality rate.
 
 Here is the key insight: **we do not rewrite the SIR model**. We take the existing model and add what is new.
 
-
 ```python
 def sird() -> Model:
     return (
@@ -139,7 +135,6 @@ def sird() -> Model:
 ```
 
 Three lines extend a model that took twelve to write. The infection and recovery dynamics are inherited unchanged. This is the composability that mxlpy is designed for.
-
 
 ```python
 variables, fluxes = (
@@ -177,7 +172,6 @@ dR/dt =  gamma * I
 
 We go back to the clean SIR model and extend in a different direction.
 
-
 ```python
 def seir() -> Model:
     return (
@@ -201,7 +195,6 @@ def seir() -> Model:
 
 `.update_reaction()` changes only the stoichiometry of the existing infection reaction — the rate law (`beta * S * I`) is untouched. Exposed individuals then progress to infectious at rate `sigma`.
 
-
 ```python
 variables, fluxes = (
     Simulator(seir()).simulate_time_course(time).get_result().unwrap_or_err()
@@ -224,7 +217,6 @@ Compared to SIR, the SEIR epidemic peak is delayed and slightly smoothed out —
 ## Comparing All Three Side by Side
 
 One practical benefit of building models this way is that all three share the same interface. We can loop over them:
-
 
 ```python
 models = {"SIR": sir(), "SIRD": sird(), "SEIR": seir()}
@@ -264,5 +256,5 @@ This is the pattern mxlpy encourages throughout: define the simplest correct ver
 ## Next Steps
 
 - Try combining the extensions: build a **SEIRD** model (incubation + mortality) by extending `seir()`.
-- Vary `beta` and `gamma` to explore the basic reproduction number *R₀ = beta / gamma* and its role in determining whether an epidemic takes off.
+- Vary `beta` and `gamma` to explore the basic reproduction number _R₀ = beta / gamma_ and its role in determining whether an epidemic takes off.
 - In a future post we will fit these parameters to real outbreak data using mxlpy's parameter estimation tools.

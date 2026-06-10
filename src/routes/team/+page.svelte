@@ -38,7 +38,7 @@
     columns={3}
     gap="var(--space-8)"
   >
-    {#each members as { slug, name }}
+    {#each members as { slug, name } (slug)}
       <Person
         title={name}
         slug={slug}

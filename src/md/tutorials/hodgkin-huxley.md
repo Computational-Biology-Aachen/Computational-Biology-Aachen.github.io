@@ -3,7 +3,7 @@ title: "The Hodgkin-Huxley Model"
 description: "The Hodgkin-Huxley Model - Action Potentials from First Principles"
 categories:
   - teaching
-date: '2026-04-20'
+date: "2026-04-20"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
@@ -13,7 +13,7 @@ published: true
 
 In 1952, Alan Hodgkin and Andrew Huxley published a quantitative description of how the squid giant axon generates an action potential. Their model earned them the Nobel Prize in 1963 and remains the foundation of computational neuroscience today.
 
-The core insight is that the neuron membrane acts like a capacitor charged by ion currents through voltage-gated channels. The channels open and close in a voltage-dependent way, described by *gating variables* that follow their own ODEs. The result is a four-dimensional system that produces the characteristic spike shape of an action potential.
+The core insight is that the neuron membrane acts like a capacitor charged by ion currents through voltage-gated channels. The channels open and close in a voltage-dependent way, described by _gating variables_ that follow their own ODEs. The result is a four-dimensional system that produces the characteristic spike shape of an action potential.
 
 ## The Model
 
@@ -42,7 +42,6 @@ dx/dt = α_x(V) · (1 − x)  −  β_x(V) · x
 
 where `α_x` and `β_x` are empirical voltage-dependent rate constants fit by Hodgkin and Huxley to their voltage-clamp data.
 
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -58,7 +57,6 @@ time = np.linspace(0, 100, 10000)  # 100 ms
 ### Rate functions
 
 The `α` and `β` functions have singularities that we handle explicitly. mxlpy requires named functions (no lambdas), so we define them at module level.
-
 
 ```python
 # Hodgkin-Huxley alpha/beta functions
@@ -128,7 +126,6 @@ def n_inact(v, n):
     return _beta_n(v) * n
 ```
 
-
 ```python
 def hodgkin_huxley() -> Model:
     # Steady-state gating variables at resting potential
@@ -183,7 +180,6 @@ def hodgkin_huxley() -> Model:
 
 Each gating variable is split into two reactions: one that opens the gate (`act`) and one that closes it (`inact`). The net rate is their difference, which is exactly `dx/dt = α(V)·(1−x) − β(V)·x`.
 
-
 ```python
 variables, fluxes = (
     Simulator(hodgkin_huxley()).simulate_time_course(time).get_result().unwrap_or_err()
@@ -208,7 +204,6 @@ The shape of each action potential is determined by the relative timing of the t
 - **m** (Na⁺ activation): opens fast when V depolarises → drives the upstroke
 - **h** (Na⁺ inactivation): closes slowly after activation → terminates Na⁺ current
 - **n** (K⁺ activation): opens slowly → drives repolarisation and undershoot
-
 
 ```python
 fig_g, axes = plt.subplots(3, 1, figsize=(9, 6), sharex=True)
@@ -239,7 +234,3 @@ During each spike: `m` jumps up fast (Na⁺ influx, upstroke), `h` falls slowly 
 - Lower `I_ext` toward the firing threshold (~6.5 µA/cm²) to see the transition from silence to spiking.
 - Clamp `I_ext = 0` and give a brief current pulse — the model produces a single action potential, then returns to rest.
 - The Hodgkin-Huxley model is biophysically detailed but expensive to simulate. In the next post we look at the **FitzHugh-Nagumo** model: a two-variable reduction that captures the essential spike dynamics at a fraction of the complexity.
-
-
-
-

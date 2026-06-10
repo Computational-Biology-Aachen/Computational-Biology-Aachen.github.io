@@ -1,7 +1,7 @@
 ---
 title: "CRC MibiNet financed by the DFG"
 description: "The CRC 1535 MibiNet “Microbial networking – from organelles to cross-kingdom communities” recieved funding for the next four years"
-date: '2022-11-24'
+date: "2022-11-24"
 categories:
   - funding
 published: true

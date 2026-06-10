@@ -1,5 +1,4 @@
 <script lang="ts">
-  import * as config from "$lib/config";
   import {
     Card,
     H1,
@@ -39,7 +38,7 @@
   width="narrow"
   gap="large"
 >
-  {#each trimmedRows as post}
+  {#each trimmedRows as post (post.slug)}
     <Card format="full">
       <H2>{post.title}</H2>
       <Text>{post.description}</Text>

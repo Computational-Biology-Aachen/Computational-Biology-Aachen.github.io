@@ -3,7 +3,7 @@ title: "Talk at the Sony CSL Paris"
 description: ""
 categories:
   - conference
-date: '2022-02-01'
+date: "2022-02-01"
 author: "Anna Matuszyńska"
 published: true
 ---

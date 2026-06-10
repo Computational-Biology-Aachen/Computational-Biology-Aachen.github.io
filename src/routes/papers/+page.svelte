@@ -37,7 +37,7 @@
   width="narrow"
   gap="large"
 >
-  {#each json as { title, date, doi, authors, preprint }}
+  {#each json as { title, date, doi, authors, preprint } (doi)}
     <Publication
       title={title}
       format="full"

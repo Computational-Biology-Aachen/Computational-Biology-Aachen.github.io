@@ -3,12 +3,11 @@ title: "The FitzHugh-Nagumo Model"
 description: "The FitzHugh-Nagumo Model - Excitable Dynamics with mxlpy"
 categories:
   - teaching
-date: '2026-04-19'
+date: "2026-04-19"
 author: "Marvin van Aalst"
 layout: tutorials
 published: true
 ---
-
 
 # Excitable Dynamics with mxlpy — The FitzHugh-Nagumo Model
 
@@ -36,7 +35,6 @@ dw/dt = (v + a  −  b·w) / tau
 
 With `a = 0.7, b = 0.8, tau = 12.5, I_ext = 0.5`, the system oscillates continuously.
 With smaller `I_ext`, it is excitable: a perturbation triggers one spike before returning to rest.
-
 
 ```python
 import numpy as np
@@ -73,7 +71,6 @@ def fhn() -> Model:
 
 With `stoichiometry={'v': 1}`, mxlpy sets `dv/dt = rate × 1 = fhn_dv(v, w, I_ext)`. This works for any ODE right-hand side we can express as a named function — not just mass-action kinetics.
 
-
 ```python
 variables, fluxes = (
     Simulator(fhn()).simulate_time_course(time).get_result().unwrap_or_err()
@@ -98,7 +95,6 @@ The most illuminating view of a two-variable system is the **phase plane**: plot
 - **w-nullcline** (`dw/dt = 0`): `w = (v + a) / b` — straight line
 
 The intersection is the equilibrium. When it lies on the middle branch of the cubic (the unstable branch), the system has no stable fixed point and oscillates — a limit cycle.
-
 
 ```python
 v_range = np.linspace(-2.5, 2.5, 400)

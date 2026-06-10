@@ -3,7 +3,7 @@ title: "Siraz Kader starts his internship"
 description: "Siraz Kader starts his internship in data analysis"
 categories:
   - teaching
-date: '2021-05-30'
+date: "2021-05-30"
 author: "Anna Matuszyńska"
 published: true
 ---

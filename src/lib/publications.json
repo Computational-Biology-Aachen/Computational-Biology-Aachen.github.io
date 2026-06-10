@@ -1,178 +1,178 @@
 [
-    {
-        "title": "Assessing the redox state of the plastoquinone pool in algae and cyanobacteria via OJIP fluorescence: perspectives and limitations",
-        "date": "2025-08-05",
-        "doi": "https://doi.org/10.1101/2025.08.05.668659",
-        "authors": [
-            "Tomáš Zavřel",
-            "Anne-Christin Pohland",
-            "Tobias Pfenning",
-            "Anna Barbara Matuszyńska",
-            "Szilvia Z. Tóth",
-            "Gábor Bernát",
-            "Jan Červený"
-        ],
-        "preprint": true
-    },
-    {
-        "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
-        "date": "2025-06-04",
-        "doi": "https://doi.org/10.1093/plcell/koae101",
-        "authors": [
-            "Sarah Philipps",
-            "Tobias Pfennig",
-            "Elouën Corvest",
-            "Marvin van Aalst",
-            "Lisa Fürtauer",
-            "Anna Matuszyńska"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "MxlPy - Python Package for Mechanistic Learning in Life Science",
-        "date": "2025-05-10",
-        "doi": "https://doi.org/10.1101/2025.05.06.652335",
-        "authors": [
-            "Marvin van Aalst",
-            "Tim Nies",
-            "Tobias Pfennig",
-            "Anna Matuszy\u0144ska"
-        ],
-        "preprint": true
-    },
-    {
-        "title": "Hackathons as essential tools in an interdisciplinary biological training - report from trainings for Sub-saharan students",
-        "date": "2025-03-30",
-        "doi": "https://doi.org/10.1101/2025.03.27.645823",
-        "authors": [
-            "Marvin van Aalst",
-            "Tobias Pfennig",
-            "Faraimunashe Chirove",
-            "Marilyn Ronoh",
-            "Anna Matuszy\u0144ska"
-        ],
-        "preprint": true
-    },
-    {
-        "title": "Shedding light on blue-green photosynthesis: A wavelength-dependent mathematical model of photosynthesis in Synechocystis sp. PCC 6803",
-        "date": "2024-09-12",
-        "doi": "https://doi.org/10.1371/journal.pcbi.1012445",
-        "authors": [
-            "Tobias Pfennig",
-            "David Lea-Smith",
-            "Elena Kullmann",
-            "Tomáš Zavřel",
-            "Andreas Nakielski",
-            "Oliver Ebenhöh",
-            "Jan Červený",
-            "Gábor Bernát",
-            "Anna Barbara Matuszyńska "
-        ],
-        "preprint": false
-    },
-    {
-        "title": "A new era of synthetic biology—microbial community design",
-        "date": "2024-07-31",
-        "doi": "https://doi.org/10.1093/synbio/ysae011",
-        "authors": [
-            "Anna Matuszyńska",
-            "Oliver Ebenhöh",
-            "Matias D Zurbriggen",
-            "Daniel C Ducat",
-            "Ilka M Axmann"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity",
-        "date": "2025-03-28",
-        "doi": "https://doi.org/10.1126/sciadv.adt9287",
-        "authors": [
-            "Edward N. Smith",
-            "Marvin van Aalst",
-            "Andreas P. M. Weber",
-            "Oliver Ebenh\u00f6h",
-            "Matthias Heinemann"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
-        "date": "2024-05-31",
-        "doi": "http://dx.doi.org/10.1093/plcell/koae101",
-        "authors": [
-            "Sarah Philipps",
-            "Tobias Pfennig",
-            "Elou\u00ebn Corvest",
-            "Marvin van Aalst",
-            "Lisa F\u00fcrtauer",
-            "Anna Matuszy\u0144ska"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives",
-        "date": "2023-09-01",
-        "doi": "http://dx.doi.org/10.1016/j.molp.2023.08.017",
-        "authors": [
-            "Edward N. Smith",
-            "Marvin van Aalst",
-            "Tiina Tosens",
-            "\u00dclo Niinemets",
-            "Benjamin Stich",
-            "Tomas Morosinotto",
-            "Alessandro Alboresi",
-            "Tobias J. Erb",
-            "Paul A. G\u00f3mez-Coronado",
-            "Dimitri Tolleter",
-            "Giovanni Finazzi",
-            "Gilles Curien",
-            "Matthias Heinemann",
-            "Oliver Ebenh\u00f6h",
-            "Julian M. Hibberd",
-            "Urte Schl\u00fcter",
-            "Tianshu Sun",
-            "Andreas P.M. Weber"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
-        "date": "2023-06-20",
-        "doi": "http://dx.doi.org/10.1111/tpj.16352",
-        "authors": [
-            "Nima P. Saadat",
-            "Marvin van Aalst",
-            "Alejandro Brand",
-            "Oliver Ebenh\u00f6h",
-            "Alain Tissier",
-            "Anna B. Matuszy\u0144ska"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "What controls carbon sequestration in plants under which conditions?",
-        "date": "2023-04-21",
-        "doi": "https://doi.org/10.1101/2023.04.20.537672",
-        "authors": [
-            "Tim Nies",
-            "Marvin van Aalst",
-            "Nima Saadat",
-            "Josha Ebeling",
-            "Oliver Ebenh\u00f6h"
-        ],
-        "preprint": false
-    },
-    {
-        "title": "Building Mathematical Models of Biological Systems with modelbase",
-        "date": "2018-11-16",
-        "doi": "http://dx.doi.org/10.5334/jors.236",
-        "authors": [
-            "Oliver Ebenh\u00f6h",
-            "Marvin van Aalst",
-            "Nima Saadat",
-            "Anna B. Matuszy\u0144ska"
-        ],
-        "preprint": false
-    }
+  {
+    "title": "Assessing the redox state of the plastoquinone pool in algae and cyanobacteria via OJIP fluorescence: perspectives and limitations",
+    "date": "2025-08-05",
+    "doi": "https://doi.org/10.1101/2025.08.05.668659",
+    "authors": [
+      "Tomáš Zavřel",
+      "Anne-Christin Pohland",
+      "Tobias Pfenning",
+      "Anna Barbara Matuszyńska",
+      "Szilvia Z. Tóth",
+      "Gábor Bernát",
+      "Jan Červený"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
+    "date": "2025-06-04",
+    "doi": "https://doi.org/10.1093/plcell/koae101",
+    "authors": [
+      "Sarah Philipps",
+      "Tobias Pfennig",
+      "Elouën Corvest",
+      "Marvin van Aalst",
+      "Lisa Fürtauer",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "MxlPy - Python Package for Mechanistic Learning in Life Science",
+    "date": "2025-05-10",
+    "doi": "https://doi.org/10.1101/2025.05.06.652335",
+    "authors": [
+      "Marvin van Aalst",
+      "Tim Nies",
+      "Tobias Pfennig",
+      "Anna Matuszy\u0144ska"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Hackathons as essential tools in an interdisciplinary biological training - report from trainings for Sub-saharan students",
+    "date": "2025-03-30",
+    "doi": "https://doi.org/10.1101/2025.03.27.645823",
+    "authors": [
+      "Marvin van Aalst",
+      "Tobias Pfennig",
+      "Faraimunashe Chirove",
+      "Marilyn Ronoh",
+      "Anna Matuszy\u0144ska"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Shedding light on blue-green photosynthesis: A wavelength-dependent mathematical model of photosynthesis in Synechocystis sp. PCC 6803",
+    "date": "2024-09-12",
+    "doi": "https://doi.org/10.1371/journal.pcbi.1012445",
+    "authors": [
+      "Tobias Pfennig",
+      "David Lea-Smith",
+      "Elena Kullmann",
+      "Tomáš Zavřel",
+      "Andreas Nakielski",
+      "Oliver Ebenhöh",
+      "Jan Červený",
+      "Gábor Bernát",
+      "Anna Barbara Matuszyńska "
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A new era of synthetic biology—microbial community design",
+    "date": "2024-07-31",
+    "doi": "https://doi.org/10.1093/synbio/ysae011",
+    "authors": [
+      "Anna Matuszyńska",
+      "Oliver Ebenhöh",
+      "Matias D Zurbriggen",
+      "Daniel C Ducat",
+      "Ilka M Axmann"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity",
+    "date": "2025-03-28",
+    "doi": "https://doi.org/10.1126/sciadv.adt9287",
+    "authors": [
+      "Edward N. Smith",
+      "Marvin van Aalst",
+      "Andreas P. M. Weber",
+      "Oliver Ebenh\u00f6h",
+      "Matthias Heinemann"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
+    "date": "2024-05-31",
+    "doi": "http://dx.doi.org/10.1093/plcell/koae101",
+    "authors": [
+      "Sarah Philipps",
+      "Tobias Pfennig",
+      "Elou\u00ebn Corvest",
+      "Marvin van Aalst",
+      "Lisa F\u00fcrtauer",
+      "Anna Matuszy\u0144ska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives",
+    "date": "2023-09-01",
+    "doi": "http://dx.doi.org/10.1016/j.molp.2023.08.017",
+    "authors": [
+      "Edward N. Smith",
+      "Marvin van Aalst",
+      "Tiina Tosens",
+      "\u00dclo Niinemets",
+      "Benjamin Stich",
+      "Tomas Morosinotto",
+      "Alessandro Alboresi",
+      "Tobias J. Erb",
+      "Paul A. G\u00f3mez-Coronado",
+      "Dimitri Tolleter",
+      "Giovanni Finazzi",
+      "Gilles Curien",
+      "Matthias Heinemann",
+      "Oliver Ebenh\u00f6h",
+      "Julian M. Hibberd",
+      "Urte Schl\u00fcter",
+      "Tianshu Sun",
+      "Andreas P.M. Weber"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
+    "date": "2023-06-20",
+    "doi": "http://dx.doi.org/10.1111/tpj.16352",
+    "authors": [
+      "Nima P. Saadat",
+      "Marvin van Aalst",
+      "Alejandro Brand",
+      "Oliver Ebenh\u00f6h",
+      "Alain Tissier",
+      "Anna B. Matuszy\u0144ska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "What controls carbon sequestration in plants under which conditions?",
+    "date": "2023-04-21",
+    "doi": "https://doi.org/10.1101/2023.04.20.537672",
+    "authors": [
+      "Tim Nies",
+      "Marvin van Aalst",
+      "Nima Saadat",
+      "Josha Ebeling",
+      "Oliver Ebenh\u00f6h"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Building Mathematical Models of Biological Systems with modelbase",
+    "date": "2018-11-16",
+    "doi": "http://dx.doi.org/10.5334/jors.236",
+    "authors": [
+      "Oliver Ebenh\u00f6h",
+      "Marvin van Aalst",
+      "Nima Saadat",
+      "Anna B. Matuszy\u0144ska"
+    ],
+    "preprint": false
+  }
 ]

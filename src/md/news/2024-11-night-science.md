@@ -1,7 +1,7 @@
 ---
 title: "Night Science 2024 Recap"
-description:  "The annual nigth science took place and we gave an insight into our work as computational photo biology lab"
-date: '2024-11-09'
+description: "The annual nigth science took place and we gave an insight into our work as computational photo biology lab"
+date: "2024-11-09"
 categories:
   - teaching
 published: true
@@ -22,6 +22,7 @@ Thank you all for joining us, for your curiosity, and for your enthusiasm. We’
 Stay tuned for more events, and we can’t wait to see you again!
 
 ## Impressions
+
 ![Night Science with researchers](/news/nightscience2.jpeg)
 
 ![three men](/news/nightscience3.jpeg)

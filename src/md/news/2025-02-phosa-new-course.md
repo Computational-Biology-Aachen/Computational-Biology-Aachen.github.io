@@ -1,7 +1,7 @@
 ---
 title: "Good luck and new course: ‘Photosynthetic Systems in Architecture’"
-description:  "Exciting new courses are also waiting for you in the coming semester (summer semester 25), such as “Photosynthetic Systems in Architecture” (PhoSA)"
-date: '2025-02-05'
+description: "Exciting new courses are also waiting for you in the coming semester (summer semester 25), such as “Photosynthetic Systems in Architecture” (PhoSA)"
+date: "2025-02-05"
 categories:
   - teaching
 published: true

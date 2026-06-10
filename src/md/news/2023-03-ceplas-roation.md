@@ -1,7 +1,7 @@
 ---
 title: "CEPLAS rotations started"
 description: "The lab welcomed their first student the will be introduced to compoutational methods as part of CEPLAS"
-date: '2023-03-13'
+date: "2023-03-13"
 categories:
   - teaching
 published: true

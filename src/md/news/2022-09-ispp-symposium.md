@@ -1,7 +1,7 @@
 ---
 title: Our Lab at the 17th International Symposium on Phototrophic Prokaryotes (ISPP2022)
-description:  "Our Lab members, Anna and Tobias, has joined the 17th International Symposium on Phototrophic Prokaryotes (ISPP2022) organised in Liverpool."
-date: '2022-09-23'
+description: "Our Lab members, Anna and Tobias, has joined the 17th International Symposium on Phototrophic Prokaryotes (ISPP2022) organised in Liverpool."
+date: "2022-09-23"
 categories:
   - conference
 published: true

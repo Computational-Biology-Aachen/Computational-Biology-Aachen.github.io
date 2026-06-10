@@ -3,7 +3,7 @@ title: "Tobias Pfennig at Planter's Punch"
 description: "Tobias shows his work"
 categories:
   - teaching
-date: '2023-03-17'
+date: "2023-03-17"
 author: "Anna Matuszyńska"
 published: true
 ---
