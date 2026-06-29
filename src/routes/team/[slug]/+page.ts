@@ -5,9 +5,9 @@ export async function load({ params }) {
     const member = await import(`../../../md/team/${params.slug}.md`);
 
     return {
-      content: member.default,
+      content: member.default as string,
       slug: params.slug,
-      meta: member.metadata,
+      meta: member.metadata as string,
     };
   } catch {
     error(404, `Could not find ${params.slug}`);
