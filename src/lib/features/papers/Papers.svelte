@@ -38,7 +38,7 @@
   gap="large"
   pad="lg"
   styleVars={{
-    yPad: "3rem",
+    innerYPad: "3rem",
     innerGap: "3rem",
   }}
 >
