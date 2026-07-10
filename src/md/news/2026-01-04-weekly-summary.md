@@ -4,7 +4,7 @@ description: "News and citations from the week of December 29 – January 4, 202
 categories:
   - news
 date: "2026-01-04"
-author: "CPBL"
+author: "Marvin van Aalst"
 published: true
 ---
 

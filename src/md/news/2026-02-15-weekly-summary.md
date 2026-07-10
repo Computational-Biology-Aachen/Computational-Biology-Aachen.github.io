@@ -4,7 +4,7 @@ description: "News and citations from the week of February 9–15, 2026"
 categories:
   - news
 date: "2026-02-15"
-author: "CPBL"
+author: "Marvin van Aalst"
 published: true
 ---
 
