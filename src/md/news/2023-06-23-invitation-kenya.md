@@ -2,7 +2,8 @@
 title: "Invitation to Kenya"
 description: "Prof. Matuszyńska and her team have been invited to Kenya"
 date: "2023-06-23"
-categories: null
+categories:
+  - conference
 published: true
 author: Anna Matuszyńska
 ---
