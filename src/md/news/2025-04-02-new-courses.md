@@ -1,8 +1,8 @@
 ---
 title: "New Semester (S25) - new courses"
-description: "The Summer Semester of 2025 is here and the junior professorship for computational biology offeres new courses and lectures
+description: "The Summer Semester of 2025 is here and the junior professorship for computational biology offeres new courses and lectures"
 date: '2025-04-02'
-categories: 
+categories:
 - teaching
 published: true
 author: "Anna Matuszyńska"
