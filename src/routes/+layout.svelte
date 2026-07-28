@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { beforeNavigate } from "$app/navigation";
+  import { updated } from "$app/state";
   import favicon from "$lib/assets/cpbl-favicon.svg";
   import * as config from "$lib/config";
   import {
@@ -11,6 +13,14 @@
   import "../app.css";
 
   let { children } = $props();
+
+  // A new deploy was detected while this tab was open: force a full reload on
+  // the next navigation instead of client-side routing into a stale bundle.
+  beforeNavigate(({ willUnload, to }) => {
+    if (updated.current && !willUnload && to?.url) {
+      location.href = to.url.href;
+    }
+  });
 </script>
 
 <!-- SEO -->
