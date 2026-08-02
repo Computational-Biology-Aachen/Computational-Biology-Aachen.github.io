@@ -50,5 +50,8 @@
 <Section variant="light">
   <H2>Where we come from</H2>
   <Text>Celebrating our diverse backgrounds</Text>
-  <Image src={imgImport}></Image>
+  <Image
+    src={imgImport}
+    alt="World map highlighting the countries our team members come from"
+  ></Image>
 </Section>

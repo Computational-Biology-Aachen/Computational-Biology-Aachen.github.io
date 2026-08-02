@@ -88,9 +88,9 @@
   width="narrow"
 >
   <hgroup>
-    <h1>The Matuszyńska Lab</h1>
-    <h1>Computational Biology</h1>
-    <h1>RWTH Aachen</h1>
+    <h1 class="hero-line">The Matuszyńska Lab</h1>
+    <p class="hero-line">Computational Biology</p>
+    <p class="hero-line">RWTH Aachen</p>
   </hgroup>
 </HeroGradient>
 
@@ -132,7 +132,10 @@
     title="team"
   ></BoxHeadingMain>
   <Link href="/team">
-    <Image src={groupImg} />
+    <Image
+      src={groupImg}
+      alt="Group photo of the Matuszyńska Lab team"
+    />
   </Link>
 
   <Text>
@@ -338,7 +341,7 @@
 
 <style>
   hgroup {
-    h1 {
+    .hero-line {
       margin: var(--space-1) 0;
       color: white;
       font-weight: 400;
@@ -347,12 +350,12 @@
       letter-spacing: -2%;
     }
     @media screen and (min-width: 800px) {
-      h1 {
+      .hero-line {
         font-size: 2.5rem;
       }
     }
     @media screen and (min-width: 1385px) {
-      h1 {
+      .hero-line {
         font-size: 3rem;
       }
     }
