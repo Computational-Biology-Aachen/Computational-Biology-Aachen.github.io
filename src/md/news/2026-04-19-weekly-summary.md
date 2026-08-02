@@ -18,4 +18,4 @@ Here's a look at what's been happening in the lab this week:
 
 This week brought 1 new citation, underscoring the steady, ongoing relevance of our published work:
 
-- ["NAViFluX: a visualization‑centric platform for interactive analysis, refinement and design of genome‑scale metabolic networks"](https://doi.org/10.1093/bioinformatics/btag191) - Abhishek Subramanian et al. (*Bioinformatics*) - citing our "COBREXA.jl: constraint-based reconstruction and exascale analysis"
+- ["NAViFluX: a visualization‑centric platform for interactive analysis, refinement and design of genome‑scale metabolic networks"](https://doi.org/10.1093/bioinformatics/btag191) - Abhishek Subramanian et al. (_Bioinformatics_) - citing our "COBREXA.jl: constraint-based reconstruction and exascale analysis"

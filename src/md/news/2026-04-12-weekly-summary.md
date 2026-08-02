@@ -12,4 +12,4 @@ published: true
 
 This week, 1 paper referenced our work, a welcome reminder that our contributions remain relevant to the field:
 
-- ["Engineering synthetic microbial communities in the crop rhizosphere to advance agricultural systems"](https://doi.org/10.1016/j.apsoil.2026.107003) - Jiayuan Wang et al. (*Applied Soil Ecology*) - citing our "A new era of synthetic biology—microbial community design"
+- ["Engineering synthetic microbial communities in the crop rhizosphere to advance agricultural systems"](https://doi.org/10.1016/j.apsoil.2026.107003) - Jiayuan Wang et al. (_Applied Soil Ecology_) - citing our "A new era of synthetic biology—microbial community design"

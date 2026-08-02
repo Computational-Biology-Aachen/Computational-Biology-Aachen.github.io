@@ -12,4 +12,4 @@ published: true
 
 This week, 1 paper referenced our work, a welcome reminder that our contributions remain relevant to the field:
 
-- ["Breeding Smarter: Artificial Intelligence and Machine Learning Tools in Modern Breeding—A Review"](https://doi.org/10.3390/agronomy16010137) - Ana Luísa Garcia-Oliveira et al. (*Agronomy*) - citing our "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives"
+- ["Breeding Smarter: Artificial Intelligence and Machine Learning Tools in Modern Breeding—A Review"](https://doi.org/10.3390/agronomy16010137) - Ana Luísa Garcia-Oliveira et al. (_Agronomy_) - citing our "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives"

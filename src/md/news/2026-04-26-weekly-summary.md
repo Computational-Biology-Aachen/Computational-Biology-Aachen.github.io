@@ -18,5 +18,5 @@ This week's lab activities are summarized in 1 article below:
 
 This week, 2 papers referenced our work, a welcome reminder that our contributions remain relevant to the field:
 
-- ["Navigating complexity: key considerations for studying fungal-bacterial interactions"](https://doi.org/10.1128/msystems.01728-25) - Gaëtan Martin et al. (*mSystems*) - citing our "Microbial markets: socio-economic perspective in studying microbial communities"
-- ["<scp>NPF2</scp> is involved in intracellular <scp>pH</scp> regulation and ion balance in the diatom <i>Phaeodactylum tricornutum</i>"](https://doi.org/10.1111/nph.71169) - Anna Santin et al. (*New Phytologist*) - citing our "Impaired photoprotection in <i>Phaeodactylum tricornutum</i> KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation"
+- ["Navigating complexity: key considerations for studying fungal-bacterial interactions"](https://doi.org/10.1128/msystems.01728-25) - Gaëtan Martin et al. (_mSystems_) - citing our "Microbial markets: socio-economic perspective in studying microbial communities"
+- ["<scp>NPF2</scp> is involved in intracellular <scp>pH</scp> regulation and ion balance in the diatom <i>Phaeodactylum tricornutum</i>"](https://doi.org/10.1111/nph.71169) - Anna Santin et al. (_New Phytologist_) - citing our "Impaired photoprotection in <i>Phaeodactylum tricornutum</i> KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation"

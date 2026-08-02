@@ -1,9 +1,29 @@
 repos:
   - repo: local
     hooks:
+      - id: image-budget
+        name: Enforce image size/dimension budget
+        entry: node scripts/check-image-budget.mjs
+        language: system
+        files: \.(png|jpe?g|gif|webp|avif)$
+        stages: [pre-commit]
+      - id: duplicate-assets
+        name: Check for byte-identical duplicate images
+        entry: node scripts/check-duplicate-assets.mjs
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
       - id: build
         name: Check whether the build succeeds
         entry: npm run build
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
+      - id: chunk-budget
+        name: Enforce client JS chunk size budget
+        entry: node scripts/check-chunk-budget.mjs
         language: system
         pass_filenames: false
         always_run: true

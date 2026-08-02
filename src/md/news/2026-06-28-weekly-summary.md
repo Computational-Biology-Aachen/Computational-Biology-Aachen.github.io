@@ -19,4 +19,4 @@ Here's what's new from the lab this week, in 2 articles:
 
 This week saw 1 citation, a modest confirmation that our work continues to inform others' research:
 
-- ["A Proof-of-Concept Greenhouse Lighting Control System for Lettuce Using a Real-Time Chlorophyll Fluorescence Biofeedback"](https://doi.org/10.3390/agriengineering8070263) - Suyun Nam and Rhuanito Soranz Ferrarezi (*AgriEngineering*) - citing our "A mathematical model of non-photochemical quenching to study short-term light memory in plants"
+- ["A Proof-of-Concept Greenhouse Lighting Control System for Lettuce Using a Real-Time Chlorophyll Fluorescence Biofeedback"](https://doi.org/10.3390/agriengineering8070263) - Suyun Nam and Rhuanito Soranz Ferrarezi (_AgriEngineering_) - citing our "A mathematical model of non-photochemical quenching to study short-term light memory in plants"

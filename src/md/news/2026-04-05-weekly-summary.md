@@ -18,6 +18,6 @@ Plenty to report from the lab this week - 1 article below:
 
 This week saw 3 citations, a modest confirmation that our work continues to inform others' research:
 
-- ["Recent advances and challenges in the biomanufacturing of L-homoserine as a versatile C4 platform chemical"](https://doi.org/10.1016/j.biotechadv.2026.108880) - Z C Liu et al. (*Biotechnology Advances*) - citing our "A new era of synthetic biology—microbial community design"
-- ["The potential of wheat spatial omics"](https://doi.org/10.1038/s41588-026-02542-w) - Xiao-Yuan Tao et al. (*Nature Genetics*) - citing our "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives"
-- ["Ultrafiltration of seawater to enhance microalgae cultivation: An industrial scale study"](https://doi.org/10.1016/j.seppur.2026.137875) - Stacy Ragueneau et al. (*Separation and Purification Technology*) - citing our "Impaired photoprotection in <i>Phaeodactylum tricornutum</i> KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation"
+- ["Recent advances and challenges in the biomanufacturing of L-homoserine as a versatile C4 platform chemical"](https://doi.org/10.1016/j.biotechadv.2026.108880) - Z C Liu et al. (_Biotechnology Advances_) - citing our "A new era of synthetic biology—microbial community design"
+- ["The potential of wheat spatial omics"](https://doi.org/10.1038/s41588-026-02542-w) - Xiao-Yuan Tao et al. (_Nature Genetics_) - citing our "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives"
+- ["Ultrafiltration of seawater to enhance microalgae cultivation: An industrial scale study"](https://doi.org/10.1016/j.seppur.2026.137875) - Stacy Ragueneau et al. (_Separation and Purification Technology_) - citing our "Impaired photoprotection in <i>Phaeodactylum tricornutum</i> KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation"
