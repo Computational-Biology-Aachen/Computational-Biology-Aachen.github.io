@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Install Node.js
         uses: actions/setup-node@v6
@@ -27,7 +29,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: lint
+        run: npm run lint
+
+      - name: check for byte-identical duplicate images
+        run: node scripts/check-duplicate-assets.mjs
+
+      - name: enforce image size/dimension budget on changed files
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- '*.png' '*.jpg' '*.jpeg' '*.webp' '*.avif' '*.gif')
+          if [ -n "$changed" ]; then
+            node scripts/check-image-budget.mjs $changed
+          fi
+
       - name: build
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
         run: npm run build
+
+      - name: enforce client JS chunk size budget
+        run: node scripts/check-chunk-budget.mjs

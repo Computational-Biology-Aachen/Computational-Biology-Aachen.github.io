@@ -27,6 +27,10 @@ export default ts.config(
       // Markdown is rendered to trusted HTML via mdsvex, so {@html} is a
       // deliberate part of the content pipeline.
       "svelte/no-at-html-tags": "off",
+      // Not enabled by svelte.configs.recommended - surfaces the Svelte
+      // compiler's own warnings (including a11y checks like missing alt
+      // text) as lint errors instead of easy-to-miss build output.
+      "svelte/valid-compile": ["error", { ignoreWarnings: false }],
       // allow intentionally-unused placeholder args/vars when prefixed with "_"
       "@typescript-eslint/no-unused-vars": [
         "error",
