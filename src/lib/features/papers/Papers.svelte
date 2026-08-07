@@ -43,16 +43,25 @@
   }}
 >
   {#each json as { title, date, doi, authors, preprint } (doi)}
-    <Publication
-      title={title}
-      format="full"
-      img={preprint ? biorxivImg : null}
-    >
-      <Text>
-        Published {date}, read at <Link href={doi}>doi</Link>. Authored by {authors.join(
-          ", ",
-        )}
-      </Text>
-    </Publication>
+    <a href={doi} target="_blank" class="unstyled-link">
+      <Publication
+        title={title}
+        format="full"
+        img={preprint ? biorxivImg : null}
+      >
+        <Text>
+          Published {date}, read at <Link href={doi}>doi</Link>. Authored by {authors.join(
+            ", ",
+          )}
+        </Text>
+      </Publication>
+    </a>
   {/each}
 </Section>
+
+<style>
+  .unstyled-link {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
