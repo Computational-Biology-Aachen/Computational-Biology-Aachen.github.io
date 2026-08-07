@@ -41,11 +41,13 @@
   gap="large"
 >
   {#each trimmedRows as post (post.slug)}
+  <a href="/news/{post.slug}" class="unstyled-link">
     <Card format="full">
       <H2>{post.title}</H2>
       <Text>{post.description}</Text>
       <Link href="/news/{post.slug}">Read on</Link>
     </Card>
+  </a>
   {/each}
   <div class="pagination">
     <button
@@ -125,5 +127,10 @@
     cursor: not-allowed;
     border: 1px solid var(--color-text);
     background-color: var(--color-text);
+  }
+
+  .unstyled-link {
+    text-decoration: none;
+    color: inherit;
   }
 </style>
