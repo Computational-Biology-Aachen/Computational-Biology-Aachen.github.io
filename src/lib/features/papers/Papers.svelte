@@ -43,7 +43,12 @@
   }}
 >
   {#each json as { title, date, doi, authors, preprint } (doi)}
-    <a href={doi} target="_blank" class="unstyled-link">
+    <a
+      href={doi}
+      target="_blank"
+      rel="external"
+      class="unstyled-link"
+    >
       <Publication
         title={title}
         format="full"
@@ -61,7 +66,7 @@
 
 <style>
   .unstyled-link {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 </style>

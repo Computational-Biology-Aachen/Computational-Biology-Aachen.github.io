@@ -26,6 +26,7 @@
     "image-size": "^2.0.2",
     "mdsvex": ">=0.12.7",
     "prettier": ">=3.9.5",
+    "prettier-plugin-css-order": ">=2.2.0",
     "prettier-plugin-svelte": ">=4.1.1",
     "prettier-plugin-tailwindcss": ">=0.8.1",
     "svelte": ">=5.56.8",
@@ -46,8 +47,6 @@
   },
   "overrides": {
     "cookie": "^1.1.1",
-    "eslint": ">=10.0.0",
-    "ajv": ">=8.18",
-    "minimatch": ">=10.2"
+    "eslint": ">=10.0.0"
   }
 }
