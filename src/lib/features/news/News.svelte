@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import type { Post } from "$lib/types";
   import {
     Card,
@@ -41,13 +42,16 @@
   gap="large"
 >
   {#each trimmedRows as post (post.slug)}
-  <a href="/news/{post.slug}" class="unstyled-link">
-    <Card format="full">
-      <H2>{post.title}</H2>
-      <Text>{post.description}</Text>
-      <Link href="/news/{post.slug}">Read on</Link>
-    </Card>
-  </a>
+    <a
+      href={resolve("/news/[slug]", { slug: post.slug })}
+      class="unstyled-link"
+    >
+      <Card format="full">
+        <H2>{post.title}</H2>
+        <Text>{post.description}</Text>
+        <Link href="/news/{post.slug}">Read on</Link>
+      </Card>
+    </a>
   {/each}
   <div class="pagination">
     <button
@@ -130,7 +134,7 @@
   }
 
   .unstyled-link {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 </style>

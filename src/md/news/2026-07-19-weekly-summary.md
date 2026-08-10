@@ -12,4 +12,4 @@ published: true
 
 This week, 1 paper referenced our work, a welcome reminder that our contributions remain relevant to the field:
 
-- ["Systems approaches for optimizing CO2 fixation pathways"](https://doi.org/10.1016/j.copbio.2026.103551) - Axel Knave et al. (*Current Opinion in Biotechnology*) - citing our "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity"
+- ["Systems approaches for optimizing CO2 fixation pathways"](https://doi.org/10.1016/j.copbio.2026.103551) - Axel Knave et al. (_Current Opinion in Biotechnology_) - citing our "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity"
