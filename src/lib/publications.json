@@ -1,5 +1,34 @@
 [
   {
+    "title": "Chilling Nights Do Not Cause Starch Over-Accumulation and Trigger a Shift in Carbon Partitioning via SPS Toward Sucrose in Arabidopsis - Differing from Acclimation to Permanent Cold",
+    "date": "2026-08-03",
+    "doi": "https://doi.org/10.64898/2026.07.31.741842",
+    "authors": [
+      "Christina Bonn",
+      "Oliver Giesbrecht",
+      "Angelina Jordine",
+      "Mona Becker",
+      "Sofie Jennings",
+      "Marvin van Aalst",
+      "Joost T. van Dongen",
+      "Anna Matuszyńska",
+      "Lisa Fürtauer"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Cooperation, privatization and cheating in microbial exoenzyme synthesis: theoretical analysis in view of biotechnological applications",
+    "date": "2026-07-29",
+    "doi": "https://doi.org/10.1098/rsob.250484",
+    "authors": [
+      "Tanvir Hassan",
+      "Shalu Dwivedi",
+      "Stefan Schuster",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
     "title": "From Field Photosynthesis to Genetic Architecture: Insights from the First Dedicated Photosynthesis Hackathon",
     "date": "2026-07-28",
     "doi": "https://doi.org/10.64898/2026.07.24.740625",
@@ -52,17 +81,141 @@
     "date": "2026-07-26",
     "doi": "https://doi.org/10.64898/2026.07.22.740007",
     "authors": [
-      "Elouen Corvest",
+      "Elouën Corvest",
       "Marvin van Aalst",
       "Tim Nies",
       "Quang Huy Nguyen",
-      "Jusha Ebeling",
+      "Josha Ebeling",
       "Maja Strauch",
-      "El Hadji Malick Cisse",
+      "El-Hadji Malick Cisse",
       "Tanvir Hassan",
       "Anna Matuszyńska"
     ],
     "preprint": true
+  },
+  {
+    "title": "Engineering principles in plant metabolism: integrating control, mechanics, and transport under dynamic environments",
+    "date": "2026-07-21",
+    "doi": "https://doi.org/10.1093/plphys/kiag535",
+    "authors": [
+      "Tim Nies",
+      "Josha Ebeling",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Context-dependent siderophore exploitability shapes microbial community structure",
+    "date": "2026-07-13",
+    "doi": "https://doi.org/10.60534/b6rne-tnd39",
+    "authors": [
+      "A. Krüger",
+      "Sanga Paik",
+      "Michelle Bund",
+      "Matthias Pesch",
+      "Stephan Krueger",
+      "Benita Lückel",
+      "Athanasios P. Papadopoulos",
+      "Johanna Wiechert",
+      "Tanvir Hassan",
+      "Ulrike Weber",
+      "Romain Allelan",
+      "Sander H. J. Smits",
+      "Michael Bott",
+      "Akos Kovacs",
+      "Philipp Westhoff",
+      "Anna Matuszyńska",
+      "Dietrich Kohlheyer",
+      "Thomas Drepper",
+      "Julia Frunzke"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Fluorescence as an inverse problem: Diagnosing PETC–CBB limitations in dynamic environments",
+    "date": "2026-07-09",
+    "doi": "https://doi.org/10.1016/j.molp.2026.07.006",
+    "authors": [
+      "Tim Nies",
+      "El-Hadji Malick Cisse",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Web-based collaborative model development in interdisciplinary consortia: Design principles and practical guidance",
+    "date": "2026-06-23",
+    "doi": "https://doi.org/10.1371/journal.pbio.3003825",
+    "authors": [
+      "Marvin van Aalst",
+      "Aliénor Lahlou",
+      "Tanvir Hassan",
+      "William Gaultier",
+      "David Colliaux",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Disentangling the sucrose metabolism of the corn smut Ustilago maydis reveals unexpected complexity",
+    "date": "2026-06-11",
+    "doi": "https://doi.org/10.64898/2026.06.11.731450",
+    "authors": [
+      "Tom Berwanger",
+      "Ali Khoshouei",
+      "Heba Yehia",
+      "Joana Charlot Hasenklever",
+      "Tanvir Hassan",
+      "Anna Matuszyńska",
+      "Jörg Kämper",
+      "Khaled A. Selim",
+      "Florian Altegoer",
+      "Kerstin Schipper"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Web-based collaborative model development in interdisciplinary consortia: design principles and practical guidance. Technical Supportive Information",
+    "date": "2026-02-20",
+    "doi": "https://doi.org/10.5281/zenodo.18715170",
+    "authors": [
+      "Aliénor Lahlou",
+      "Marvin van Aalst",
+      "Tanvir Hassan",
+      "William Gaultier",
+      "David Colliaux",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Estimating the redox state of the plastoquinone pool in algae and cyanobacteria via OJIP fluorescence: perspectives and limitations",
+    "date": "2026-01-19",
+    "doi": "https://doi.org/10.1007/s11120-025-01194-x",
+    "authors": [
+      "Tomáš Zavřel",
+      "Anne-Christin Pohland",
+      "Tobias Pfennig",
+      "Anna Matuszyńska",
+      "Szilvia Z. Tóth",
+      "Gábor Bernát",
+      "Jan Červený"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Window-integrated photobioreactors: a proof-of-concept for green building retrofitting",
+    "date": "2026-01-01",
+    "doi": "https://doi.org/10.24406/publica-9397",
+    "authors": [
+      "Frederic Radzio",
+      "Tim Nies",
+      "Lisa Fürtauer",
+      "Lars Lauterbach",
+      "Anna Matuszyńska",
+      ":unav"
+    ],
+    "preprint": false
   },
   {
     "title": "Assessing the redox state of the plastoquinone pool in algae and cyanobacteria via OJIP fluorescence: perspectives and limitations",
@@ -80,20 +233,6 @@
     "preprint": true
   },
   {
-    "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
-    "date": "2025-06-04",
-    "doi": "https://doi.org/10.1093/plcell/koae101",
-    "authors": [
-      "Sarah Philipps",
-      "Tobias Pfennig",
-      "Elouën Corvest",
-      "Marvin van Aalst",
-      "Lisa Fürtauer",
-      "Anna Matuszyńska"
-    ],
-    "preprint": false
-  },
-  {
     "title": "MxlPy - Python Package for Mechanistic Learning in Life Science",
     "date": "2025-05-10",
     "doi": "https://doi.org/10.1101/2025.05.06.652335",
@@ -101,7 +240,7 @@
       "Marvin van Aalst",
       "Tim Nies",
       "Tobias Pfennig",
-      "Anna Matuszy\u0144ska"
+      "Anna Matuszyńska"
     ],
     "preprint": true
   },
@@ -114,39 +253,9 @@
       "Tobias Pfennig",
       "Faraimunashe Chirove",
       "Marilyn Ronoh",
-      "Anna Matuszy\u0144ska"
+      "Anna Matuszyńska"
     ],
     "preprint": true
-  },
-  {
-    "title": "Shedding light on blue-green photosynthesis: A wavelength-dependent mathematical model of photosynthesis in Synechocystis sp. PCC 6803",
-    "date": "2024-09-12",
-    "doi": "https://doi.org/10.1371/journal.pcbi.1012445",
-    "authors": [
-      "Tobias Pfennig",
-      "David Lea-Smith",
-      "Elena Kullmann",
-      "Tomáš Zavřel",
-      "Andreas Nakielski",
-      "Oliver Ebenhöh",
-      "Jan Červený",
-      "Gábor Bernát",
-      "Anna Barbara Matuszyńska "
-    ],
-    "preprint": false
-  },
-  {
-    "title": "A new era of synthetic biology—microbial community design",
-    "date": "2024-07-31",
-    "doi": "https://doi.org/10.1093/synbio/ysae011",
-    "authors": [
-      "Anna Matuszyńska",
-      "Oliver Ebenhöh",
-      "Matias D Zurbriggen",
-      "Daniel C Ducat",
-      "Ilka M Axmann"
-    ],
-    "preprint": false
   },
   {
     "title": "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity",
@@ -156,22 +265,124 @@
       "Edward N. Smith",
       "Marvin van Aalst",
       "Andreas P. M. Weber",
-      "Oliver Ebenh\u00f6h",
+      "Oliver Ebenhöh",
       "Matthias Heinemann"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Photosynthetic Systems in Architecture (PhoSA): a design|build|research approach for teaching",
+    "date": "2025-01-01",
+    "doi": "",
+    "authors": [
+      "Axel Timpe",
+      "Harald Lesan",
+      "Anna Matuszyńska",
+      "Tim Nies",
+      "Yuxia Luo",
+      "Lailly Ster Vaz de Miranda"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Assembly and Quantification of Co-Cultures Combining Heterotrophic Yeast with Phototrophic Sugar-Secreting Cyanobacteria",
+    "date": "2024-12-27",
+    "doi": "https://doi.org/10.3791/67311",
+    "authors": [
+      "Dennis Hasenklever",
+      "Joana Charlot Pohlentz",
+      "Tom Berwanger",
+      "Emmanuel J. Kokarakis",
+      "Tanvir Hassan",
+      "Kerstin Schipper",
+      "Anna Matuszyńska",
+      "Ilka M. Axmann",
+      "Daniel C. Ducat"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "MxlPy—Python package for mechanistic learning and hybrid modelling in life science",
+    "date": "2024-12-26",
+    "doi": "https://doi.org/10.1093/bioadv/vbaf294",
+    "authors": [
+      "Marvin van Aalst",
+      "Tim Nies",
+      "Tobias Pfennig",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Shedding light on blue-green photosynthesis: A wavelength-dependent mathematical model of photosynthesis in Synechocystis sp. PCC 6803",
+    "date": "2024-09-12",
+    "doi": "https://doi.org/10.1371/journal.pcbi.1012445",
+    "authors": [
+      "Tobias Pfennig",
+      "Elena Kullmann",
+      "Tomáš Zavřel",
+      "Andreas Nakielski",
+      "Oliver Ebenhöh",
+      "Jan Červený",
+      "Gábor Bernát",
+      "Anna Matuszyńska"
     ],
     "preprint": false
   },
   {
     "title": "Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis",
     "date": "2024-05-31",
-    "doi": "http://dx.doi.org/10.1093/plcell/koae101",
+    "doi": "https://doi.org/10.1093/plcell/koae101",
     "authors": [
       "Sarah Philipps",
       "Tobias Pfennig",
-      "Elou\u00ebn Corvest",
+      "Elouën Corvest",
       "Marvin van Aalst",
-      "Lisa F\u00fcrtauer",
-      "Anna Matuszy\u0144ska"
+      "Lisa Fürtauer",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A new era of synthetic biology—microbial community design",
+    "date": "2024-01-01",
+    "doi": "https://doi.org/10.1093/synbio/ysae011",
+    "authors": [
+      "Anna Matuszyńska",
+      "Oliver Ebenhöh",
+      "Matías D. Zurbriggen",
+      "Daniel C. Ducat",
+      "Ilka M. Axmann"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Microbial markets: socio-economic perspective in studying microbial communities",
+    "date": "2024-01-01",
+    "doi": "https://doi.org/10.1093/femsml/uqae016",
+    "authors": [
+      "F. F. M. Mostafa",
+      "Aileen Krüger",
+      "Tim Nies",
+      "Julia Frunzke",
+      "Kerstin Schipper",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Synechocystis sp. PCC 6803 Photosynthesis under Different Light Colours - In Silico Analysis",
+    "date": "2024-01-01",
+    "doi": "",
+    "authors": [
+      "Tobias Pfennig",
+      "Elena Kullmann",
+      "Gábor Bernát",
+      "Jan Cervený",
+      "Oliver Ebenhöh",
+      "Tomáš Zavřel",
+      "Anna Matuszyńska",
+      "Andreas Nakielski"
     ],
     "preprint": false
   },
@@ -183,35 +394,50 @@
       "Edward N. Smith",
       "Marvin van Aalst",
       "Tiina Tosens",
-      "\u00dclo Niinemets",
+      "Ülo Niinemets",
       "Benjamin Stich",
       "Tomas Morosinotto",
       "Alessandro Alboresi",
       "Tobias J. Erb",
-      "Paul A. G\u00f3mez-Coronado",
+      "Paul A. Gómez-Coronado",
       "Dimitri Tolleter",
       "Giovanni Finazzi",
       "Gilles Curien",
       "Matthias Heinemann",
-      "Oliver Ebenh\u00f6h",
+      "Oliver Ebenhöh",
       "Julian M. Hibberd",
-      "Urte Schl\u00fcter",
+      "Urte Schlüter",
       "Tianshu Sun",
       "Andreas P.M. Weber"
     ],
     "preprint": false
   },
   {
+    "title": "The mRNA stability factor Khd4 defines a specific mRNA regulon for membrane trafficking in the pathogen Ustilago maydis",
+    "date": "2023-08-17",
+    "doi": "https://doi.org/10.1073/pnas.2301731120",
+    "authors": [
+      "Srimeenakshi Sankaranarayanan",
+      "Carl Haag",
+      "Patrick Petzsch",
+      "Karl Köhrer",
+      "Anna Matuszyńska",
+      "Kathi Zarnack",
+      "Michael Feldbrügge"
+    ],
+    "preprint": false
+  },
+  {
     "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
     "date": "2023-06-20",
-    "doi": "http://dx.doi.org/10.1111/tpj.16352",
+    "doi": "https://doi.org/10.1111/tpj.16352",
     "authors": [
       "Nima P. Saadat",
       "Marvin van Aalst",
       "Alejandro Brand",
-      "Oliver Ebenh\u00f6h",
+      "Oliver Ebenhöh",
       "Alain Tissier",
-      "Anna B. Matuszy\u0144ska"
+      "Anna Matuszyńska"
     ],
     "preprint": false
   },
@@ -224,19 +450,289 @@
       "Marvin van Aalst",
       "Nima Saadat",
       "Josha Ebeling",
-      "Oliver Ebenh\u00f6h"
+      "Oliver Ebenhöh"
     ],
     "preprint": false
   },
   {
-    "title": "Building Mathematical Models of Biological Systems with modelbase",
-    "date": "2018-11-16",
-    "doi": "http://dx.doi.org/10.5334/jors.236",
+    "title": "Shedding Light on Blue-Green Photosynthesis: Investigating Wavelength-Dependent Photosynthesis Dynamics in Synechocystis sp. PCC 6803 via In Silico Analysis",
+    "date": "2023-01-01",
+    "doi": "",
     "authors": [
-      "Oliver Ebenh\u00f6h",
+      "Tobias Pfennig",
+      "Elena Kullmann",
+      "Tomáš Zavřel",
+      "Andreas Nakielski",
+      "Oliver Ebenhöh",
+      "Jan Červený",
+      "Gábor Bernát",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Designing synthetic communities with organism-free modular computational models",
+    "date": "2022-03-23",
+    "doi": "https://doi.org/10.26434/chemrxiv-2022-r78kg",
+    "authors": [
+      "Anna Matuszyńska",
+      "Oliver Ebenhöh",
+      "Matías D. Zurbriggen",
+      "Daniel C. Ducat",
+      "Ilka M. Axmann"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Impaired photoprotection in Phaeodactylum tricornutum KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation",
+    "date": "2022-01-29",
+    "doi": "https://doi.org/10.1111/nph.18003",
+    "authors": [
+      "Claire Seydoux",
+      "Mattia Storti",
+      "Vasco Giovagnetti",
+      "Anna Matuszyńska",
+      "Erika Guglielmino",
+      "Xue Zhao",
+      "Cécile Giustini",
+      "Yufang Pan",
+      "Lander Blommaert",
+      "Jhoanell Angulo",
+      "Alexander V. Ruban",
+      "Hanhua Hu",
+      "Benjamin Bailleul",
+      "Florence Courtois",
+      "Guillaume Allorent",
+      "Giovanni Finazzi"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Computational Analysis of Alternative Photosynthetic Electron Flows Linked With Oxidative Stress",
+    "date": "2021-10-22",
+    "doi": "https://doi.org/10.3389/fpls.2021.750580",
+    "authors": [
+      "Nima P. Saadat",
+      "Tim Nies",
       "Marvin van Aalst",
-      "Nima Saadat",
-      "Anna B. Matuszy\u0144ska"
+      "Brandon Hank",
+      "Büsra Demirtas",
+      "Oliver Ebenhöh",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Chlorophyll fluorescence: How the quality of information about PAM instrument parameters may affect our research",
+    "date": "2021-05-13",
+    "doi": "https://doi.org/10.1101/2021.05.12.443801",
+    "authors": [
+      "Tim Nies",
+      "Yuxi Niu",
+      "Oliver Ebenhöh",
+      "Shizue Matsubara",
+      "Anna Matuszyńska"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Constructing and analysing dynamic models with modelbase v1.2.3: a software update",
+    "date": "2021-04-20",
+    "doi": "https://doi.org/10.1186/s12859-021-04122-7",
+    "authors": [
+      "Marvin van Aalst",
+      "Oliver Ebenhöh",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Constructing and analysing dynamic models with modelbase v1.0 - a software update",
+    "date": "2020-10-02",
+    "doi": "https://doi.org/10.1101/2020.09.30.321380",
+    "authors": [
+      "Marvin van Aalst",
+      "Oliver Ebenhöh",
+      "Anna Matuszyńska"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Balancing energy supply during photosynthesis – a theoretical perspective",
+    "date": "2019-03-12",
+    "doi": "https://doi.org/10.1111/ppl.12962",
+    "authors": [
+      "Anna Matuszyńska",
+      "Nima P. Saadat",
+      "Oliver Ebenhöh"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Balancing energy supply during photosynthesis - a theoretical perspective",
+    "date": "2018-11-22",
+    "doi": "https://doi.org/10.1101/476846",
+    "authors": [
+      "Anna Matuszyńska",
+      "Nima P. Saadat",
+      "Oliver Ebenhöh"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "Building Mathematical Models of Biological Systems with <tt>modelbase</tt>",
+    "date": "2018-11-16",
+    "doi": "https://doi.org/10.5334/jors.236",
+    "authors": [
+      "Oliver Ebenhöh",
+      "Marvin van Aalst",
+      "Nima P. Saadat",
+      "Tim Nies",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "Building mathematical models of biological systems with modelbase , a Python package for semi-automatic ODE assembly and construction of isotope-specific models",
+    "date": "2018-07-05",
+    "doi": "https://doi.org/10.1101/362954",
+    "authors": [
+      "Oliver Ebenhöh",
+      "Marvin van Aalst",
+      "Nima P. Saadat",
+      "Tim Nies",
+      "Anna Matuszyńska"
+    ],
+    "preprint": true
+  },
+  {
+    "title": "THE Port Humanitarian Hackathon: final presentations",
+    "date": "2018-01-01",
+    "doi": "",
+    "authors": [
+      "ben krikler",
+      "Wilhelmina Welsch",
+      "Viviane Praz",
+      "Umang Deep Mishra",
+      "Thinhinane Laribi",
+      "Surbhi Mundra",
+      "Sophie Ashcroft",
+      "Saykan Duygu",
+      "Sara Zahedinezhad",
+      "Safar Ligal",
+      "Saco Heijboer",
+      "Roy Allela",
+      "Oliver Paul",
+      "Norwin Schnyder",
+      "Nicoletta Garelli",
+      "Navid Rekabsaz",
+      "Natalia Gutanu",
+      "Mohammad Moosajee",
+      "Mathis Gerdes",
+      "Margot Montassine",
+      "Lennart Heim",
+      "Kitty Liao",
+      "Kelly Baker",
+      "Karolos Potamianos",
+      "Kai Nino Streicher",
+      "Joseph Manda",
+      "Josefina Espinosa",
+      "Johnny Skidmore",
+      "John Brogan",
+      "James Jennings",
+      "Ines Knapper",
+      "Giuseppe Reale",
+      "Ewan Oglethorp",
+      "Eveline Wandt-Vogt",
+      "Evangelia Kavrochorianou",
+      "Elisabeth Pfund",
+      "Duco Tellegen",
+      "Diego Cammarano",
+      "Daniel DOBOS",
+      "Carmen Margiotta",
+      "Branislav Ristic",
+      "Boshra Khoshnevis",
+      "Bilge Melahat Demirköz",
+      "Bibek Pandey",
+      "Bertrand Michels",
+      "Bashir Khoshnevis",
+      "Barbara Rusconi",
+      "Antonio Gilardi",
+      "Anna Matuszyńska",
+      "Anna Marie Gottschalk",
+      "Andrea Cupertino",
+      "Amelie Dorn",
+      "Agnes Jakab",
+      "Aayush Chadha"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A systems-wide understanding of photosynthetic acclimation in algae and higher plants",
+    "date": "2017-04-07",
+    "doi": "https://doi.org/10.1093/jxb/erx137",
+    "authors": [
+      "Fiona Wanjiku Moejes",
+      "Anna Matuszyńska",
+      "Kailash Adhikari",
+      "Roberto Bassi",
+      "Federica Cariti",
+      "Guillaume Cogne",
+      "Ioannis Dikaios",
+      "Angela Falciatore",
+      "Giovanni Finazzi",
+      "Serena Flori",
+      "Michel Goldschmidt‐Clermont",
+      "Stefano Magni",
+      "Julie Maguire",
+      "Adeline Le Monnier",
+      "Kathrin Müller",
+      "Mark G. Poolman",
+      "Dipali Singh",
+      "Stephanie Spelberg",
+      "Giulio Rocco Stella",
+      "A. Succurro",
+      "Lucilla Taddei",
+      "Brieuc Urbain",
+      "Valeria Villanova",
+      "Claudia Zabke",
+      "Oliver Ebenhöh"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A mathematical model of non-photochemical quenching to study short-term light memory in plants",
+    "date": "2016-09-13",
+    "doi": "https://doi.org/10.1016/j.bbabio.2016.09.003",
+    "authors": [
+      "Anna Matuszyńska",
+      "Somayyeh Heidari",
+      "Peter Jahns",
+      "Oliver Ebenhöh"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A Young Algaeneers' perspective: Communication and networking are key to successful multidisciplinary research",
+    "date": "2016-07-26",
+    "doi": "https://doi.org/10.1016/j.algal.2016.07.013",
+    "authors": [
+      "Anna Matuszyńska",
+      "Martina Angeleri",
+      "Anthony S. Riseley",
+      "Erick Miguel Ramos‐Martinez",
+      "Tiago Guerra",
+      "Fiona Wanjiku Moejes"
+    ],
+    "preprint": false
+  },
+  {
+    "title": "A reductionist approach to model photosynthetic self-regulation in eukaryotes in response to light",
+    "date": "2015-11-27",
+    "doi": "https://doi.org/10.1042/bst20150136",
+    "authors": [
+      "Anna Matuszyńska",
+      "Oliver Ebenhöh"
     ],
     "preprint": false
   }
