@@ -12,9 +12,13 @@
   import mibinetImg from "$lib/assets/mibinet-logo.png";
   import mxlbricksImg from "$lib/assets/mxlbricks-logo.png";
   import mxlpyImg from "$lib/assets/mxlpy-logo.png";
-  import marketsImg from "$lib/assets/publications/microbial-markets.png";
-  import newEraImg from "$lib/assets/publications/new-era.png";
-  import sheddingImg from "$lib/assets/publications/shedding.png";
+  // Publication images
+  import pubFluoInvImg from "$lib/assets/publications/2026-fluorescence-inverse.png";
+  import pubWebBased from "$lib/assets/publications/2026-web-based.png";
+  import pubMarketsImg from "$lib/assets/publications/microbial-markets.png";
+  import pubNewEraImg from "$lib/assets/publications/new-era.png";
+  import pubSheddingImg from "$lib/assets/publications/shedding.png";
+  // Remainder
   import rwth from "$lib/assets/rwth.svg";
   import {
     Bold,
@@ -241,9 +245,28 @@
 
   <Grid columns={1}>
     <PublicationMain
+      title="Fluorescence as an inverse problem: Diagnosing PETC–CBB limitations in dynamic environments"
+      href="https://doi.org/10.1016/j.molp.2026.07.006"
+      img={pubFluoInvImg}
+    >
+      <Text color="white">
+        Tim Nies , El-Hadji Malick Cisse , Anna Matuszyńska
+      </Text>
+    </PublicationMain>
+    <PublicationMain
+      title="Web-based collaborative model development in interdisciplinary consortia: Design principles and practical guidance"
+      href="https://doi.org/10.1371/journal.pbio.3003825"
+      img={pubWebBased}
+    >
+      <Text color="white">
+        Marvin van Aalst , Aliénor Lahlou , Tanvir Hassan , William Gaultier ,
+        David Colliaux , Anna Matuszyńska
+      </Text>
+    </PublicationMain>
+    <PublicationMain
       title="Shedding light on blue-green photosynthesis"
       href="https://doi.org/10.1371/journal.pcbi.1012445"
-      img={sheddingImg}
+      img={pubSheddingImg}
     >
       <Text color="white">
         Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver
@@ -253,7 +276,7 @@
     <PublicationMain
       title="Microbial markets: socio-economic perspective in studying microbial communities"
       href="https://doi.org/10.1093/femsml/uqae016"
-      img={marketsImg}
+      img={pubMarketsImg}
     >
       <Text color="white">
         Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin
@@ -263,7 +286,7 @@
     <PublicationMain
       title="A new era of synthetic biology—microbial community design"
       href="https://doi.org/10.1093/synbio/ysae011"
-      img={newEraImg}
+      img={pubNewEraImg}
     >
       <Text color="white"
         >Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C
