@@ -1,31 +1,42 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Product",
-  "description": "A product in the catalog",
+  "title": "Publications",
+  "description": "The lab's publication list shown on the website.",
   "type": "array",
-  "properties": {
-    "title": {
-      "description": "Title of the publication",
-      "type": "string"
-    },
-    "date": {
-      "description": "Title of the publication",
-      "type": "string"
-    },
-    "doi": {
-      "description": "Title of the publication",
-      "type": "string"
-    },
-    "authors": {
-      "description": "Title of the publication",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "preprint": {
-      "description": "Whether publication is preprint",
-      "type": "boolean"
+  "items": {
+    "$ref": "#/$defs/publication"
+  },
+  "$defs": {
+    "publication": {
+      "type": "object",
+      "description": "A single publication.",
+      "properties": {
+        "title": {
+          "description": "Title of the publication.",
+          "type": "string"
+        },
+        "date": {
+          "description": "Publication date in YYYY-MM-DD format.",
+          "type": "string"
+        },
+        "doi": {
+          "description": "DOI URL of the publication.",
+          "type": "string"
+        },
+        "authors": {
+          "description": "Display names of the publication's authors.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "preprint": {
+          "description": "Whether the publication is still an unreviewed preprint.",
+          "type": "boolean"
+        }
+      },
+      "required": ["title", "date", "doi", "authors", "preprint"],
+      "additionalProperties": false
     }
   }
 }
