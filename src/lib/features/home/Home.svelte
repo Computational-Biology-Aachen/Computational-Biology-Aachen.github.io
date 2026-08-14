@@ -15,8 +15,8 @@
   // Publication images
   import pubFluoInvImg from "$lib/assets/publications/2026-fluorescence-inverse.png";
   import pubWebBased from "$lib/assets/publications/2026-web-based.png";
-  import pubMarketsImg from "$lib/assets/publications/microbial-markets.png";
-  import pubNewEraImg from "$lib/assets/publications/new-era.png";
+  // import pubMarketsImg from "$lib/assets/publications/microbial-markets.png";
+  // import pubNewEraImg from "$lib/assets/publications/new-era.png";
   import pubSheddingImg from "$lib/assets/publications/shedding.png";
   // Remainder
   import rwth from "$lib/assets/rwth.svg";
@@ -273,7 +273,7 @@
         Ebenhöh, Jan Červený, Gábor Bernát, Anna Barbara Matuszyńska
       </Text>
     </PublicationMain>
-    <PublicationMain
+    <!-- <PublicationMain
       title="Microbial markets: socio-economic perspective in studying microbial communities"
       href="https://doi.org/10.1093/femsml/uqae016"
       img={pubMarketsImg}
@@ -282,8 +282,8 @@
         Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin
         Schipper , Anna Matuszyńska
       </Text>
-    </PublicationMain>
-    <PublicationMain
+    </PublicationMain> -->
+    <!-- <PublicationMain
       title="A new era of synthetic biology—microbial community design"
       href="https://doi.org/10.1093/synbio/ysae011"
       img={pubNewEraImg}
@@ -292,7 +292,7 @@
         >Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C
         Ducat , Ilka M Axmann</Text
       >
-    </PublicationMain>
+    </PublicationMain> -->
   </Grid>
   <Text>
     Interested? Check out our <Link href="/papers"
