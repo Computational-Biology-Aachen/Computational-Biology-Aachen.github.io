@@ -263,20 +263,6 @@
     "preprint": false
   },
   {
-    "title": "Photosynthetic Systems in Architecture (PhoSA): a design|build|research approach for teaching",
-    "date": "2025-01-01",
-    "doi": "",
-    "authors": [
-      "Axel Timpe",
-      "Harald Lesan",
-      "Anna Matuszyńska",
-      "Tim Nies",
-      "Yuxia Luo",
-      "Lailly Ster Vaz de Miranda"
-    ],
-    "preprint": false
-  },
-  {
     "title": "Assembly and Quantification of Co-Cultures Combining Heterotrophic Yeast with Phototrophic Sugar-Secreting Cyanobacteria",
     "date": "2024-12-27",
     "doi": "https://doi.org/10.3791/67311",
@@ -363,22 +349,6 @@
     "preprint": false
   },
   {
-    "title": "Synechocystis sp. PCC 6803 Photosynthesis under Different Light Colours - In Silico Analysis",
-    "date": "2024-01-01",
-    "doi": "",
-    "authors": [
-      "Tobias Pfennig",
-      "Elena Kullmann",
-      "Gábor Bernát",
-      "Jan Cervený",
-      "Oliver Ebenhöh",
-      "Tomáš Zavřel",
-      "Anna Matuszyńska",
-      "Andreas Nakielski"
-    ],
-    "preprint": false
-  },
-  {
     "title": "Improving photosynthetic efficiency toward food security: Strategies, advances, and perspectives",
     "date": "2023-09-01",
     "doi": "http://dx.doi.org/10.1016/j.molp.2023.08.017",
@@ -443,22 +413,6 @@
       "Nima Saadat",
       "Josha Ebeling",
       "Oliver Ebenhöh"
-    ],
-    "preprint": false
-  },
-  {
-    "title": "Shedding Light on Blue-Green Photosynthesis: Investigating Wavelength-Dependent Photosynthesis Dynamics in Synechocystis sp. PCC 6803 via In Silico Analysis",
-    "date": "2023-01-01",
-    "doi": "",
-    "authors": [
-      "Tobias Pfennig",
-      "Elena Kullmann",
-      "Tomáš Zavřel",
-      "Andreas Nakielski",
-      "Oliver Ebenhöh",
-      "Jan Červený",
-      "Gábor Bernát",
-      "Anna Matuszyńska"
     ],
     "preprint": false
   },
@@ -580,68 +534,6 @@
       "Anna Matuszyńska"
     ],
     "preprint": true
-  },
-  {
-    "title": "THE Port Humanitarian Hackathon: final presentations",
-    "date": "2018-01-01",
-    "doi": "",
-    "authors": [
-      "ben krikler",
-      "Wilhelmina Welsch",
-      "Viviane Praz",
-      "Umang Deep Mishra",
-      "Thinhinane Laribi",
-      "Surbhi Mundra",
-      "Sophie Ashcroft",
-      "Saykan Duygu",
-      "Sara Zahedinezhad",
-      "Safar Ligal",
-      "Saco Heijboer",
-      "Roy Allela",
-      "Oliver Paul",
-      "Norwin Schnyder",
-      "Nicoletta Garelli",
-      "Navid Rekabsaz",
-      "Natalia Gutanu",
-      "Mohammad Moosajee",
-      "Mathis Gerdes",
-      "Margot Montassine",
-      "Lennart Heim",
-      "Kitty Liao",
-      "Kelly Baker",
-      "Karolos Potamianos",
-      "Kai Nino Streicher",
-      "Joseph Manda",
-      "Josefina Espinosa",
-      "Johnny Skidmore",
-      "John Brogan",
-      "James Jennings",
-      "Ines Knapper",
-      "Giuseppe Reale",
-      "Ewan Oglethorp",
-      "Eveline Wandt-Vogt",
-      "Evangelia Kavrochorianou",
-      "Elisabeth Pfund",
-      "Duco Tellegen",
-      "Diego Cammarano",
-      "Daniel DOBOS",
-      "Carmen Margiotta",
-      "Branislav Ristic",
-      "Boshra Khoshnevis",
-      "Bilge Melahat Demirköz",
-      "Bibek Pandey",
-      "Bertrand Michels",
-      "Bashir Khoshnevis",
-      "Barbara Rusconi",
-      "Antonio Gilardi",
-      "Anna Matuszyńska",
-      "Anna Marie Gottschalk",
-      "Andrea Cupertino",
-      "Amelie Dorn",
-      "Agnes Jakab",
-      "Aayush Chadha"
-    ],
-    "preprint": false
   },
   {
     "title": "A systems-wide understanding of photosynthetic acclimation in algae and higher plants",

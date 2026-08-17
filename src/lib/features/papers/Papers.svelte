@@ -10,6 +10,8 @@
     Section,
     Text,
   } from "@computational-biology-aachen/design";
+
+  const papers = json.filter((p) => p.doi);
 </script>
 
 <svelte:head>
@@ -42,7 +44,7 @@
     innerGap: "3rem",
   }}
 >
-  {#each json as { title, date, doi, authors, preprint } (doi)}
+  {#each papers as { title, date, doi, authors, preprint } (doi)}
     <a
       href={doi}
       target="_blank"

@@ -21,7 +21,8 @@
         },
         "doi": {
           "description": "DOI URL of the publication.",
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "authors": {
           "description": "Display names of the publication's authors.",
