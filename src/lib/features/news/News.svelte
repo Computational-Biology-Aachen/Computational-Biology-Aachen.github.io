@@ -108,10 +108,10 @@
     transition: var(--transition);
     cursor: pointer;
     outline: 0;
-    border: 1px solid var(--color-surface);
+    border: 1px solid var(--color-text);
     border-radius: 0.25rem;
     border-radius: 0.25rem;
-    background-color: var(--color-surface);
+    background-color: var(--color-text);
     padding: 0.75rem 2rem;
     color: var(--color-bg);
     font-size: 1rem;
@@ -129,8 +129,8 @@
   }
   button:disabled {
     cursor: not-allowed;
-    border: 1px solid var(--color-text);
-    background-color: var(--color-text);
+    border: 1px solid var(--color-surface);
+    background-color: var(--color-surface);
   }
 
   .unstyled-link {
