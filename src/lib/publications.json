@@ -110,11 +110,7 @@
     "title": "Engineering principles in plant metabolism: integrating control, mechanics, and transport under dynamic environments",
     "date": "2026-07-21",
     "doi": "https://doi.org/10.1093/plphys/kiag535",
-    "authors": [
-      "Tim Nies",
-      "Josha Ebeling",
-      "Anna Matuszyńska"
-    ],
+    "authors": ["Tim Nies", "Josha Ebeling", "Anna Matuszyńska"],
     "preprint": false
   },
   {
@@ -148,11 +144,7 @@
     "title": "Fluorescence as an inverse problem: Diagnosing PETC–CBB limitations in dynamic environments",
     "date": "2026-07-09",
     "doi": "https://doi.org/10.1016/j.molp.2026.07.006",
-    "authors": [
-      "Tim Nies",
-      "El-Hadji Malick Cisse",
-      "Anna Matuszyńska"
-    ],
+    "authors": ["Tim Nies", "El-Hadji Malick Cisse", "Anna Matuszyńska"],
     "preprint": false
   },
   {
@@ -493,44 +485,28 @@
     "title": "Constructing and analysing dynamic models with modelbase v1.2.3: a software update",
     "date": "2021-04-20",
     "doi": "https://doi.org/10.1186/s12859-021-04122-7",
-    "authors": [
-      "Marvin van Aalst",
-      "Oliver Ebenhöh",
-      "Anna Matuszyńska"
-    ],
+    "authors": ["Marvin van Aalst", "Oliver Ebenhöh", "Anna Matuszyńska"],
     "preprint": false
   },
   {
     "title": "Constructing and analysing dynamic models with modelbase v1.0 - a software update",
     "date": "2020-10-02",
     "doi": "https://doi.org/10.1101/2020.09.30.321380",
-    "authors": [
-      "Marvin van Aalst",
-      "Oliver Ebenhöh",
-      "Anna Matuszyńska"
-    ],
+    "authors": ["Marvin van Aalst", "Oliver Ebenhöh", "Anna Matuszyńska"],
     "preprint": true
   },
   {
     "title": "Balancing energy supply during photosynthesis – a theoretical perspective",
     "date": "2019-03-12",
     "doi": "https://doi.org/10.1111/ppl.12962",
-    "authors": [
-      "Anna Matuszyńska",
-      "Nima P. Saadat",
-      "Oliver Ebenhöh"
-    ],
+    "authors": ["Anna Matuszyńska", "Nima P. Saadat", "Oliver Ebenhöh"],
     "preprint": false
   },
   {
     "title": "Balancing energy supply during photosynthesis - a theoretical perspective",
     "date": "2018-11-22",
     "doi": "https://doi.org/10.1101/476846",
-    "authors": [
-      "Anna Matuszyńska",
-      "Nima P. Saadat",
-      "Oliver Ebenhöh"
-    ],
+    "authors": ["Anna Matuszyńska", "Nima P. Saadat", "Oliver Ebenhöh"],
     "preprint": true
   },
   {
@@ -622,10 +598,7 @@
     "title": "A reductionist approach to model photosynthetic self-regulation in eukaryotes in response to light",
     "date": "2015-11-27",
     "doi": "https://doi.org/10.1042/bst20150136",
-    "authors": [
-      "Anna Matuszyńska",
-      "Oliver Ebenhöh"
-    ],
+    "authors": ["Anna Matuszyńska", "Oliver Ebenhöh"],
     "preprint": false
   }
 ]
