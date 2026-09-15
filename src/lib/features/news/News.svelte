@@ -107,7 +107,6 @@
   button {
     transition: var(--transition);
     cursor: pointer;
-    outline: 0;
     border: 1px solid var(--color-text);
     border-radius: 0.25rem;
     border-radius: 0.25rem;
@@ -119,9 +118,6 @@
   button:not([disabled]):hover {
     transform: scale(1.05);
     box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.125);
-  }
-  button:focus {
-    outline: 1px;
   }
   button:active {
     transform: scale(1);
