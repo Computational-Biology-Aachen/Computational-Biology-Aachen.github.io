@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-15T00:00:00Z",
+  "title": "Design System: Computational-Biology-Aachen.github.io",
+  "extensions": {},
+  "components": [
+    {
+      "name": "Pagination Button (legacy — migrate to shared Button)",
+      "kind": "button",
+      "refersTo": "button-pagination-legacy",
+      "description": "Hand-rolled prev/next button in News.svelte and Tutorials.svelte. Confirmed drift, not a sanctioned pattern — replace with the shared @computational-biology-aachen/design Button component when touched. Shown as-is (neutral variant from News.svelte) for reference only.",
+      "html": "<button class=\"ds-btn-pagination\">Next</button>",
+      "css": ".ds-btn-pagination { transition: var(--transition); cursor: pointer; border: 1px solid var(--color-text); border-radius: 0.25rem; background-color: var(--color-text); padding: 0.75rem 2rem; color: var(--color-bg); font-size: 1rem; } .ds-btn-pagination:not([disabled]):hover { transform: scale(1.05); box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.125); } .ds-btn-pagination:active { transform: scale(1); box-shadow: inset 5px 5px 10px -5px rgba(0, 0, 0, 0.5); } .ds-btn-pagination:disabled { cursor: not-allowed; border: 1px solid var(--color-surface); background-color: var(--color-surface); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Journal Figure (inherited — see @computational-biology-aachen/design)",
+    "overview": "This site has no visual system of its own. Every color, typeface, spacing value, and component comes from @computational-biology-aachen/design, imported via tokens.css and the shared Svelte components. That package's own DESIGN.md is the canonical spec for Colors, Layout, Elevation & Depth, and Shapes. This file records only two confirmed drifts from that canonical spec, both flagged for migration rather than documented as sanctioned exceptions.",
+    "keyCharacteristics": [
+      "No local color, spacing, radius, or layout tokens; app.css only sets base html/body properties from imported CSS variables plus a .katex-display margin reset.",
+      "Two confirmed drifts from the upstream spec, both flagged for migration rather than documented as intentional exceptions.",
+      "No other local component library: all Card, Section, Button, Text, etc. usage is the shared package's components used as-is."
+    ],
+    "rules": [
+      {
+        "name": "The One-Typeface Migration Rule",
+        "body": "The Quicksand hero treatment in Home.svelte is tech debt, not a pattern. Don't extend Quicksand to any other heading or component. Migrate .hero-line to Space Grotesk and drop the Quicksand Google Fonts family from src/app.html when Home.svelte is next touched.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do treat pkg-js/design's DESIGN.md as the canonical source for colors, layout, elevation, shapes, and every component other than the two drifts recorded here.",
+      "Do migrate the News.svelte/Tutorials.svelte pagination buttons to the shared Button component the next time either file is touched.",
+      "Do migrate Home.svelte's .hero-line off Quicksand to Space Grotesk (and remove the Quicksand <link> in src/app.html) the next time the hero is touched."
+    ],
+    "donts": [
+      "Don't copy the Quicksand hero treatment to any other component — it is drift being phased out, not an approved second display face.",
+      "Don't copy the hand-rolled pagination button styles to any new component — use the shared Button directly for any new prev/next or action-button UI.",
+      "Don't re-derive colors, spacing, or radius values locally for this site; import them from @computational-biology-aachen/design/tokens.css as app.css already does."
+    ]
+  }
+}
