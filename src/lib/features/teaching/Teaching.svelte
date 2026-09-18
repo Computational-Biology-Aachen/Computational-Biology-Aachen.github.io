@@ -44,7 +44,9 @@
         >Lecture with exercise Introduction to Bioinformatics 16.00286</Link
       ></Li
     >
-    <Li><Link href="/">Lecture Ethics in the Biosciences 16.00244</Link></Li>
+    <Li
+      ><Link href="/">Lecture Ethics in the Biosciences 16.00244</Link></Li
+    >
     <Li>
       <Link href="/"
         >Practical + Seminar Interdisciplinary Data Science Course 16.00017</Link

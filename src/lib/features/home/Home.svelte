@@ -12,14 +12,14 @@
   import mibinetImg from "$lib/assets/mibinet-logo.png";
   import mxlbricksImg from "$lib/assets/mxlbricks-logo.png";
   import mxlpyImg from "$lib/assets/mxlpy-logo.png";
-  // Publication images
+  import placeholderImg from "$lib/assets/placeholder.jpg";
+  // Publication watermark images, keyed by DOI in `publicationImages` below
   import pubFluoInvImg from "$lib/assets/publications/2026-fluorescence-inverse.png";
   import pubWebBased from "$lib/assets/publications/2026-web-based.png";
-  // import pubMarketsImg from "$lib/assets/publications/microbial-markets.png";
-  // import pubNewEraImg from "$lib/assets/publications/new-era.png";
   import pubSheddingImg from "$lib/assets/publications/shedding.png";
   // Remainder
   import rwth from "$lib/assets/rwth.svg";
+  import publicationsJson from "$lib/publications.json";
   import {
     Bold,
     BoxHeadingMain,
@@ -79,6 +79,22 @@
       height: "5.5rem",
     },
   ];
+
+  // Curated watermark art for the top publications, keyed by DOI. Any
+  // publication.json entry without a curated image falls back to a generic
+  // placeholder rather than going unillustrated.
+  const publicationImages: Record<string, string> = {
+    "https://doi.org/10.1016/j.molp.2026.07.006": pubFluoInvImg,
+    "https://doi.org/10.1371/journal.pbio.3003825": pubWebBased,
+    "https://doi.org/10.1371/journal.pcbi.1012445": pubSheddingImg,
+  };
+
+  // Always show the curated set above, not just whatever is chronologically
+  // newest - publications.json is bumped by a weekly bot, so "top 3 by date"
+  // drifts away from the hand-made watermark art almost immediately.
+  const publications = Object.keys(publicationImages)
+    .map((doi) => publicationsJson.find((publication) => publication.doi === doi))
+    .filter((publication) => publication !== undefined);
 </script>
 
 <svelte:head>
@@ -244,55 +260,15 @@
   ></BoxHeadingMain>
 
   <Grid columns={1}>
-    <PublicationMain
-      title="Fluorescence as an inverse problem: Diagnosing PETC–CBB limitations in dynamic environments"
-      href="https://doi.org/10.1016/j.molp.2026.07.006"
-      img={pubFluoInvImg}
-    >
-      <Text color="white">
-        Tim Nies , El-Hadji Malick Cisse , Anna Matuszyńska
-      </Text>
-    </PublicationMain>
-    <PublicationMain
-      title="Web-based collaborative model development in interdisciplinary consortia: Design principles and practical guidance"
-      href="https://doi.org/10.1371/journal.pbio.3003825"
-      img={pubWebBased}
-    >
-      <Text color="white">
-        Marvin van Aalst , Aliénor Lahlou , Tanvir Hassan , William Gaultier ,
-        David Colliaux , Anna Matuszyńska
-      </Text>
-    </PublicationMain>
-    <PublicationMain
-      title="Shedding light on blue-green photosynthesis"
-      href="https://doi.org/10.1371/journal.pcbi.1012445"
-      img={pubSheddingImg}
-    >
-      <Text color="white">
-        Tobias Pfennig , Elena Kullmann, Tomáš Zavřel, Andreas Nakielski, Oliver
-        Ebenhöh, Jan Červený, Gábor Bernát, Anna Barbara Matuszyńska
-      </Text>
-    </PublicationMain>
-    <!-- <PublicationMain
-      title="Microbial markets: socio-economic perspective in studying microbial communities"
-      href="https://doi.org/10.1093/femsml/uqae016"
-      img={pubMarketsImg}
-    >
-      <Text color="white">
-        Fariha Mostafa , Aileen Krüger , Tim Nies , Julia Frunzke , Kerstin
-        Schipper , Anna Matuszyńska
-      </Text>
-    </PublicationMain> -->
-    <!-- <PublicationMain
-      title="A new era of synthetic biology—microbial community design"
-      href="https://doi.org/10.1093/synbio/ysae011"
-      img={pubNewEraImg}
-    >
-      <Text color="white"
-        >Anna Matuszyńska , Oliver Ebenhöh , Matias D Zurbriggen , Daniel C
-        Ducat , Ilka M Axmann</Text
+    {#each publications as publication (publication.doi)}
+      <PublicationMain
+        title={publication.title}
+        href={publication.doi}
+        img={publicationImages[publication.doi] ?? placeholderImg}
       >
-    </PublicationMain> -->
+        <Text color="white">{publication.authors.join(", ")}</Text>
+      </PublicationMain>
+    {/each}
   </Grid>
   <Text>
     Interested? Check out our <Link href="/papers"
