@@ -7,7 +7,8 @@ import { existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-const designSrc = new URL("../design/src/lib", import.meta.url).pathname;
+const designSrc = new URL("../../pkg-js/design/src/lib", import.meta.url)
+  .pathname;
 const designAlias = existsSync(designSrc)
   ? { "@computational-biology-aachen/design": designSrc }
   : {};
