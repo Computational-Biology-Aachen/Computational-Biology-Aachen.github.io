@@ -23,9 +23,9 @@
     "eslint-config-prettier": ">=10.1.8",
     "eslint-plugin-svelte": ">=3.23.0",
     "globals": ">=17.12.0",
-    "image-size": "^2.0.2",
+    "image-size": "^2.0.4",
     "mdsvex": ">=0.12.7",
-    "prettier": ">=3.9.5",
+    "prettier": ">=3.9.7",
     "prettier-plugin-css-order": ">=2.2.0",
     "prettier-plugin-svelte": ">=4.1.1",
     "prettier-plugin-tailwindcss": ">=0.8.1",
@@ -33,7 +33,7 @@
     "svelte-check": ">=4.7.6",
     "typescript": ">=6.0.3",
     "typescript-eslint": ">=8.70.0",
-    "vite": ">=8.2.2"
+    "vite": ">=8.3.0"
   },
   "dependencies": {
     "@computational-biology-aachen/design": "github:Computational-Biology-Aachen/design",
