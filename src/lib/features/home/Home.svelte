@@ -93,7 +93,9 @@
   // newest - publications.json is bumped by a weekly bot, so "top 3 by date"
   // drifts away from the hand-made watermark art almost immediately.
   const publications = Object.keys(publicationImages)
-    .map((doi) => publicationsJson.find((publication) => publication.doi === doi))
+    .map((doi) =>
+      publicationsJson.find((publication) => publication.doi === doi),
+    )
     .filter((publication) => publication !== undefined);
 </script>
 
