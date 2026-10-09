@@ -1,13 +1,47 @@
 [
   {
+    "title": "Making Models That Matter: How to Build Trustworthy and Useful Systems Biology Models",
+    "date": "2026-09-11",
+    "doi": "https://doi.org/10.48550/arxiv.2609.13127",
+    "authors": [
+      "John M. Hancock",
+      "Mihail Anton",
+      "Frank Bergmann",
+      "Irina Balaur",
+      "Carissa Bleker",
+      "Thomas C. Collin",
+      "Óscar Dias",
+      "Elena Domínguez-Romero",
+      "Chris Evelo",
+      "Gavin Farrell",
+      "Martina Kutmon",
+      "Vitor Martins dos Santos",
+      "Anna Matuszyńska",
+      "Sébastien Moretti",
+      "Sara Morsy",
+      "Anna Niarakis",
+      "Marek Ostaszewski",
+      "Miguel Rocha",
+      "David Šafránek",
+      "William Scott",
+      "Rahuman S. Malik Sheriff",
+      "Silvio C. E. Tosatto",
+      "Dagmar Waltemath",
+      "Ulrike Wittig",
+      "Jan Zrimec",
+      "Anže Županič"
+    ],
+    "preprint": true
+  },
+  {
     "title": "Hackathons as effective pedagogical tools in interdisciplinary biological training: report from two training programs for sub-Saharan African students",
     "date": "2026-08-13",
     "doi": "https://doi.org/10.1080/00219266.2026.2710440",
     "authors": [
       "Marvin van Aalst",
       "Tobias Pfennig",
-      "F. Chirove",
-      "M. Ronoh",
+      "Faraimunashe Chirove",
+      "Marilyn Ronoh",
       "Anna Matuszyńska"
     ],
     "preprint": false
@@ -23,7 +57,7 @@
       "Mona Becker",
       "Sofie Jennings",
       "Marvin van Aalst",
-      "Joost T. van Dongen",
+      "Joost Thomas van Dongen",
       "Anna Matuszyńska",
       "Lisa Fürtauer"
     ],
@@ -54,25 +88,25 @@
       "Olukunle Babatunde Bashir",
       "Zsa Zsa Friederique Boyny",
       "Mkpuma Kenneth Chukwuka",
-      "Elouen Corvest",
+      "Elouën Corvest",
       "Adenike Oluwaseun Dada",
       "Matteo Dell’Acqua",
       "Georgina Lala Ehemba",
       "Andris Justin Finkbeiner",
-      "Swivia Hamabwe",
+      "Swivia M. Hamabwe",
       "Djidjoho A.T. Hodehou",
-      "Olivia Kacheyo",
+      "Olivia Cynthia Kacheyo",
       "Kelvin Kamfwa",
-      "Kanthu Joseph Mhango",
+      "Kanthu J. Mhango",
       "Wajiha Mu’az Abdullahi",
       "Gideon Munduwe",
       "Solomon Ntukidem",
-      "Olalekan Kazeem Obisesan",
+      "Olalekan K Obisesan",
       "Ifeoluwa Simeon Odesina",
       "Nwogu-Uchenna Ogechi",
       "Omotola Dorcas Olaoye",
       "Mary Morenike Olayinka",
-      "Isaac Osei-Bonsu",
+      "Isaac Osei‐Bonsu",
       "Kolawale Olalekan Rilwan",
       "Leandro Stival",
       "Zeynu Tehar",
@@ -83,8 +117,8 @@
       "Marvin van Aalst",
       "Dominik Vrbic",
       "Chao Zhang",
-      "Tom P.J.M. Theeuwen",
-      "David M. Kramer",
+      "Tom P. J. M. Theeuwen",
+      "David Kramer",
       "Johannes Kromdijk"
     ],
     "preprint": true
@@ -111,33 +145,6 @@
     "date": "2026-07-21",
     "doi": "https://doi.org/10.1093/plphys/kiag535",
     "authors": ["Tim Nies", "Josha Ebeling", "Anna Matuszyńska"],
-    "preprint": false
-  },
-  {
-    "title": "Context-dependent siderophore exploitability shapes microbial community structure",
-    "date": "2026-07-13",
-    "doi": "https://doi.org/10.60534/b6rne-tnd39",
-    "authors": [
-      "A. Krüger",
-      "Sanga Paik",
-      "Michelle Bund",
-      "Matthias Pesch",
-      "Stephan Krueger",
-      "Benita Lückel",
-      "Athanasios P. Papadopoulos",
-      "Johanna Wiechert",
-      "Tanvir Hassan",
-      "Ulrike Weber",
-      "Romain Allelan",
-      "Sander H. J. Smits",
-      "Michael Bott",
-      "Akos Kovacs",
-      "Philipp Westhoff",
-      "Anna Matuszyńska",
-      "Dietrich Kohlheyer",
-      "Thomas Drepper",
-      "Julia Frunzke"
-    ],
     "preprint": false
   },
   {
@@ -180,9 +187,22 @@
     "preprint": true
   },
   {
+    "title": "Window-integrated photobioreactors: a proof-of-concept for green building retrofitting",
+    "date": "2026-05-19",
+    "doi": "https://doi.org/10.3389/fbuil.2026.1818560",
+    "authors": [
+      "Frederic Radzio",
+      "Tim Nies",
+      "Lisa Fürtauer",
+      "Lars Lauterbach",
+      "Anna Matuszyńska"
+    ],
+    "preprint": false
+  },
+  {
     "title": "Web-based collaborative model development in interdisciplinary consortia: design principles and practical guidance. Technical Supportive Information",
     "date": "2026-02-20",
-    "doi": "https://doi.org/10.5281/zenodo.18715170",
+    "doi": "https://doi.org/10.5281/zenodo.18715169",
     "authors": [
       "Aliénor Lahlou",
       "Marvin van Aalst",
@@ -202,23 +222,36 @@
       "Anne-Christin Pohland",
       "Tobias Pfennig",
       "Anna Matuszyńska",
-      "Szilvia Z. Tóth",
+      "Szilvia Zita Tóth",
       "Gábor Bernát",
       "Jan Červený"
     ],
     "preprint": false
   },
   {
-    "title": "Window-integrated photobioreactors: a proof-of-concept for green building retrofitting",
+    "title": "Context-dependent siderophore exploitability shapes microbial community structure",
     "date": "2026-01-01",
-    "doi": "https://doi.org/10.24406/publica-9397",
+    "doi": "https://doi.org/10.1093/ismejo/wrag247",
     "authors": [
-      "Frederic Radzio",
-      "Tim Nies",
-      "Lisa Fürtauer",
-      "Lars Lauterbach",
+      "A. Krüger",
+      "Sanga Paik",
+      "Michelle Bund",
+      "Matthias Pesch",
+      "Stephan Krueger",
+      "Benita Lückel",
+      "Athanasios Papadopoulos",
+      "Johanna Wiechert",
+      "Tanvir Hassan",
+      "Ulrike Weber",
+      "Romain Avellan",
+      "Sander H. J. Smits",
+      "Michael H. Bott",
+      "Ákos T. Kovács",
+      "Philipp Westhoff",
       "Anna Matuszyńska",
-      ":unav"
+      "Dietrich Kohlheyer",
+      "Thomas Drepper",
+      "Julia Frunzke"
     ],
     "preprint": false
   },
@@ -250,6 +283,19 @@
     "preprint": true
   },
   {
+    "title": "Hackathons as essential tools in an interdisciplinary biological training - report from trainings for Sub-saharan students",
+    "date": "2025-03-30",
+    "doi": "https://doi.org/10.1101/2025.03.27.645823",
+    "authors": [
+      "Marvin van Aalst",
+      "Tobias Pfennig",
+      "Faraimunashe Chirove",
+      "Marilyn Ronoh",
+      "Anna Matuszyńska"
+    ],
+    "preprint": true
+  },
+  {
     "title": "Alternatives to photorespiration: A system-level analysis reveals mechanisms of enhanced plant productivity",
     "date": "2025-03-28",
     "doi": "https://doi.org/10.1126/sciadv.adt9287",
@@ -274,7 +320,7 @@
       "Tanvir Hassan",
       "Kerstin Schipper",
       "Anna Matuszyńska",
-      "Ilka M. Axmann",
+      "Ilka Maria IM Axmann",
       "Daniel C. Ducat"
     ],
     "preprint": false
@@ -328,9 +374,9 @@
     "authors": [
       "Anna Matuszyńska",
       "Oliver Ebenhöh",
-      "Matías D. Zurbriggen",
+      "Matias Daniel Zurbriggen",
       "Daniel C. Ducat",
-      "Ilka M. Axmann"
+      "Ilka Maria IM Axmann"
     ],
     "preprint": false
   },
@@ -339,8 +385,8 @@
     "date": "2024-01-01",
     "doi": "https://doi.org/10.1093/femsml/uqae016",
     "authors": [
-      "F. F. M. Mostafa",
-      "Aileen Krüger",
+      "Fariha Mostafa",
+      "A. Krüger",
       "Tim Nies",
       "Julia Frunzke",
       "Kerstin Schipper",
@@ -398,7 +444,7 @@
       "Marvin van Aalst",
       "Alejandro Brand",
       "Oliver Ebenhöh",
-      "Alain Tissier",
+      "Alain F. Tissier",
       "Anna Matuszyńska"
     ],
     "preprint": false
@@ -417,15 +463,22 @@
     "preprint": false
   },
   {
+    "title": "High dimensional data-driven study on the impact of genetic variations on plant secondary metabolism",
+    "date": "2023-01-01",
+    "doi": "https://doi.org/10.13140/rg.2.2.30961.03680",
+    "authors": ["Chloé Aujoulat", "Wolfgang Wiechert", "Anna Matuszyńska"],
+    "preprint": false
+  },
+  {
     "title": "Designing synthetic communities with organism-free modular computational models",
     "date": "2022-03-23",
     "doi": "https://doi.org/10.26434/chemrxiv-2022-r78kg",
     "authors": [
       "Anna Matuszyńska",
       "Oliver Ebenhöh",
-      "Matías D. Zurbriggen",
+      "Matias Daniel Zurbriggen",
       "Daniel C. Ducat",
-      "Ilka M. Axmann"
+      "Ilka Maria IM Axmann"
     ],
     "preprint": true
   },
@@ -451,6 +504,13 @@
       "Guillaume Allorent",
       "Giovanni Finazzi"
     ],
+    "preprint": false
+  },
+  {
+    "title": "Graph theory as a driver for multi-omic mechanistic model construction applied to Tomato Glandular Trichomes",
+    "date": "2022-01-01",
+    "doi": "https://doi.org/10.13140/rg.2.2.36413.63208",
+    "authors": ["Chloé Aujoulat", "Anna Matuszyńska"],
     "preprint": false
   },
   {
