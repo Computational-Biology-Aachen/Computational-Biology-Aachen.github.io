@@ -1,5 +1,5 @@
 <script lang="ts">
-  import NewsPage from "$lib/features/news/NewsPage.svelte";
+  import NewsPage from "#lib/features/news/NewsPage.svelte";
   import type { Component } from "svelte";
   let {
     data,

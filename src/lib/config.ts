@@ -1,4 +1,4 @@
-import { dev } from "$app/environment";
+import { dev } from "$app/env";
 
 export const title = "The Matuszyńska Lab";
 export const description = "Computational Biology lab at RWTH Aachen";

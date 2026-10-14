@@ -1,6 +1,6 @@
 <script lang="ts">
-  import imgImport from "$lib/assets/contributor-map.png";
-  import type { Member } from "$lib/types";
+  import imgImport from "#lib/assets/contributor-map.png";
+  import type { Member } from "#lib/types.js";
   import {
     GridPerson,
     H1,

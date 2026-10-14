@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
-  import type { Post } from "$lib/types";
+  import type { Post } from "#lib/types.js";
   import {
     Card,
     H1,

@@ -1,4 +1,4 @@
-import type { Member } from "$lib/types";
+import type { Member } from "#lib/types.js";
 import { error } from "@sveltejs/kit";
 
 export async function load() {

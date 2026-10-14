@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { Member } from "$lib/types";
+  import type { Member } from "#lib/types.js";
   import {
     SectionHeaderPerson as HeaderPerson,
     Section,
   } from "@computational-biology-aachen/design";
   import type { Component } from "svelte";
 
-  const images = import.meta.glob(["$lib/assets/people/*"], {
+  const images = import.meta.glob(["/src/lib/assets/people/*"], {
     eager: true,
     query: "?url",
     import: "default",

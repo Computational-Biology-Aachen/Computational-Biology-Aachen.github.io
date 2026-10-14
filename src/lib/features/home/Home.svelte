@@ -1,25 +1,25 @@
 <script lang="ts">
-  import bioscImg from "$lib/assets/biosc-logo.jpg";
-  import ccls from "$lib/assets/ccls.svg";
-  import ceplasImg from "$lib/assets/ceplas-logo.jpg";
-  import crophotImg from "$lib/assets/comphot-logo.png";
-  import cpblImg from "$lib/assets/cpbl-rwth-logo.svg";
-  import gopmfImg from "$lib/assets/gopmf-logo.png";
-  import greenslothImg from "$lib/assets/greensloth-logo.svg";
-  import groupImg from "$lib/assets/group-picture-2026-03-sm.jpg";
-  import hdsleeImg from "$lib/assets/hdslee-logo.jpg";
-  import hero from "$lib/assets/hero.jpg";
-  import mibinetImg from "$lib/assets/mibinet-logo.png";
-  import mxlbricksImg from "$lib/assets/mxlbricks-logo.png";
-  import mxlpyImg from "$lib/assets/mxlpy-logo.png";
-  import placeholderImg from "$lib/assets/placeholder.jpg";
+  import bioscImg from "#lib/assets/biosc-logo.jpg";
+  import ccls from "#lib/assets/ccls.svg";
+  import ceplasImg from "#lib/assets/ceplas-logo.jpg";
+  import crophotImg from "#lib/assets/comphot-logo.png";
+  import cpblImg from "#lib/assets/cpbl-rwth-logo.svg";
+  import gopmfImg from "#lib/assets/gopmf-logo.png";
+  import greenslothImg from "#lib/assets/greensloth-logo.svg";
+  import groupImg from "#lib/assets/group-picture-2026-03-sm.jpg";
+  import hdsleeImg from "#lib/assets/hdslee-logo.jpg";
+  import hero from "#lib/assets/hero.jpg";
+  import mibinetImg from "#lib/assets/mibinet-logo.png";
+  import mxlbricksImg from "#lib/assets/mxlbricks-logo.png";
+  import mxlpyImg from "#lib/assets/mxlpy-logo.png";
+  import placeholderImg from "#lib/assets/placeholder.jpg";
   // Publication watermark images, keyed by DOI in `publicationImages` below
-  import pubFluoInvImg from "$lib/assets/publications/2026-fluorescence-inverse.png";
-  import pubWebBased from "$lib/assets/publications/2026-web-based.png";
-  import pubSheddingImg from "$lib/assets/publications/shedding.png";
+  import pubFluoInvImg from "#lib/assets/publications/2026-fluorescence-inverse.png";
+  import pubWebBased from "#lib/assets/publications/2026-web-based.png";
+  import pubSheddingImg from "#lib/assets/publications/shedding.png";
   // Remainder
-  import rwth from "$lib/assets/rwth.svg";
-  import publicationsJson from "$lib/publications.json";
+  import rwth from "#lib/assets/rwth.svg";
+  import publicationsJson from "#lib/publications.json";
   import {
     Bold,
     BoxHeadingMain,

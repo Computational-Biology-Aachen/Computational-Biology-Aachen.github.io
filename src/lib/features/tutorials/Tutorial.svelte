@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { formatDate } from "$lib/utils";
+  import { formatDate } from "#lib/utils.js";
   import { H1, Section, Text } from "@computational-biology-aachen/design";
   import type { Component } from "svelte";
 

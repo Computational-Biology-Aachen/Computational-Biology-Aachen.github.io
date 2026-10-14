@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Tutorials from "$lib/features/tutorials/Tutorials.svelte";
+  import Tutorials from "#lib/features/tutorials/Tutorials.svelte";
   let {
     data,
   }: {

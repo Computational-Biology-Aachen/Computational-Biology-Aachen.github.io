@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Team from "$lib/features/team/Team.svelte";
-  import type { Member } from "$lib/types";
+  import Team from "#lib/features/team/Team.svelte";
+  import type { Member } from "#lib/types.js";
 
   let {
     data,

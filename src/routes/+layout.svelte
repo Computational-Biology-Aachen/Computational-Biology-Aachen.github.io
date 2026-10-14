@@ -1,8 +1,8 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
   import { updated } from "$app/state";
-  import favicon from "$lib/assets/cpbl-favicon.svg";
-  import * as config from "$lib/config";
+  import favicon from "#lib/assets/cpbl-favicon.svg";
+  import * as config from "#lib/config.js";
   import {
     CollapseToBurger,
     Imprint,

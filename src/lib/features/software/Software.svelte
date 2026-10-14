@@ -1,9 +1,9 @@
 <script lang="ts">
-  import absorpigImg from "$lib/assets/absorpig-logo.png";
-  import cpblRwthImg from "$lib/assets/cpbl-rwth-logo.svg";
-  import greenslothImg from "$lib/assets/greensloth-logo.svg";
-  import mxlbricksImg from "$lib/assets/mxlbricks-logo.png";
-  import mxlpyImg from "$lib/assets/mxlpy-logo.png";
+  import absorpigImg from "#lib/assets/absorpig-logo.png";
+  import cpblRwthImg from "#lib/assets/cpbl-rwth-logo.svg";
+  import greenslothImg from "#lib/assets/greensloth-logo.svg";
+  import mxlbricksImg from "#lib/assets/mxlbricks-logo.png";
+  import mxlpyImg from "#lib/assets/mxlpy-logo.png";
   import {
     CardSoftware,
     H1,

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Tutorial from "$lib/features/tutorials/Tutorial.svelte";
+  import Tutorial from "#lib/features/tutorials/Tutorial.svelte";
   import type { Component } from "svelte";
 
   let {

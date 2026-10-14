@@ -1,6 +1,6 @@
 <script lang="ts">
-  import biorxivImg from "$lib/assets/biorxiv_logo.png";
-  import json from "$lib/publications.json";
+  import biorxivImg from "#lib/assets/biorxiv_logo.png";
+  import json from "#lib/publications.json";
   import {
     H1,
     SectionHeader as Header,
