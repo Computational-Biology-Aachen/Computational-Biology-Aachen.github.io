@@ -1,6 +1,6 @@
 <script lang="ts">
   import * as config from "#lib/config.js";
-  import { absoluteUrl } from "#lib/site/content.js";
+  import { absoluteUrl } from "#lib/site/url.js";
   import Seo from "#lib/site/Seo.svelte";
   import type { Member } from "#lib/types.js";
   import {

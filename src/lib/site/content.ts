@@ -1,8 +1,10 @@
 // Build-time view of the site's Markdown content and publications, shared by
 // the machine-readable endpoints (sitemap, RSS, llms.txt) so they always list
 // exactly what the pages render.
-import * as config from "#lib/config.js";
 import publicationsJson from "#lib/publications.json";
+import { absoluteUrl } from "./url.js";
+
+export { absoluteUrl };
 
 export type Article = {
   slug: string;
@@ -113,10 +115,6 @@ export const publications: Publication[] = (publicationsJson as Publication[])
 export const groupLeader = team.find(
   (person) => person.slug === "anna-matuszyńska",
 );
-
-export function absoluteUrl(path: string): string {
-  return new URL(path, config.url).href;
-}
 
 export type SitePage = { path: string; lastmod?: string };
 

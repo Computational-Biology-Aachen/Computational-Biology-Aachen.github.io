@@ -1,8 +1,4 @@
-import { news } from "#lib/site/content.js";
 import { error } from "@sveltejs/kit";
-import type { EntryGenerator } from "./$types";
-
-export const entries: EntryGenerator = () => news.map(({ slug }) => ({ slug }));
 
 export async function load({ params }) {
   try {
