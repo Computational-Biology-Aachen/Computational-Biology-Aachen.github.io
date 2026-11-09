@@ -65,6 +65,7 @@ export default defineConfig({
           "/sitemap.xml",
           "/llms.txt",
           "/llms-full.txt",
+          "/rss.xml",
         ],
       },
 
