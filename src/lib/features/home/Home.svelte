@@ -3,7 +3,6 @@
   import ccls from "#lib/assets/ccls.svg";
   import ceplasImg from "#lib/assets/ceplas-logo.jpg";
   import crophotImg from "#lib/assets/comphot-logo.png";
-  import cpblLogoRaster from "#lib/assets/cpbl-rwth-logo.jpg";
   import cpblImg from "#lib/assets/cpbl-rwth-logo.svg";
   import gopmfImg from "#lib/assets/gopmf-logo.png";
   import greenslothImg from "#lib/assets/greensloth-logo.svg";
@@ -22,7 +21,7 @@
   import rwth from "#lib/assets/rwth.svg";
   import publicationsJson from "#lib/publications.json";
   import * as config from "#lib/config.js";
-  import { absoluteUrl, groupLeader } from "#lib/site/content.js";
+  import { absoluteUrl } from "#lib/site/url.js";
   import Seo from "#lib/site/Seo.svelte";
   import {
     Bold,
@@ -48,17 +47,12 @@
     "@type": "ResearchOrganization",
     name: config.title,
     url: absoluteUrl("/"),
-    logo: absoluteUrl(cpblLogoRaster),
+    logo: absoluteUrl(cpblImg),
     description: config.description,
     parentOrganization: {
       "@type": "CollegeOrUniversity",
       name: "RWTH Aachen University",
       url: "https://www.rwth-aachen.de",
-    },
-    member: groupLeader && {
-      "@type": "Person",
-      name: groupLeader.name,
-      url: absoluteUrl(`/team/${groupLeader.slug}`),
     },
     sameAs: ["https://github.com/Computational-Biology-Aachen"],
   };

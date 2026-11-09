@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/state";
   import * as config from "#lib/config.js";
-  import { absoluteUrl } from "#lib/site/content.js";
+  import { absoluteUrl } from "#lib/site/url.js";
 
   let {
     title,
