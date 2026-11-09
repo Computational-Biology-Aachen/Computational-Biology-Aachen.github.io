@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import {
     TableAlumni as AlumniTable,
     H1,
@@ -12,9 +13,10 @@
   } from "@computational-biology-aachen/design";
 </script>
 
-<svelte:head>
-  <title>Teaching - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Teaching"
+  description="Computational biology courses, practicals and internships offered by the Matuszyńska Lab at RWTH Aachen."
+/>
 
 <Header width="narrow">
   <H1 color="light">Teaching</H1>

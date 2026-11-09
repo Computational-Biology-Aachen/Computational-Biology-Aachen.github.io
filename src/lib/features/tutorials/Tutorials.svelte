@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import {
     Card,
     H1,
@@ -27,9 +28,10 @@
   let trimmedRows = $derived(allPosts.slice(start, end + 1));
 </script>
 
-<svelte:head>
-  <title>Tutorials - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Tutorials"
+  description="Hands-on tutorials for building ODE models of biological and other systems with MxlPy."
+/>
 
 <Header width="narrow">
   <H1 color="light">Tutorials</H1>

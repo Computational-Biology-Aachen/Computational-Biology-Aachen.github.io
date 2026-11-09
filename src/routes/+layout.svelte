@@ -23,29 +23,7 @@
   });
 </script>
 
-<!-- SEO -->
 <svelte:head>
-  <title>Matuszyńska Lab</title>
-  <meta
-    name="description"
-    content={config.description}
-  />
-  <meta
-    property="og:title"
-    content={config.title}
-  />
-  <meta
-    property="og:description"
-    content={config.description}
-  />
-  <meta
-    property="og:url"
-    content={config.url}
-  />
-  <meta
-    property="og:type"
-    content="website"
-  />
   <meta
     name="twitter:card"
     content="summary"
@@ -53,6 +31,12 @@
   <link
     rel="icon"
     href={favicon}
+  />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{config.title} - News"
+    href="/rss.xml"
   />
 </svelte:head>
 

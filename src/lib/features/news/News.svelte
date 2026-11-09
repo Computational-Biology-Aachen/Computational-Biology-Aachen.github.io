@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import { resolve } from "$app/paths";
   import type { Post } from "#lib/types.js";
   import {
@@ -30,9 +31,10 @@
   let trimmedRows = $derived(allPosts.slice(start, end + 1));
 </script>
 
-<svelte:head>
-  <title>News - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="News"
+  description="News from the Matuszyńska Lab: publications, talks, events and team updates."
+/>
 
 <Header width="narrow">
   <H1 color="light">News</H1>

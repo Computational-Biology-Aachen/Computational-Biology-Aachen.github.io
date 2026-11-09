@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import biorxivImg from "#lib/assets/biorxiv_logo.png";
   import json from "#lib/publications.json";
   import {
@@ -12,11 +13,28 @@
   } from "@computational-biology-aachen/design";
 
   const papers = json.filter((p) => p.doi);
+
+  const jsonLd = {
+    "@type": "ItemList",
+    itemListElement: papers.map((paper, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "ScholarlyArticle",
+        "@id": paper.doi,
+        name: paper.title,
+        datePublished: paper.date,
+        author: paper.authors.map((name) => ({ "@type": "Person", name })),
+      },
+    })),
+  };
 </script>
 
-<svelte:head>
-  <title>Papers - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Papers"
+  jsonLd={jsonLd}
+  description="Publications of the Matuszyńska Lab: mechanistic and data-driven models of photosynthesis, metabolism and microbial communities."
+/>
 
 <Header width="narrow">
   <H1 color="light">Our publications</H1>
