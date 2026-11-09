@@ -70,3 +70,6 @@ jobs:
 
       - name: enforce client JS chunk size budget
         run: node scripts/check-chunk-budget.mjs
+
+      - name: check sitemap covers exactly the prerendered pages
+        run: node scripts/check-sitemap.mjs
