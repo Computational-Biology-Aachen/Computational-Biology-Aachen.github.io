@@ -66,6 +66,7 @@ export default defineConfig({
           "/llms.txt",
           "/llms-full.txt",
           "/rss.xml",
+          "/.well-known/security.txt",
         ],
       },
 
