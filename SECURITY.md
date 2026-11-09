@@ -1,21 +1,15 @@
 # Security Policy
 
-## Supported Versions
+This repository is the static website of the Matuszyńska Lab
+(https://cpbl.rwth-aachen.de/). Only the current `main` branch, as deployed,
+is supported.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+## Reporting a vulnerability
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Please report vulnerabilities privately via
+[GitHub private vulnerability reporting](https://github.com/Computational-Biology-Aachen/Computational-Biology-Aachen.github.io/security/advisories/new),
+not in a public issue. We aim to acknowledge reports within a week and will
+keep you updated until the issue is resolved or declined.
 
-## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+The same contact is published at
+https://cpbl.rwth-aachen.de/.well-known/security.txt (RFC 9116).
