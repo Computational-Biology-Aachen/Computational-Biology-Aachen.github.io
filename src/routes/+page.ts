@@ -31,5 +31,3 @@ export async function load() {
     error(500, "Failed to load news");
   }
 }
-
-export const prerender = true;
