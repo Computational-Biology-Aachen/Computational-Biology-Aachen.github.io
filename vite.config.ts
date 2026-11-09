@@ -57,6 +57,15 @@ export default defineConfig({
         fallback: "404.html",
       }),
 
+      prerender: {
+        // Machine-readable files no page links to.
+        entries: [
+          "*",
+          "/robots.txt",
+          "/sitemap.xml",
+        ],
+      },
+
       version: {
         // Poll for new deploys so long-lived tabs upgrade proactively instead of
         // only recovering reactively after a failed navigation.

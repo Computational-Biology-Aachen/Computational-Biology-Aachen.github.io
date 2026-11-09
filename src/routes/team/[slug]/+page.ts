@@ -1,10 +1,8 @@
+import { team } from "#lib/site/content.js";
 import { error } from "@sveltejs/kit";
 import type { EntryGenerator } from "./$types";
 
-export const entries: EntryGenerator = () =>
-  Object.keys(import.meta.glob("/src/md/team/*.md")).map((path) => ({
-    slug: path.split("/").at(-1)!.replace(".md", ""),
-  }));
+export const entries: EntryGenerator = () => team.map(({ slug }) => ({ slug }));
 
 export async function load({ params }) {
   try {
