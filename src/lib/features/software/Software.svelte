@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import absorpigImg from "#lib/assets/absorpig-logo.png";
   import cpblRwthImg from "#lib/assets/cpbl-rwth-logo.svg";
   import greenslothImg from "#lib/assets/greensloth-logo.svg";
@@ -14,9 +15,10 @@
   } from "@computational-biology-aachen/design";
 </script>
 
-<svelte:head>
-  <title>Community resources - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Community resources"
+  description="Open-source software and resources from the Matuszyńska Lab: MxlPy, MxlBricks, GreenSloth, ComPhot and more."
+/>
 
 <Header width="narrow">
   <H1 color="light">Community resources</H1>

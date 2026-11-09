@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import {
     Card,
     H1,
@@ -10,9 +11,10 @@
   } from "@computational-biology-aachen/design";
 </script>
 
-<svelte:head>
-  <title>Community resources - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Events"
+  description="Hackathons, summer schools and workshops organised by the Matuszyńska Lab."
+/>
 
 <Header width="narrow">
   <H1 color="light">Events</H1>

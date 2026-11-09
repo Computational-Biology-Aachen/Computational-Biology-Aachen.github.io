@@ -1,4 +1,6 @@
 <script lang="ts">
+  import * as config from "#lib/config.js";
+  import Seo from "#lib/site/Seo.svelte";
   import { formatDate } from "#lib/utils.js";
   import { H1, Section, Text } from "@computational-biology-aachen/design";
   import type { Component } from "svelte";
@@ -10,24 +12,29 @@
       content: Component;
       meta: {
         title: string;
+        description?: string;
         author: string;
         date: string;
       };
     };
   } = $props();
+
+  const jsonLd = $derived({
+    "@type": "BlogPosting",
+    headline: data.meta.title,
+    description: data.meta.description,
+    datePublished: data.meta.date,
+    author: { "@type": "Person", name: data.meta.author },
+    publisher: { "@type": "ResearchOrganization", name: config.title },
+  });
 </script>
 
-<svelte:head>
-  <title>{data.meta.title} - Matuszyńska Lab</title>
-  <meta
-    property="og:type"
-    content="article"
-  />
-  <meta
-    property="og:title"
-    content={data.meta.title}
-  />
-</svelte:head>
+<Seo
+  title={data.meta.title}
+  description={data.meta.description}
+  type="article"
+  jsonLd={jsonLd}
+/>
 
 <Section
   variant="primary"

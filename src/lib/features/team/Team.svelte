@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Seo from "#lib/site/Seo.svelte";
   import imgImport from "#lib/assets/contributor-map.png";
   import type { Member } from "#lib/types.js";
   import {
@@ -18,9 +19,10 @@
   let members: Member[] = data.members;
 </script>
 
-<svelte:head>
-  <title>Team - Matuszyńska Lab</title>
-</svelte:head>
+<Seo
+  title="Team"
+  description="Members and alumni of the Matuszyńska Lab for computational biology at RWTH Aachen."
+/>
 
 <SectionHeader
   variant="primary"
