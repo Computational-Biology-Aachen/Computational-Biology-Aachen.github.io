@@ -63,6 +63,8 @@ export default defineConfig({
           "*",
           "/robots.txt",
           "/sitemap.xml",
+          "/llms.txt",
+          "/llms-full.txt",
         ],
       },
 
