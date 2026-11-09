@@ -2,12 +2,16 @@ import type { Post } from "#lib/types.js";
 import { error } from "@sveltejs/kit";
 
 export async function load() {
+  const bot = /\d{4}-\d{2}-\d{2}-weekly-summary\.md$/;
+
   try {
     let posts: Post[] = [];
 
     const paths = import.meta.glob("/src/md/news/*.md", { eager: true });
 
     for (const path in paths) {
+      if (bot.test(path)) continue;
+
       const file = paths[path];
       const slug = path.split("/").at(-1)?.replace(".md", "");
 
