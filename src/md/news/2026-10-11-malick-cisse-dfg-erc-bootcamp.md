@@ -1,7 +1,7 @@
 ---
 title: "Malick Cisse Selected for the RWTH DFG–ERC Grant Writing Bootcamp"
 description: "Port to Europe fellow postdoctoral researcher Malick Cisse participated in the competitive RWTH DFG–ERC Grant Writing Bootcamp at Kloster Steinfeld."
-date: 2026-10-11
+date: "2026-10-11"
 categories:
   - funding
 published: true
