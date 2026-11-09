@@ -10,7 +10,7 @@ export const software = [
     title: "MxlPy",
     url: "https://github.com/Computational-Biology-Aachen/MxlPy",
     description:
-      "Python package for mechanistic learning (Mxl) - the combination of mechanistic modeling and machine learning to deliver explainable, data-informed solutions. Docs: https://cpbl.rwth-aachen.de/MxlPy/ ; LLM reference: https://github.com/Computational-Biology-Aachen/MxlPy/blob/main/docs/llms.txt",
+      "Python package for mechanistic learning (Mxl) - the combination of mechanistic modeling and machine learning to deliver explainable, data-informed solutions. Docs: https://cpbl.rwth-aachen.de/MxlPy/ ; LLM reference: https://cpbl.rwth-aachen.de/MxlPy/latest/llms.txt",
   },
   {
     title: "MxlBricks",
