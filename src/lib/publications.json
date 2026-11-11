@@ -1,5 +1,12 @@
 [
   {
+    "title": "When Everyone Can Build a Model: Mechanistic Inference in the Age of AI",
+    "date": "2026-10-30",
+    "doi": "https://doi.org/10.48550/arxiv.2610.41454",
+    "authors": ["Marvin van Aalst", "Adèle H. Ribeiro", "Anna Matuszyńska"],
+    "preprint": true
+  },
+  {
     "title": "Experimental and computational analyses of KEA3-dependent photosynthetic responses uncover species-specific molecular variation",
     "date": "2026-10-21",
     "doi": "https://doi.org/10.64898/2026.10.13.758443",
