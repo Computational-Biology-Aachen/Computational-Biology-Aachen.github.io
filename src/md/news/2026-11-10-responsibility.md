@@ -10,7 +10,7 @@ published: true
 
 Prof. Anna Matuszyńska was invited to contribute to the Global Responsibility Working Group at RWTH Aachen University, where she shared experiences from collaborative teaching and research projects with partners in Sub-Saharan Africa.
 
-Her presentation highlighted several initiatives carried out over the past years, demonstrating how international collaboration can bring together education, scientific research, and capacity building. These included teaching hackathons organised in Kenya in 2022 and 2023, as well as a research hackathon on photosynthetic data held earlier this year in Ghana.
+Her presentation highlighted several initiatives carried out over the past years, demonstrating how international collaboration can bring together education, scientific research, and capacity building. These included teaching hackathons organised in Kenya in 2022 and 2023, as well as a research hackathon on photosynthetic data held in Ghana in 2026.
 
 The projects provided opportunities for students and researchers to work together across disciplines and institutional boundaries, tackling practical scientific challenges while building international networks and strengthening research and teaching collaborations.
 
