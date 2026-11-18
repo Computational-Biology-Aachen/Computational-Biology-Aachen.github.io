@@ -16,4 +16,4 @@ The projects provided opportunities for students and researchers to work togethe
 
 Prof. Matuszyńska's contribution offered insights into both the opportunities and practical experiences of developing sustainable academic partnerships with institutions in Sub-Saharan Africa.
 
-[<img src="/news/GLOBAL_RESPONSIBILITY_SLIDE.jpg" alt="Opening slide of Prof. Matuszyńska's presentation to the RWTH Global Responsibility Working Group" style="max-width: 100%" />]( /news/GLOBAL_RESPONSIBILITY_SLIDE.jpg )
+[<img src="/news/GLOBAL_RESPONSIBILITY_SLIDE.jpg" alt="Opening slide of Prof. Matuszyńska's presentation to the RWTH Global Responsibility Working Group" style="max-width: 100%" />](/news/GLOBAL_RESPONSIBILITY_SLIDE.jpg)

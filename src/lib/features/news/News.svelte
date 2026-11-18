@@ -11,8 +11,7 @@
     Section,
     Text,
   } from "@computational-biology-aachen/design";
-  import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-  import Fa from "svelte-fa";
+  import Pagination from "#lib/site/Pagination.svelte";
 
   let { data }: { data: { posts: Post[] } } = $props();
 
@@ -21,14 +20,9 @@
   let perPage = 5;
 
   let currentPage = $state(0);
-  let totalRows = $derived(allPosts.length);
-  let totalPages = $derived(Math.ceil(totalRows / perPage));
-  let start = $derived(currentPage * perPage);
-  let end = $derived(
-    currentPage === totalRows - 1 ? totalRows - 1 : start + perPage - 1,
+  let trimmedRows = $derived(
+    allPosts.slice(currentPage * perPage, (currentPage + 1) * perPage),
   );
-
-  let trimmedRows = $derived(allPosts.slice(start, end + 1));
 </script>
 
 <Seo
@@ -44,95 +38,16 @@
   gap="large"
 >
   {#each trimmedRows as post (post.slug)}
-    <a
-      href={resolve("/news/[slug]", { slug: post.slug })}
-      class="unstyled-link"
-    >
-      <Card format="full">
-        <H2>{post.title}</H2>
-        <Text>{post.description}</Text>
-        <Link href="/news/{post.slug}">Read on</Link>
-      </Card>
-    </a>
+    <Card format="full">
+      <H2>{post.title}</H2>
+      <Text>{post.description}</Text>
+      <Link href={resolve("/news/[slug]", { slug: post.slug })}>Read on</Link>
+    </Card>
   {/each}
-  <div class="pagination">
-    <button
-      onclick={() => (currentPage -= 1)}
-      disabled={currentPage === 0 ? true : false}
-      aria-label="left arrow icon"
-      aria-describedby="prev"
-    >
-      <Fa icon={faArrowLeft} />
-    </button>
-    <span
-      id="prev"
-      class="sr-only">Load previous {perPage} rows</span
-    >
-    <p>{start + 1} - {end + 1} of {totalRows}</p>
-    <button
-      onclick={() => (currentPage += 1)}
-      disabled={currentPage === totalPages - 1 ? true : false}
-      aria-label="right arrow icon"
-      aria-describedby="next"
-    >
-      <Fa icon={faArrowRight} />
-    </button>
-    <span
-      id="next"
-      class="sr-only">Load next {perPage} rows</span
-    >
-  </div>
+  <Pagination
+    bind:page={currentPage}
+    perPage={perPage}
+    total={allPosts.length}
+    color="var(--color-text)"
+  />
 </Section>
-
-<style>
-  .sr-only {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    border: 0;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: all;
-  }
-
-  .pagination p {
-    margin: 0 1rem;
-  }
-
-  button {
-    transition: var(--transition);
-    cursor: pointer;
-    border: 1px solid var(--color-text);
-    border-radius: 0.25rem;
-    border-radius: 0.25rem;
-    background-color: var(--color-text);
-    padding: 0.75rem 2rem;
-    color: var(--color-bg);
-    font-size: 1rem;
-  }
-  button:not([disabled]):hover {
-    transform: scale(1.05);
-    box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.125);
-  }
-  button:active {
-    transform: scale(1);
-    box-shadow: inset 5px 5px 10px -5px rgba(0, 0, 0, 0.5);
-  }
-  button:disabled {
-    cursor: not-allowed;
-    border: 1px solid var(--color-surface);
-    background-color: var(--color-surface);
-  }
-
-  .unstyled-link {
-    color: inherit;
-    text-decoration: none;
-  }
-</style>

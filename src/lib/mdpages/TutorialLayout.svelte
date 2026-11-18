@@ -17,15 +17,15 @@
     H5 as h5,
     H6 as h6,
     Text as p,
+    Table as table,
+    Tbody as tbody,
+    Td as td,
+    Th as th,
+    Thead as thead,
+    Tr as tr,
   } from "@computational-biology-aachen/design";
   import hr from "./hr.svelte";
   import li from "./li.svelte";
-  import table from "./table.svelte";
-  import tbody from "./tbody.svelte";
-  import td from "./td.svelte";
-  import th from "./th.svelte";
-  import thead from "./thead.svelte";
-  import tr from "./tr.svelte";
   import ul from "./ul.svelte";
 
   export {
