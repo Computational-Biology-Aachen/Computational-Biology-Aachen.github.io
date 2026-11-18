@@ -73,6 +73,7 @@
         title={title}
         format="full"
         img={preprint ? biorxivImg : null}
+        styleVars={{ minHeight: "17rem" }}
       >
         <Text>
           Published {date}, read at <Link href={doi}>doi</Link>. Authored by {authors.join(
