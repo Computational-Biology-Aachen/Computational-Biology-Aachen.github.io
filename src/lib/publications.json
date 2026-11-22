@@ -1,5 +1,12 @@
 [
   {
+    "title": "Mesoscale thylakoid organization modulates plastoquinol delivery to Cyt b6f in simulated cyanobacterial membranes",
+    "date": "2026-11-18",
+    "doi": "https://doi.org/10.1016/j.bbabio.2026.149933",
+    "authors": ["Tim Nies", "Anna Matuszyńska"],
+    "preprint": false
+  },
+  {
     "title": "When Everyone Can Build a Model: Mechanistic Inference in the Age of AI",
     "date": "2026-10-30",
     "doi": "https://doi.org/10.48550/arxiv.2610.41454",
@@ -529,7 +536,7 @@
   },
   {
     "title": "Shifts in carbon partitioning by photosynthetic activity increase terpenoid synthesis in glandular trichomes",
-    "date": "2023-06-20",
+    "date": "2023-07-04",
     "doi": "https://doi.org/10.1111/tpj.16352",
     "authors": [
       "Nima P. Saadat",
@@ -576,7 +583,7 @@
   },
   {
     "title": "Impaired photoprotection in Phaeodactylum tricornutum KEA3 mutants reveals the proton regulatory circuit of diatoms light acclimation",
-    "date": "2022-01-29",
+    "date": "2022-02-21",
     "doi": "https://doi.org/10.1111/nph.18003",
     "authors": [
       "Claire Seydoux",
@@ -649,7 +656,7 @@
   },
   {
     "title": "Balancing energy supply during photosynthesis – a theoretical perspective",
-    "date": "2019-03-12",
+    "date": "2019-03-25",
     "doi": "https://doi.org/10.1111/ppl.12962",
     "authors": ["Anna Matuszyńska", "Nima P. Saadat", "Oliver Ebenhöh"],
     "preprint": false
