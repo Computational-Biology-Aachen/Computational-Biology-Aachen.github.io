@@ -18,4 +18,4 @@ The newly developed course will start next summer semester (2025), and we hope t
 
 Additionally, please check this website from time to time. We will post regular updates on the course's planning.
 
-**https://www.rwth-aachen.de/cms/root/studium/im-studium/~egv/semestertermine/**
+*<https://www.rwth-aachen.de/cms/root/studium/im-studium/~egv/semestertermine/>*

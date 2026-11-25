@@ -5,7 +5,7 @@ categories:
   - teaching
 date: "2026-04-22"
 author: "Marvin van Aalst"
-layout: tutorials
+template: tutorials
 published: true
 ---
 
@@ -17,7 +17,7 @@ We will build this model in mxlpy and explore its two characteristic features: p
 
 ## The Model
 
-Two populations: **H** (prey, e.g. hares) and **L** (predators, e.g. lynx). Four events drive the dynamics:
+Two populations: *H* (prey, e.g. hares) and *L* (predators, e.g. lynx). Four events drive the dynamics:
 
 | Reaction                   | Rate            | Effect |
 | -------------------------- | --------------- | ------ |
@@ -101,7 +101,7 @@ Both populations oscillate with a fixed period. The predator peak always lags be
 
 ## Phase Portrait
 
-Instead of watching H and L evolve over time, we can plot one against the other. Each point in this **phase plane** represents the complete state of the system at one instant. Because the classical Lotka-Volterra model conserves a quantity analogous to energy, trajectories are **closed orbits** — the system returns exactly to its starting point every cycle.
+Instead of watching H and L evolve over time, we can plot one against the other. Each point in this *phase plane* represents the complete state of the system at one instant. Because the classical Lotka-Volterra model conserves a quantity analogous to energy, trajectories are *closed orbits* — the system returns exactly to its starting point every cycle.
 
 ```python
 fig_ph, ax = plt.subplots(figsize=(5, 5))
@@ -126,6 +126,6 @@ The closed loop confirms the system is periodic and conservative. Different star
 
 ## What's Next
 
-- Add a **carrying capacity** for prey: replace `alpha · H` with `alpha · H · (1 − H/K)`. The orbit will spiral inward to a stable equilibrium.
+- Add a *carrying capacity* for prey: replace `alpha · H` with `alpha · H · (1 − H/K)`. The orbit will spiral inward to a stable equilibrium.
 - Start at the fixed point `H* = gamma/delta, L* = alpha/beta` — the system should stay there indefinitely.
 - In the next post we step up in complexity: the Hodgkin-Huxley model, which uses a similar reaction structure to describe the electrical dynamics of a single neuron.

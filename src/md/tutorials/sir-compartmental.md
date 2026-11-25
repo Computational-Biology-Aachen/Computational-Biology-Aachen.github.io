@@ -5,7 +5,7 @@ categories:
   - teaching
 date: "2026-04-23"
 author: "Marvin van Aalst"
-layout: tutorials
+template: tutorials
 published: true
 ---
 
@@ -13,15 +13,15 @@ published: true
 
 Compartmental epidemic models are one of the oldest and most widely used tools in public health. The core idea is simple: divide a population into groups — _compartments_ — and write down rules for how people move between them. Despite their simplicity, these models powered pandemic response decisions during COVID-19, influenza outbreaks, and many others.
 
-In this post we will build a family of these models using mxlpy. The point is not just to simulate an epidemic — it is to show how mxlpy lets you **start with a simple model and extend it incrementally**, without ever rewriting the core from scratch.
+In this post we will build a family of these models using mxlpy. The point is not just to simulate an epidemic — it is to show how mxlpy lets you *start with a simple model and extend it incrementally*, without ever rewriting the core from scratch.
 
 ## The SIR Model
 
 The simplest compartmental model splits a population into three groups:
 
-- **S** — Susceptible (can catch the disease)
-- **I** — Infected (currently sick and infectious)
-- **R** — Recovered (immune, no longer infectious)
+- *S* — Susceptible (can catch the disease)
+- *I* — Infected (currently sick and infectious)
+- *R* — Recovered (immune, no longer infectious)
 
 The population flows in one direction: S → I → R.
 
@@ -77,8 +77,8 @@ def sir() -> Model:
 
 A few things to note about the mxlpy API:
 
-- **Fluent builder pattern** — every `.add_*` call returns the model itself, so you can chain them.
-- **`stoichiometry`** maps variable names to the sign of their change. `{"S": -1, "I": 1}` means: one unit leaves S, one unit enters I.
+- *Fluent builder pattern* — every `.add_*` call returns the model itself, so you can chain them.
+- *`stoichiometry`* maps variable names to the sign of their change. `{"S": -1, "I": 1}` means: one unit leaves S, one unit enters I.
 - Rate functions come from `mxlpy.fns`. `mass_action_2s(k, s1, s2)` evaluates to `k * s1 * s2`, which gives us `beta * S * I`.
 
 ### Simulating and Plotting
@@ -104,7 +104,7 @@ You should see the classic epidemic curve: a wave of infections that rises, peak
 
 ## Extending to SIRD — Adding Disease-Induced Mortality
 
-The SIR model assumes everyone recovers. That is often a reasonable simplification, but sometimes we want to track deaths explicitly. The **SIRD** model adds a **D** (Deceased) compartment. Infected individuals now either recover or die:
+The SIR model assumes everyone recovers. That is often a reasonable simplification, but sometimes we want to track deaths explicitly. The *SIRD* model adds a *D* (Deceased) compartment. Infected individuals now either recover or die:
 
 ```
 dS/dt = -beta * S * I
@@ -117,7 +117,7 @@ Here `mu` is the disease-induced mortality rate.
 
 ### Extending the SIR Model
 
-Here is the key insight: **we do not rewrite the SIR model**. We take the existing model and add what is new.
+Here is the key insight: *we do not rewrite the SIR model*. We take the existing model and add what is new.
 
 ```python
 def sird() -> Model:
@@ -157,7 +157,7 @@ Notice how the recovered population is now slightly lower and the deceased compa
 
 ## Extending to SEIR — Adding an Incubation Period
 
-Many diseases have an **incubation period**: infected individuals are not immediately infectious. The **SEIR** model captures this with an **E** (Exposed) compartment. Susceptibles first become exposed, then move to infectious:
+Many diseases have an *incubation period*: infected individuals are not immediately infectious. The *SEIR* model captures this with an *E* (Exposed) compartment. Susceptibles first become exposed, then move to infectious:
 
 ```
 dS/dt = -beta * S * I
@@ -241,7 +241,7 @@ plt.tight_layout()
 
 ## What Did We Actually Do?
 
-We built three epidemiological models. More importantly, we built them as a **family**:
+We built three epidemiological models. More importantly, we built them as a *family*:
 
 - SIR is the core — defined once, cleanly.
 - SIRD extends SIR by adding a mortality branch.
@@ -255,6 +255,6 @@ This is the pattern mxlpy encourages throughout: define the simplest correct ver
 
 ## Next Steps
 
-- Try combining the extensions: build a **SEIRD** model (incubation + mortality) by extending `seir()`.
+- Try combining the extensions: build a *SEIRD* model (incubation + mortality) by extending `seir()`.
 - Vary `beta` and `gamma` to explore the basic reproduction number _R₀ = beta / gamma_ and its role in determining whether an epidemic takes off.
 - In a future post we will fit these parameters to real outbreak data using mxlpy's parameter estimation tools.

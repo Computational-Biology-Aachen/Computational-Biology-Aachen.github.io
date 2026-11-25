@@ -14,7 +14,7 @@ The article is a collaboration between our group and Prof. Adèle H. Ribeiro (Ca
 
 AI tools have made building grey-box models of biological systems easy, but interpreting them is as hard as ever: a model that predicts well does not prove that its inferred mechanism is the real one, and several different models often fit the same data equally well. We argue that causal inference and ensemble analyses together show what the data support, what remains open, and which experiment would settle the question. You can read more about the ideas behind the article in our [preprint announcement](/news/2026-11-11-mechanistic-inference-ai).
 
-**Authors:** Marvin van Aalst, Adèle H. Ribeiro, Anna Matuszyńska  
-**Journal:** Frontiers in Systems Biology, section Multiscale Mechanistic Modeling (2026)  
-**Article type:** Perspective  
-**Preprint:** [https://doi.org/10.48550/arXiv.2610.41454](https://doi.org/10.48550/arXiv.2610.41454)
+*Authors:* Marvin van Aalst, Adèle H. Ribeiro, Anna Matuszyńska\
+*Journal:* Frontiers in Systems Biology, section Multiscale Mechanistic Modeling (2026)\
+*Article type:* Perspective\
+*Preprint:* <https://doi.org/10.48550/arXiv.2610.41454>

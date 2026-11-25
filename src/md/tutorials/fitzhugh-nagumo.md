@@ -5,13 +5,13 @@ categories:
   - teaching
 date: "2026-04-19"
 author: "Marvin van Aalst"
-layout: tutorials
+template: tutorials
 published: true
 ---
 
 # Excitable Dynamics with mxlpy — The FitzHugh-Nagumo Model
 
-The Hodgkin-Huxley model captures neuron dynamics with high biophysical fidelity, but four coupled ODEs with nonlinear voltage-dependent coefficients make it hard to reason about intuitively. In 1961, Richard FitzHugh reduced the essential mathematics to two variables, and in 1962 Jin-ichi Nagumo built an electronic circuit that implements the same equations. The result is the **FitzHugh-Nagumo (FHN) model**: the simplest system that captures excitability, threshold behaviour, and limit cycle oscillations.
+The Hodgkin-Huxley model captures neuron dynamics with high biophysical fidelity, but four coupled ODEs with nonlinear voltage-dependent coefficients make it hard to reason about intuitively. In 1961, Richard FitzHugh reduced the essential mathematics to two variables, and in 1962 Jin-ichi Nagumo built an electronic circuit that implements the same equations. The result is the *FitzHugh-Nagumo (FHN) model*: the simplest system that captures excitability, threshold behaviour, and limit cycle oscillations.
 
 It is widely used beyond neuroscience — the same structure appears in cardiac models, chemical oscillators, and pattern-forming systems.
 
@@ -19,8 +19,8 @@ It is widely used beyond neuroscience — the same structure appears in cardiac 
 
 Two variables:
 
-- **v** — fast variable, analogous to membrane voltage
-- **w** — slow variable, analogous to a recovery current
+- *v* — fast variable, analogous to membrane voltage
+- *w* — slow variable, analogous to a recovery current
 
 ```
 dv/dt = v  −  v³/3  −  w  +  I_ext
@@ -89,10 +89,10 @@ plt.tight_layout()
 
 ## Phase Plane Analysis
 
-The most illuminating view of a two-variable system is the **phase plane**: plot `v` against `w` and overlay the **nullclines** — the curves where each derivative is zero.
+The most illuminating view of a two-variable system is the *phase plane*: plot `v` against `w` and overlay the *nullclines* — the curves where each derivative is zero.
 
-- **v-nullcline** (`dv/dt = 0`): `w = v − v³/3 + I_ext` — cubic, N-shaped
-- **w-nullcline** (`dw/dt = 0`): `w = (v + a) / b` — straight line
+- *v-nullcline* (`dv/dt = 0`): `w = v − v³/3 + I_ext` — cubic, N-shaped
+- *w-nullcline* (`dw/dt = 0`): `w = (v + a) / b` — straight line
 
 The intersection is the equilibrium. When it lies on the middle branch of the cubic (the unstable branch), the system has no stable fixed point and oscillates — a limit cycle.
 
@@ -123,10 +123,10 @@ plt.tight_layout()
 
 ![FitzHugh-Nagumo phase plane](/tutorials/fitzhugh-nagumo-phase.png)
 
-The trajectory circles around the intersection of the two nullclines. Because that intersection sits on the middle (unstable) branch of the cubic, no stable fixed point exists and the system settles onto a **limit cycle** — a closed orbit that attracts all nearby trajectories.
+The trajectory circles around the intersection of the two nullclines. Because that intersection sits on the middle (unstable) branch of the cubic, no stable fixed point exists and the system settles onto a *limit cycle* — a closed orbit that attracts all nearby trajectories.
 
 ## What's Next
 
-- Reduce `I_ext` below the Hopf bifurcation (~0.34) — the system should become excitable rather than oscillatory.
+- Reduce `I_ext` below the Hopf bifurcation (\~0.34) — the system should become excitable rather than oscillatory.
 - Vary `tau` to see how timescale separation affects spike shape.
-- The models so far have all been in biology or neuroscience. In the next post we apply the same mxlpy workflow to a model from economics: the **Solow-Swan growth model**.
+- The models so far have all been in biology or neuroscience. In the next post we apply the same mxlpy workflow to a model from economics: the *Solow-Swan growth model*.

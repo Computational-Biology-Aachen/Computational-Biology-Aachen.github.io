@@ -12,7 +12,7 @@ order: 4
 
 > I'm a research software engineer focused on making mathematical modeling easier to use and more robust.
 
-In particular I focus on enabling using **mechanistic learning**, which is the intersection of mechanistic modellig and machine learning.
+In particular I focus on enabling using *mechanistic learning*, which is the intersection of mechanistic modellig and machine learning.
 This requires a knowledge of a board range of techniques and theories.
 
 My aim is to make robust tools that make it easier to work with this approach such that the entire community can benefit from it.

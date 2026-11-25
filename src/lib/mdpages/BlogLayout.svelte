@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
   import {
     Link as a,
     Code as code,
@@ -15,27 +15,10 @@
   } from "@computational-biology-aachen/design";
 
   export { a, code, h1, h2, h3, h4, h5, h6, p, table, td, th };
-
-  /**
-   * @type {string}
-   */
-  export let title;
-  /**
-   * @type {string}
-   */
-  export let description;
-  /**
-   * @type {string}
-   */
-  export let date;
-  /**
-   * @type {string}
-   */
-  export let categories;
-  /**
-   * @type {string}
-   */
-  export let published;
 </script>
 
-<slot></slot>
+<script>
+  let { children } = $props();
+</script>
+
+{@render children()}

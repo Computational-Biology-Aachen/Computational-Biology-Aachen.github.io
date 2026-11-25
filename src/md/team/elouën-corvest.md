@@ -22,4 +22,4 @@ While modelling in the biological field is a young venture, many examples of suc
 
 ## Publications
 
-- Philipps, Pfennig, Corvest, van Aalst, Fürtauer, Matuszyńska (2025) Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis, The Plant Cell, [https://doi.org/10.1093/plcell/koae101](https://doi.org/10.1093/plcell/koae101)
+- Philipps, Pfennig, Corvest, van Aalst, Fürtauer, Matuszyńska (2025) Computational Photosynthesis (ComPhot): Simulation-Based Learning Platform to Study Photosynthesis, The Plant Cell, <https://doi.org/10.1093/plcell/koae101>

@@ -8,7 +8,11 @@
   "objectWrap": "preserve",
   "arrowParens": "always",
   "singleAttributePerLine": true,
-  "plugins": ["prettier-plugin-svelte", "prettier-plugin-css-order"],
+  "plugins": [
+    "prettier-plugin-svelte",
+    "prettier-plugin-css-order",
+    "@mdsvex/prettier-plugin"
+  ],
   "svelteAllowShorthand": false,
   "svelteIndentScriptAndStyle": true,
   "overrides": [
@@ -16,6 +20,12 @@
       "files": "*.svelte",
       "options": {
         "parser": "svelte"
+      }
+    },
+    {
+      "files": "src/**/*.md",
+      "options": {
+        "parser": "mdsvex"
       }
     }
   ]

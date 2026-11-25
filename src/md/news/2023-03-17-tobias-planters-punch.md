@@ -9,4 +9,4 @@ published: true
 ---
 
 Our doctoral student, Tobias Pfennig, will introduce his work in a video of CEPLAS' series "Planter's Punch"
-Here is the link to the video: https://www.ceplas.eu/en/discover/planters-punch/.
+Here is the link to the video: <https://www.ceplas.eu/en/discover/planters-punch/>.

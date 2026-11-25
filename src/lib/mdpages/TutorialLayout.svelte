@@ -3,10 +3,11 @@
 
   Dev Documentation
   -----------------
-  - shiki highlighter returns {@html ...} raw HTML — bypasses mdsvex component substitution entirely.
+  - Code fences are highlighted by mdsvex (twinkleplop), themed with Night Owl dark.
 -->
 
-<script context="module">
+<script module>
+  import "@twinkleplop/theme-night-owl/dark";
   import {
     Link as a,
     Code as code,
@@ -48,33 +49,20 @@
     tr,
     ul,
   };
-  /**
-   * @type {string}
-   */
-  export let title;
-  /**
-   * @type {string}
-   */
-  export let description;
-  /**
-   * @type {string}
-   */
-  export let date;
-  /**
-   * @type {string}
-   */
-  export let categories;
-  /**
-   * @type {string}
-   */
-  export let published;
 </script>
 
-<slot></slot>
+<script>
+  let { children } = $props();
+</script>
+
+{@render children()}
 
 <style>
-  :global(.shiki) {
+  :global(pre.twinkleplop) {
     margin: 1rem 0;
+    background: var(--twp-background);
     padding: 1rem;
+    overflow-x: auto;
+    color: var(--twp-identifier);
   }
 </style>

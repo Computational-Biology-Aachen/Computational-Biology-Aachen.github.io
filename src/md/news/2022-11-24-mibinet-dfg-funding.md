@@ -15,4 +15,4 @@ The CRC 1535 includes six cooperation partners, including RWTH Aachen, Heinrich-
 
 Within this project we will create MibiNeⓍt - Integrated Research Training Group. MibiNeⓍt will offer targeted and interdisciplinary high-quality training for the next generation of microbiologists and will provide a tailored 4-year doctoral training programme. Numerous partners are opening right now their recruitment process INCLUDING OUR LAB! If you are looking for a computational doctoral project please send your application directly to Prof. Matuszyńska. The official call will follow up in January 2023.
 
-For more information visit project's website: https://www.sfb1535.hhu.de/.
+For more information visit project's website: <https://www.sfb1535.hhu.de/>.

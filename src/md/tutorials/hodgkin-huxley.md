@@ -5,7 +5,7 @@ categories:
   - teaching
 date: "2026-04-20"
 author: "Marvin van Aalst"
-layout: tutorials
+template: tutorials
 published: true
 ---
 
@@ -201,9 +201,9 @@ With `I_ext = 10 µA/cm²`, the neuron fires repetitively. Each spike is about 1
 
 The shape of each action potential is determined by the relative timing of the three gates:
 
-- **m** (Na⁺ activation): opens fast when V depolarises → drives the upstroke
-- **h** (Na⁺ inactivation): closes slowly after activation → terminates Na⁺ current
-- **n** (K⁺ activation): opens slowly → drives repolarisation and undershoot
+- *m* (Na⁺ activation): opens fast when V depolarises → drives the upstroke
+- *h* (Na⁺ inactivation): closes slowly after activation → terminates Na⁺ current
+- *n* (K⁺ activation): opens slowly → drives repolarisation and undershoot
 
 ```python
 fig_g, axes = plt.subplots(3, 1, figsize=(9, 6), sharex=True)
@@ -231,6 +231,6 @@ During each spike: `m` jumps up fast (Na⁺ influx, upstroke), `h` falls slowly 
 
 ## What's Next
 
-- Lower `I_ext` toward the firing threshold (~6.5 µA/cm²) to see the transition from silence to spiking.
+- Lower `I_ext` toward the firing threshold (\~6.5 µA/cm²) to see the transition from silence to spiking.
 - Clamp `I_ext = 0` and give a brief current pulse — the model produces a single action potential, then returns to rest.
-- The Hodgkin-Huxley model is biophysically detailed but expensive to simulate. In the next post we look at the **FitzHugh-Nagumo** model: a two-variable reduction that captures the essential spike dynamics at a fraction of the complexity.
+- The Hodgkin-Huxley model is biophysically detailed but expensive to simulate. In the next post we look at the *FitzHugh-Nagumo* model: a two-variable reduction that captures the essential spike dynamics at a fraction of the complexity.

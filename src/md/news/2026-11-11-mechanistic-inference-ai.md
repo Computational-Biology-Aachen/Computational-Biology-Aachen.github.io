@@ -14,4 +14,4 @@ Deep learning and AI-assisted code generation have made it easier than ever for 
 
 We argue that this ambiguity has two sources: the choice of which variables influence which others, and the choice of the response function describing each mechanism. Causal inference tackles the first by stating which relationships and intervention effects can actually be identified from data. Ensemble analyses tackle the second by quantifying the uncertainty and the range of behaviours that equally good models allow. Taken together, they show what the data support, what remains open, and which experiment would settle the question.
 
-The preprint can be found here: [https://doi.org/10.48550/arXiv.2610.41454](https://doi.org/10.48550/arXiv.2610.41454)
+The preprint can be found here: <https://doi.org/10.48550/arXiv.2610.41454>

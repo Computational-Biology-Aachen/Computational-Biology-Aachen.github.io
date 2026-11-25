@@ -1,10 +1,7 @@
 import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
-import { escapeSvelte, mdsvex, type MdsvexOptions } from "mdsvex";
-import { createHighlighter } from "shiki";
+import { mdsvex } from "mdsvex";
 import { existsSync } from "fs";
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
 
@@ -15,40 +12,23 @@ const designAlias: Record<string, string> = existsSync(designSrc)
   ? { "@computational-biology-aachen/design": designSrc }
   : {};
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const layouts_dir = join(__dirname, "./src/lib/mdpages");
-
-const highlighter = await createHighlighter({
-  themes: ["poimandres"],
-  langs: ["javascript", "typescript", "python"],
-});
-
-const mdsvexOptions: MdsvexOptions = {
-  extensions: [".md"],
-  highlight: {
-    highlighter: (code, lang = "text") => {
-      const html = escapeSvelte(
-        highlighter.codeToHtml(code, {
-          lang: lang ?? "text",
-          theme: "poimandres",
-        }),
-      );
-      return `{@html \`${html}\` }`;
-    },
-  },
-  layout: {
-    tutorials: join(layouts_dir, "TutorialLayout.svelte"),
-    _: join(layouts_dir, "BlogLayout.svelte"),
-  },
-};
-
 export default defineConfig({
   resolve: { alias: designAlias },
   plugins: [
+    mdsvex({
+      extensions: [".md"],
+      templates: {
+        default: "./src/lib/mdpages/BlogLayout.svelte",
+        tutorials: "./src/lib/mdpages/TutorialLayout.svelte",
+      },
+      // 0.x picked a named layout by folder name; templates need it explicitly.
+      select_template: (id) =>
+        id.includes("/tutorials/") ? "tutorials" : undefined,
+      smart_punctuation: true,
+    }),
     sveltekit({
       extensions: [".svelte", ".md"],
-      preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+      preprocess: [vitePreprocess()],
       adapter: adapter({
         pages: "build",
         assets: "build",

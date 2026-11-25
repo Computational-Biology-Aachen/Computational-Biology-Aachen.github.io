@@ -5,13 +5,13 @@ categories:
   - teaching
 date: "2026-04-21"
 author: "Marvin van Aalst"
-layout: tutorials
+template: tutorials
 published: true
 ---
 
 # Enzymatic Chains with mxlpy — Linear Michaelis-Menten Kinetics
 
-Many metabolic pathways are linear sequences of enzymatic reactions: substrate S1 is converted to S2, then to S3, and so on. Each step follows **Michaelis-Menten kinetics** — the rate saturates at high substrate concentrations and is half-maximal when the substrate equals the Michaelis constant K_m.
+Many metabolic pathways are linear sequences of enzymatic reactions: substrate S1 is converted to S2, then to S3, and so on. Each step follows *Michaelis-Menten kinetics* — the rate saturates at high substrate concentrations and is half-maximal when the substrate equals the Michaelis constant K\_m.
 
 This post builds an n-step chain programmatically in mxlpy. The point is not the biology — it is to show that mxlpy lets you build models with loops and parameters, not just by hand.
 
@@ -88,7 +88,7 @@ S1 drains first, filling S2, which in turn fills S3, and so on. Each substrate p
 
 ## Signal Delay vs Chain Length
 
-Longer chains delay the appearance of the final product. We can quantify this by tracking when the last substrate S_n reaches its half-maximum concentration as a function of chain length.
+Longer chains delay the appearance of the final product. We can quantify this by tracking when the last substrate S\_n reaches its half-maximum concentration as a function of chain length.
 
 ```python
 time_long = np.linspace(0, 30, 2000)
@@ -119,5 +119,5 @@ The final product accumulates progressively later as the chain grows. This is a 
 ## What's Next
 
 - Vary `Km` along the chain — how does a bottleneck step (high Km, low Vmax) affect the overall flux?
-- Add feedback inhibition: let the final product S_n inhibit the first reaction. This is a common regulatory motif in amino acid biosynthesis.
+- Add feedback inhibition: let the final product S\_n inhibit the first reaction. This is a common regulatory motif in amino acid biosynthesis.
 - In a future post we will use mxlpy's parameter estimation tools to fit Vmax and Km values to time-course data.
